@@ -1,3 +1,6 @@
+const moment = require('moment');
+moment.locale('zh-cn');
+
 module.exports = {
     title: "七伊",
     description: "七伊的博客",
@@ -5,6 +8,17 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico' }],
         ['meta', { name: 'author', content: '七伊' }],
         ['meta', { name: 'keywords', content: 'vuepress 介绍，vuepress 说明，七伊' }]
+    ],
+    plugins: [
+        [
+            '@vuepress/last-updated',
+            {
+                transformer: (timestamp, lang) => {
+
+                    return moment(timestamp).format("LLLL")
+                }
+            }
+        ]
     ],
     themeConfig: {
         lastUpdated: '更新时间',

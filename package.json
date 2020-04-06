@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/YKYK1K1/docs/issues"
   },
-  "homepage": "https://github.com/YKYK1K1/docs#readme"
+  "homepage": "https://github.com/YKYK1K1/docs#readme",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
 }
