@@ -1,0 +1,21 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "vuepress demo 加油 2020",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YKYK1K1/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YKYK1K1/docs/issues"
+  },
+  "homepage": "https://github.com/YKYK1K1/docs#readme"
+}
