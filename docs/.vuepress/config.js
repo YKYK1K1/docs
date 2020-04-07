@@ -2,6 +2,7 @@ const moment = require('moment');
 moment.locale('zh-cn');
 
 module.exports = {
+    base: '/docs/',
     title: "七伊",
     description: "七伊的博客",
     head: [
@@ -32,11 +33,14 @@ module.exports = {
                         { title: '走向单体地狱', path: '走向单体地狱' }
                     ]
                 },
+            ],
+            '/zh/idea/': [
                 {
-                    title: '基础',
-                    collapsable: false,
+                    title: 'Intllij IDEA',
+                    collapsable: false,  
                     children: [
-                        { title: '走向单体地狱', path: '走向单体地狱' }
+                        { title: 'IDEA 简介', path: '/zh/idea/' },
+                        { title: '第一个 IDEA 单体应用', path: '第一个 IDEA 单体应用' }
                     ]
                 },
             ],
