@@ -24,24 +24,22 @@ module.exports = {
         lastUpdated: '更新时间',
         logo: '/assets/img/hero.png',
         sidebar: {
-            '/foo/': [
-                '',     /* /foo/ */
-                'one',  /* /foo/one.html */
-                'two'   /* /foo/two.html */
+            '/zh/guide/': [
+                {
+                    title: '基础',
+                    collapsable: false,  
+                    children: [
+                        { title: '走向单体地狱', path: '走向单体地狱' }
+                    ]
+                },
+                {
+                    title: '基础',
+                    collapsable: false,
+                    children: [
+                        { title: '走向单体地狱', path: '走向单体地狱' }
+                    ]
+                },
             ],
-
-            '/bar/': [
-                '',      /* /bar/ */
-                'three', /* /bar/three.html */
-                'four'   /* /bar/four.html */
-            ],
-
-            // fallback
-            '/': [
-                '',        /* / */
-                'contact', /* /contact.html */
-                'about'    /* /about.html */
-            ]
         },
         nav: [
             { text: 'Home', link: '/' },
