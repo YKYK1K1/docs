@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/YKYK1K1/docs#readme",
   "dependencies": {
+    "@vssue/api-github-v4": "^1.4.0",
+    "@vssue/vuepress-plugin-vssue": "^1.4.3",
     "moment": "^2.24.0"
   },
   "devDependencies": {
-    "@vuepress/plugin-pwa": "^1.4.0"
+    "@vuepress/plugin-pwa": "^1.4.0",
+    "vuepress": "^1.4.0"
   }
 }

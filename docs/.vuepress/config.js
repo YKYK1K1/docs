@@ -18,24 +18,30 @@ module.exports = {
         ['meta', { name: 'author', content: '七伊' }],
         ['meta', { name: 'keywords', content: 'vuepress 介绍，vuepress 说明，七伊' }]
     ],
-    plugins: [
-        [
-            '@vuepress/last-updated', {
-                transformer: (timestamp, lang) => {
-                    return moment(timestamp).format("LLLL")
-                }
+    plugins: {
+        '@vuepress/last-updated': {
+            transformer: (timestamp, lang) => moment(timestamp).format("LLLL")
+        },
+        '@vuepress/pwa': {
+            serviceWorker: true,
+            updatePopup: {
+                message: "发现新内容可用",
+                buttonText: "刷新"
             }
-        ],
-        [
-            '@vuepress/pwa', {
-                serviceWorker: true,
-                updatePopup: {
-                    message: "发现新内容可用",
-                    buttonText: "刷新"
-                }
-            }
-        ]
-    ],
+        },
+        '@vssue/vuepress-plugin-vssue': {
+            // 设置 `platform` 而不是 `api`
+            platform: 'github-v4',
+
+            // 其他的 Vssue 配置
+            owner: 'YKYK1K1',
+            repo: 'docs',
+            clientId: 'e7689aca1c779c83325c',
+            clientSecret: '78f06ba11751c78f409a5cd05fa38f74261ee077',
+            autoCreateIssue: true
+        },
+
+    },
     themeConfig: {
         lastUpdated: '更新时间',
         logo: '/assets/img/hero.png',
@@ -72,15 +78,17 @@ module.exports = {
                 ]
             },
             {
-                text: 'Languages',
+                text: '在线工具',
                 items: [
                     {
-                        text: 'Group1', items: [{ text: 'Home', link: '/' },
-                        { text: 'Guide', link: '/about' },]
+                        text: '在线转换', items: [
+                            { text: '格式转换', link: 'https://www.aconvert.com/cn/format/svg/' },
+                            { text: 'Guide', link: '/about' },]
                     },
                     {
-                        text: 'Group2', items: [{ text: 'Home', link: '/' },
-                        { text: 'Guide', link: '/about' },]
+                        text: 'Group2', items: [
+                            { text: 'Home', link: '/' },
+                            { text: 'Guide', link: '/about' },]
                     }
                 ]
             },
