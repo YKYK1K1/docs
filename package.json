@@ -6,7 +6,8 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh",
+    "cname": "bash cname.sh"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,9 @@
   "dependencies": {
     "@vssue/api-github-v4": "^1.4.0",
     "@vssue/vuepress-plugin-vssue": "^1.4.3",
-    "moment": "^2.24.0"
+    "countup.js": "^2.0.4",
+    "moment": "^2.24.0",
+    "vuepress-theme-antdocs": "^1.0.0"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.4.0",
