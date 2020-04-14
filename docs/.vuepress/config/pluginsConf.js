@@ -26,5 +26,16 @@ module.exports = {
     }, '@vuepress/back-to-top': true,
     '@vuepress/google-analytics': {
         'ga': secret.ga
+    },
+    //图片缩放插件
+    '@vuepress/medium-zoom': {
+        selector: 'img.custom',
+        options: {
+            margin: 16
+        }
+    },
+    "vuepress-plugin-auto-sidebar": {
+        sort: 'desc',
+        
     }
 }

@@ -12,4 +12,9 @@
 ## 创建一个JAVA Web应用
 
 1.打开IDEA IDEA,点击 `Create New Project`-> `JaVa` -> `Java Web`-> `Next`
-![]()
+<a-button type="primary">我就是你们要找的按钮</a-button>
+
+<a-checkbox checked>Checkbox</a-checkbox>
+<a-input placeholder="Basic usage" />
+<a-radio checked>Radio</a-radio>
+<a-rate :defaultValue="4.5" allowHalf />

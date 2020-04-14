@@ -23,6 +23,7 @@
   "dependencies": {
     "@vssue/api-github-v4": "^1.4.0",
     "@vssue/vuepress-plugin-vssue": "^1.4.3",
+    "ant-design-vue": "^1.5.2",
     "countup.js": "^2.0.4",
     "moment": "^2.24.0",
     "vuepress-theme-antdocs": "^1.0.0"
@@ -30,6 +31,7 @@
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.4.0",
     "@vuepress/plugin-google-analytics": "^1.4.0",
+    "@vuepress/plugin-medium-zoom": "^1.4.0",
     "@vuepress/plugin-pwa": "^1.4.0",
     "vuepress": "^1.4.0",
     "vuepress-plugin-auto-sidebar": "^1.4.1"
