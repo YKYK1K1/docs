@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # 隐藏私密信息 要保存好以免更新项目找不到该文件
-# secret.js
+secret.js
