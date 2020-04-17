@@ -111,4 +111,4 @@ Java Web的Maven基本结构如下:
 ```
 ##  **配置 Tomcat**
 
-![tomcat](/assets/maven/yky-15734367557.png)
+![tomcat](/assets/maven/yky-15734367557.png9)

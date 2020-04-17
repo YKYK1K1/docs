@@ -41,6 +41,8 @@ module.exports = {
                 { title: 'Maven 常用命令', path: 'Maven 常用命令' },
                 { title: '第一个 Maven 程序', path: '第一个 Maven 程序' },
                 { title: '解决 Maven 无法自动下载依赖的问题', path: '解决 Maven 无法自动下载依赖的问题' },
+                { title: '知识点：maven pom', path: '知识点MavenPom' },
+                
             ]
         },
     ]
