@@ -10,10 +10,13 @@ module.exports = {
     theme: 'antdocs',
     description: "七伊的博客",
     head: headConf,
-    plugins: puluginsConf,
     themeConfig: {
         lastUpdated: '更新时间',
         logo: '/assets/img/hero.png',
-        nav: navConf
+        sidebar: sidebarConf,
+        nav: navConf,
+        smoothScroll: true
     },
+    plugins: puluginsConf,
+    
 }

@@ -29,13 +29,10 @@ module.exports = {
     },
     //图片缩放插件
     '@vuepress/medium-zoom': {
-        selector: 'img.custom',
+        selector: 'img',
         options: {
             margin: 16
         }
-    },
-    "vuepress-plugin-auto-sidebar": {
-        sort: 'desc',
-        
     }
+    // ,"vuepress-plugin-auto-sidebar": {}
 }

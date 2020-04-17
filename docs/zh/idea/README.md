@@ -1,7 +1,7 @@
 # IDEA 简介
 
 ## 什么是 IDEA
-<img class="custom" :src="$withBase('/assets/idea/4afbfbedab64034f72b616b4a5c379310a551d0c.jpg')" alt="favicon">
+<!-- <img class="custom" :src="$withBase('/assets/idea/4afbfbedab64034f72b616b4a5c379310a551d0c.jpg')" alt="favicon"> -->
 
 ![img](/assets/idea/4afbfbedab64034f72b616b4a5c379310a551d0c.jpg)
 
