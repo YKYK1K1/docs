@@ -4,7 +4,7 @@ module.exports = {
             title: '指南',
             collapsable: false,
             children: [
-                { title: '如何学编程', path: '如何学编程' }
+                { title: '如何学编程', path: '/zh/guide/' }
             ]
         },
         {
@@ -106,13 +106,29 @@ module.exports = {
     ],
     '/zh/spring-web/': [
         {
-            title: 'Log4j 简介',
+            title: 'Spring 整合 Web',
             collapsable: false,
             children: [
                 { title: 'Spring 整合 Web', path: '/zh/spring-web/' },
                 { title: 'ApplicationContextAware', path: 'ApplicationContextAware' },
                 { title: 'Bean 的装配方式', path: 'Bean-的装配方式' },
                 { title: '浏览器端存储技术简介', path: '浏览器端存储技术简介' },
+            ]
+        },
+    ],
+    '/zh/spring-mvc/': [
+        {
+            title: 'Spring MVC 简介',
+            collapsable: false,
+            children: [
+                { title: 'Spring MVC 简介', path: '/zh/spring-mvc/' },
+                { title: 'Spring 整合 Spring MVC', path: 'Spring-整合-Spring MVC' },
+                { title: '第一个 Controller 控制器', path: '第一个-Controller-控制器' },
+                { title: 'Spring MVC 拦截器的使用', path: 'Spring-MVC-拦截器的使用' },
+                { title: 'Maven 模块化开发', path: 'Maven-模块化开发' },
+                { title: 'Spring MVC 表单标签库', path: 'Spring-MVC-表单标签库' },
+                { title: 'SpringMVC @ModelAttribute', path: 'SpringMVC-@ModelAttribute' },
+                { title: 'Spring MVC @ResponseBody', path: 'Spring MVC-@ResponseBody' },
             ]
         },
     ]
