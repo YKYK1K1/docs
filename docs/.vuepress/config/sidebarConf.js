@@ -103,6 +103,18 @@ module.exports = {
                 { title: '第一个 Log4j 日志文件', path: '第一个-Log4j-日志文件' },
             ]
         },
+    ],
+    '/zh/spring-web/': [
+        {
+            title: 'Log4j 简介',
+            collapsable: false,
+            children: [
+                { title: 'Spring 整合 Web', path: '/zh/spring-web/' },
+                { title: 'ApplicationContextAware', path: 'ApplicationContextAware' },
+                { title: 'Bean 的装配方式', path: 'Bean-的装配方式' },
+                { title: '浏览器端存储技术简介', path: '浏览器端存储技术简介' },
+            ]
+        },
     ]
 
 }
