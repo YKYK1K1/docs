@@ -62,7 +62,6 @@ module.exports = {
             collapsable: false,
             children: [
                 { title: 'Bootstrap 简介', path: '/zh/bootstrap/' },
-                { title: 'Boot', path: 'Boot' }
             ]
         },
     ],
