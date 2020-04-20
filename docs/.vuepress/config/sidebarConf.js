@@ -34,15 +34,35 @@ module.exports = {
                 { title: 'Maven 简介', path: '/zh/maven/' },
                 { title: 'Maven 安装配置', path: 'Maven 安装配置' },
                 { title: 'Maven 的本地仓库与中央仓库', path: 'Maven 的本地仓库与中央仓库' },
-                { title: 'Maven 依赖机制', path: 'Maven 依赖机制' }, 
+                { title: 'Maven 依赖机制', path: 'Maven 依赖机制' },
                 { title: 'Maven POM', path: 'Maven POM' },
                 { title: 'Maven 插件', path: 'Maven 插件' },
                 { title: 'Maven 快照', path: 'Maven 快照' },
                 { title: 'Maven 常用命令', path: 'Maven 常用命令' },
                 { title: '第一个 Maven 程序', path: '第一个 Maven 程序' },
                 { title: '解决 Maven 无法自动下载依赖的问题', path: '解决 Maven 无法自动下载依赖的问题' },
-                { title: '知识点：maven pom', path: '知识点MavenPom' },
-                
+                { title: '知识点：Maven Pom', path: '知识点 MavenPom' },
+            ]
+        },
+    ],
+    '/zh/mvc/': [
+        {
+            title: '三层架构 + MVC',
+            collapsable: false,
+            children: [
+                { title: '什么是三层架构', path: '/zh/mvc/' },
+                { title: '什么是 MVC 模式', path: '什么是MVC模式' },
+                { title: '小知识：高内聚低耦合', path: '小知识高内聚低耦合' }
+            ]
+        },
+    ],
+    '/zh/bootstrap/': [
+        {
+            title: 'Bootstrap 简介',
+            collapsable: false,
+            children: [
+                { title: 'Bootstrap 简介', path: '/zh/bootstrap/' },
+                { title: 'Boot', path: 'Boot' }
             ]
         },
     ]

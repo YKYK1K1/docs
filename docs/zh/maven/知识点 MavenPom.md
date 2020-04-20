@@ -1,4 +1,5 @@
 # **知识点：Maven pom**
+
 ## **maven 生命周期**
 - clean: 删除构建目录
 - validate: 检查工程配置是否正确，完成构建过程的所有必要信息是否能够获取到。
@@ -11,7 +12,9 @@
 - deploy: 拷贝最终的工程包到远程仓库中，以共享给其他开发人员和工程。
 
 ## **pom.xml 常用节点**
+
 基本信息
+
 ```
 <modelVersion>4.0.0</modelVersion>
 <groupId>com.xstore.order.production</groupId>
@@ -20,6 +23,7 @@
 <packaging>pom</packaging>
 <version>1.0-SNAPSHOT</version>
 ```
+
 `groupId`, `artifactId`, `name`, `version` 构成应用的坐标
 
 `packaging` 默认为 jar
@@ -46,6 +50,7 @@
 - resources: 将main源码下的资源文件复制到main输出目录中
 - testResources:  将test源码下的资源文件复制到test输出目录中
 - copy-resources: 讲任意资源文件复制到输出目录中，需要指定来源和输出目录
+
 ```
 <plugin>
     <artifactId>maven-resources-plugin</artifactId>
@@ -64,18 +69,22 @@
     </configuration>
 </plugin>
 ```
+
 上面的配置，将input-resources中的资源文件复制到output-resuorces中，并且排除了以png为后缀的文件。
 
 其中filtering设置为true，则会用properties中声明的变量替换资源文件中的占位符变量：
+
 ```
 <properties>
     <resources.name>Baeldung</resources.name>
 </properties>
 ```
+
 将替代资源文件中包含如下文本的地方：
 ```
 Welcome to ${resources.name}!
 ```
+
 ## **The Compiler Plugin**
 用以构建源码
 
@@ -152,7 +161,9 @@ The Surefire Plugin
     </executions>
 </plugin>
 ```
+
 默认包含如下测试文件：
+
 ```
 <includes>
     <include>**/IT*.java</include>
@@ -160,12 +171,14 @@ The Surefire Plugin
     <include>**/*ITCase.java</include>
 </includes>
 ```
+
 IT -> Integration Test
 
 ## **The Verifier Plugin**
 确保文件和目录的存在或不存在，也可以根据正则表达式检查文件的内容
 
 - verify 显式指定时才会触发该插件
+
 ```
 <plugin>
     <artifactId>maven-verifier-plugin</artifactId>
@@ -182,9 +195,11 @@ IT -> Integration Test
     </executions>
 </plugin>
 ```
+
 默认的检查文件位于`src/test/verifier/verifications.xml`，如果想要使用别的文件，需要指定`verificationFile`参数
 
 下面的校验要求input-resources/baeldung.txt存在单词Welcome
+
 ```
 <verifications
   xmlns="http://maven.apache.org/verifications/1.0.0"
@@ -199,6 +214,7 @@ IT -> Integration Test
     </files>
 </verifications>
 ```
+
 ## **The Install Plugin**
 将应用打包至本地仓库中。这个插件包含在顶级POM中，因此不需要显式的包含它
 
@@ -210,6 +226,7 @@ IT -> Integration Test
 
 ## **modules**
 > aven Pom Modules
+
 ```
 <modules>
   <module>my-project</module>
@@ -217,6 +234,7 @@ IT -> Integration Test
   <module>third-project/pom-example.xml</module>
 </modules>
 ```
+
 无需考虑项目之间的依赖关系，maven会确保依赖的模块优先被构建
 
 ## **Maven 项目管理**
@@ -226,18 +244,22 @@ IT -> Integration Test
 项目模块化可以将通用的部分抽离出来，方便重用。修改一部分代码不再需要build整个项目，缩短了build时间。
 
 ## **Maven 依赖管理**
+
 http://ifeve.com/maven-dependency-mechanism/
 
 ## **传递性依赖**
+
 假设你的项目依赖于一个库，而这个库又依赖于其他库。你不必自己去找出所有这些依赖，你只需要加上你直接依赖的库，Maven会隐式的把这些库间接依赖的库也加入到你的项目中。当项目中出现多个版本构件依赖的情形，依赖调解决定最终应该使用哪个版本。项目会选择依赖关系树中路径最短的版本作为依赖。当两个版本的依赖路径长度一致时，POM中依赖声明的顺序决定了哪个版本会被使用，也叫作”第一声明原则”。
 
 ## **依赖范围**
+
 - compile 默认范围
 - provided provided范围表明你希望由JDK或者某个容器提供运行时依赖。如Servlet API和相关的Java EE APIs，会由web容器提供运行时依赖。provided依赖只对编译和测试classpath有效，并且不能传递。
 - runtime 编译时不需要依赖，而只在运行时依赖。此依赖范围对运行和测试classpath有效，对编译classpath无效。
 - test 只在编译测试代码和运行测试的时候需要，应用的正常运行不需要此类依赖。
 - system 系统范围与provided类似，不过你必须显式指定一个本地系统路径的JAR，此类依赖应该一直有效，Maven也不会去仓库中寻找它。
-- import import范围只适用于pom文件中的<dependencyManagement>部分。表明指定的POM必须使用<dependencyManagement>部分的依赖。因为依赖已经被替换，所以使用import范围的依赖并不影响依赖传递。
+- import import范围只适用于pom文件中的`<dependencyManagement>`部分。表明指定的POM必须使用`<dependencyManagement>`部分的依赖。因为依赖已经被替换，所以使用import范围的依赖并不影响依赖传递。
 
 ## **依赖管理**
-Maven提供了一个机制来集中管理依赖信息，叫做依赖管理元素<dependencyManagement>。假设你有许多项目继承自同一个公有的父项目，那可以把所有依赖信息放在一个公共的POM文件，并且在子POM中简单第引用该构件即可。
+
+Maven提供了一个机制来集中管理依赖信息，叫做依赖管理元素`<dependencyManagement>`。假设你有许多项目继承自同一个公有的父项目，那可以把所有依赖信息放在一个公共的POM文件，并且在子POM中简单第引用该构件即可。

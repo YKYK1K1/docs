@@ -1,5 +1,5 @@
 module.exports = [
-    { text: 'Home', link: '/' },
+    { text: '指南', link: '/zh/guide' },
     {
         text: '在线文档',
         items: [
