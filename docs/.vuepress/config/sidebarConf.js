@@ -65,6 +65,44 @@ module.exports = {
                 { title: 'Boot', path: 'Boot' }
             ]
         },
+    ],
+    '/zh/spring/': [
+        {
+            title: 'Spring 简介',
+            collapsable: false,
+            children: [
+                { title: 'Spring 简介', path: '/zh/spring/' },
+                { title: 'Spring 体系结构', path: 'Spring-体系结构' },
+                { title: 'Spring 的特点', path: 'Spring-的特点' },
+                { title: 'Spring 与 loC', path: 'Spring-与-loC' },
+                { title: '第一个  Spring 应用程序', path: '第一个-Spring-应用程序' },
+            ]
+        },
+    ],
+    '/zh/junit/': [
+        {
+            title: 'Spring 简介',
+            collapsable: false,
+            children: [
+                { title: 'JUnit 简介', path: '/zh/junit/' },
+                { title: '知识点：测试', path: '知识点：测试' },
+                { title: '第一个 JUnit 单元测试', path: '第一个-JUnit-单元测试' },
+                { title: 'JUnit 注解', path: 'JUnit-注解' },
+                { title: 'JUnit 断言', path: 'JUnit-断言' },
+            ]
+        },
+    ],
+    '/zh/log4j/': [
+        {
+            title: 'Log4j 简介',
+            collapsable: false,
+            children: [
+                { title: 'Log4j 简介', path: '/zh/log4j/' },
+                { title: 'Log4j 日志级别', path: 'Log4j-日志级别' },
+                { title: 'Log4j 日志输出控制文件', path: 'Log4j-日志输出控制文件' },
+                { title: '第一个 Log4j 日志文件', path: '第一个-Log4j-日志文件' },
+            ]
+        },
     ]
 
 }
