@@ -1,5 +1,6 @@
-# **第一个Controller控制器**
+# **第一个 Controller 控制器**
 ## **概述**
+
 ```
 package com.yky.my.shop.web.controller;
 
@@ -27,6 +28,7 @@ public class LoginController {
     }
 }
 ```
+
 ## **注解说明**
 **@Controller**
 在 Spring MVC 中，控制器 Controller 负责处理由 `DispatcherServlet` 分发的请求，它把用户请求的数据经过业务处理层处理之后封装成一个 Model ，然后再把该 Model 返回给对应的 View 进行展示。在 Spring MVC 中提供了一个非常简便的定义 Controller 的方法，你无需继承特定的类或实现特定的接口，只需使用 `@Controller` 标记一个类是 Controller ，然后使用 `@RequestMapping` 和 `@RequestParam` 等一些注解用以定义 URL 请求和 Controller 方法之间的映射，这样的 Controller 就能被外界访问到。此外 Controller 不会直接依赖于 `HttpServletRequest` 和 `HttpServletResponse` 等 `HttpServlet` 对象，它们可以通过 Controller 的方法参数灵活的获取到。
