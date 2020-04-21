@@ -77,7 +77,7 @@ module.exports = {
                 { title: 'Spring 体系结构', path: 'Spring-体系结构' },
                 { title: 'Spring 的特点', path: 'Spring-的特点' },
                 { title: 'Spring 与 loC', path: 'Spring-与-loC' },
-                { title: '第一个  Spring 应用程序', path: '第一个-Spring-应用程序' },
+                { title: '第一个 Spring 应用程序', path: '第一个-Spring-应用程序' },
             ]
         },
     ],
@@ -139,15 +139,15 @@ module.exports = {
             title: 'GitFlow 工作流指南',
             collapsable: false,
             children: [
-                { title: '为什么需要版本控制', path: '/zh/git/' },
+                { title: '为什么需要版本控制', path: '/zh/gitflow/' },
                 { title: '什么是 Git', path: '什么是-Git' },
                 { title: '安装 Git', path: '安装-Git' },
                 { title: 'Git 工作流程简介', path: 'Git-工作流简介' },
                 { title: '集中式工作流', path: '集中式工作流' },
                 { title: '功能分支工作流', path: '功能分支工作流' },
                 { title: 'GitFlow 工作流', path: 'GitFlow-工作流' },
-                { title: 'Forking 工作流', path: 'Forking-工作流' },
-                { title: 'Pull Requests', path: 'Pull-Requests' },
+                // { title: 'Forking 工作流', path: 'Forking-工作流' },
+                // { title: 'Pull Requests', path: 'Pull-Requests' },
             ]
         },
     ],
