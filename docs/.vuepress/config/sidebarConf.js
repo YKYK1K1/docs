@@ -15,6 +15,7 @@ module.exports = {
                 { title: 'GitFlow 工作流指南', path: 'GitFlow-工作流指南' },
                 { title: '微服务解决复杂问题', path: '微服务解决复杂问题' },
                 { title: '再谈谈微服务', path: '再谈谈微服务' },
+                { title: 'Spring Cloud iToken', path: 'Spring-Cloud-iToken' },
             ]
         },
 
@@ -161,6 +162,26 @@ module.exports = {
                 { title: '微服务的特征', path: '微服务的特征' },
                 { title: 'SOA 架构与微服务架构的区别.md', path: 'SOA-架构与微服务架构的区别' },
                 { title: '微服务的实践', path: '微服务的实践' },
+            ]
+        },
+    ],
+    '/zh/spring-cloud-itoken/': [
+        {
+            title: '项目介绍',
+            collapsable: false,
+            children: [
+                { title: 'iToken 白皮书', path: '/zh/spring-cloud-itoken/' },
+                { title: 'iToken 项目简介', path: 'iToken-项目简介' },
+            ]
+        },
+    ],
+    '/zh/spring-cloud-itoken-prepare/': [
+        {
+            title: '开发前的准备',
+            collapsable: false,
+            children: [
+                { title: '了解敏捷开发', path: '/zh/spring-cloud-itoken-prepare/' },
+                { title: 'iToken 项目简介', path: 'iToken-项目简介' },
             ]
         },
     ],
