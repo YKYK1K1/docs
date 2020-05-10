@@ -16,6 +16,7 @@ module.exports = {
                 { title: '微服务解决复杂问题', path: '微服务解决复杂问题' },
                 { title: '再谈谈微服务', path: '再谈谈微服务' },
                 { title: 'Spring Cloud iToken', path: 'Spring-Cloud-iToken' },
+                { title: 'Nginx', path: 'Nginx' },
             ]
         },
 
@@ -185,9 +186,21 @@ module.exports = {
             ]
         },
     ],
+    '/zh/nginx/': [
+        {
+            title: 'Nginx',
+            collapsable: false,
+            children: [
+                { title: '知识点：CDN', path: '知识点-CDN' },
+                { title: 'Nginx 简介', path: '/zh/nginx/' },
+                { title: 'Nginx 虚拟主机', path: 'Nginx-虚拟主机' },
+                { title: '小知识：Nginx 惊群问题', path: '小知识-Nginx-惊群问题' },
+            ]
+        },
+    ],
     '/zh/gengxin/': [
         {
-            title: 'Spring MVC 简介',
+            title: '更新中',
             collapsable: false,
             children: [
                 { title: '更新中', path: '/zh/gengxin/' }
