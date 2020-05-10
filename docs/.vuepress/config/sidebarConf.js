@@ -182,7 +182,8 @@ module.exports = {
             collapsable: false,
             children: [
                 { title: '了解敏捷开发', path: '/zh/spring-cloud-itoken-prepare/' },
-                { title: 'iToken 项目简介', path: 'iToken-项目简介' },
+                { title: '在 GitLab 上创建项目', path: '在-GitLab-上创建项目' },
+                { title: '部署服务到容器', path: '部署服务到容器' },
             ]
         },
     ],
