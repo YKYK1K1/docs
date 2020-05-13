@@ -17,6 +17,7 @@ module.exports = {
                 { title: '再谈谈微服务', path: '再谈谈微服务' },
                 { title: 'Spring Cloud iToken', path: 'Spring-Cloud-iToken' },
                 { title: 'Nginx', path: 'Nginx' },
+                { title: 'ZooKeeper 源码分析与实战', path: 'Zookeeper-源码分析与实战' },
             ]
         },
 
@@ -196,6 +197,15 @@ module.exports = {
                 { title: 'Nginx 简介', path: '/zh/nginx/' },
                 { title: 'Nginx 虚拟主机', path: 'Nginx-虚拟主机' },
                 { title: '小知识：Nginx 惊群问题', path: '小知识-Nginx-惊群问题' },
+            ]
+        },
+    ],
+    '/zh/zookeeper-analysis/': [
+        {
+            title: 'ZooKeeper 源码分析与实战',
+            collapsable: false,
+            children: [
+                { title: 'ZooKeeper 数据模型：节点的特性与应用', path: '/zh/zookeeper-analysis/' },
             ]
         },
     ],
