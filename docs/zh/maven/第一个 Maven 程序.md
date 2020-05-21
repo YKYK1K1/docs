@@ -1,31 +1,67 @@
 # **第一个Maven程序**
 ## **概述**
+---
+
 下面由我们来学习如何使用Maven创建一个Java Web应用陈旭
-## 创建Maven项目
+
+## **创建Maven项目**
+---
+
 选择`File`->`New`->`Project...`
 
-![创建项目](https://note.youdao.com/yws/public/resource/6746b00449dca15808460205b79fc09b/xmlnote/7F6EDBD400DB4DD0B32EC1F2C879B026/2216)
+<br />
+
+![创建项目](/assets/maven/yky_1528025821.png)
+
+<br />
 
 选择`maven`项目
 
-![创建maven项目](https://note.youdao.com/yws/public/resource/6746b00449dca15808460205b79fc09b/xmlnote/33734E46B25A441DB1A14383997BF78D/2228)
+<br />
 
-填写项目信息 `Next`
+![创建maven项目](/assets/maven/yky_1573199544.png)
 
-![填项目信息](https://note.youdao.com/yws/public/resource/6746b00449dca15808460205b79fc09b/xmlnote/D31706A2C98A47A4AE8AB45FFE3C9979/2234)
+<br />
+
+填写项目信息 -> `Next`
+
+<br />
+
+![填项目信息](/assets/maven/yky_1573199700.png)
+
+<br />
 
 选择工作空间 `Finish`
 
-![创建项目](https://note.youdao.com/yws/public/resource/6746b00449dca15808460205b79fc09b/xmlnote/4AC8B1536ACF48DFB3327994C59C5DCB/2245)
+<br />
+
+![创建项目](/assets/maven/yky_1573199996.png)
+
+<br />
 
 选择当前窗口创建还是新起一个窗口创建 `New Window`
 
-![创建新窗口](https://note.youdao.com/yws/public/resource/6746b00449dca15808460205b79fc09b/xmlnote/AD6917877ECF43D9A6B03033244B1B19/2251)
+<br />
+
+![创建新窗口](/assets/maven/yky_1573200106.png)
 
 ## **目录结构**
+---
+
 Java Web的Maven基本结构如下:
 
-![目录结构](/assets/maven/yky-1235312312.png)
+<br />
+
+```
+├─src
+│  ├─main
+│  │  ├─java
+│  │  ├─resources
+│  │  └─webapp
+│  │      └─WEB-INF
+│  └─test
+│      └─java
+```
 
 结构说明:
 
@@ -37,33 +73,52 @@ Java Web的Maven基本结构如下:
 
 新建文件夹`webapp`
 
-![](https://note.youdao.com/yws/public/resource/6746b00449dca15808460205b79fc09b/xmlnote/CF70696C55C142BA954CA6E3D2D4E14F/2262)
+<br />
+
+![](/assets/maven/yky_1573200584.png)
+
+<br />
 
 配置打包格式`war`
 
-![](https://note.youdao.com/yws/public/resource/6746b00449dca15808460205b79fc09b/xmlnote/30D1E025345148148BC0BAECBEC08C5E/2264)
+<br />
+
+![](/assets/maven/yky_1573200610.png)
+
+<br />
 
 修改`maven`仓库为之前配置的仓库路径(只对当前项目有效) `File`->`Settings`->`Maven`
 
-![修改maven仓库路径](https://note.youdao.com/yws/public/resource/6746b00449dca15808460205b79fc09b/xmlnote/E1FCE7441B2C49459382B8B1B5C7FAFF/2279)
+<br />
+
+![修改maven仓库路径](/assets/maven/yky_1573200710.png)
+
+<br />
 
 设置全局maven配置仓库路径 `File`->`Other Settings`->`Default Settings`
+
+<br />
 
 ![全局maven仓库路径](/assets/maven/yky-1234522132.png)
 
 ## **Idea Maven项目管理**
-在Idea界面的右侧`Maven Projects`选项，可以管理Maven项目的整个生命周期、插件、依赖等。
+---
+
+在Idea界面的右侧 `Maven Projects` 选项，可以管理Maven项目的整个生命周期、插件、依赖等。
 
 ![右侧项目菜单](/assets/maven/yky-123741238.png)
 
 ## **完善Java Web 程序**
+---
+
 ### **POM**
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.funtl</groupId>
+    <groupId>com.yky</groupId>
     <artifactId>my-shop-dependencies</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
@@ -84,14 +139,73 @@ Java Web的Maven基本结构如下:
 
 </project>
 ```
+
 配置说明：
 - `packaging`：打包方式，这里是war包，表示为Java Web 应用程序
 - `dependencies`：项目依赖配置，整个项目生命周期中所需的依赖都在这里配置
+### **创建测试用Servlet**
 
-## **创建测试用Servlet**
 创新一个`Servlet`用于测试请求
 
-## **配置 web.xml**
+```
+package com.yky.hello.maven.servlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+public class HelloServlet extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getRequestDispatcher("/index.jsp").forward(req, resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.doPost(req, resp);
+    }
+}
+```
+### **创建测试用 JSP**
+
+创建一个 `JSP` 页面，用于测试请求
+
+```
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    Hello Maven
+</body>
+</html>
+```
+
+### **创建 Log4J 的配置文件**
+在 `src/main/resources` 目录下创建 `log4j.properties` 配置文件，内容如下：
+
+```
+log4j.rootLogger=INFO, console, file
+
+log4j.appender.console=org.apache.log4j.ConsoleAppender
+log4j.appender.console.layout=org.apache.log4j.PatternLayout
+log4j.appender.console.layout.ConversionPattern=%d %p [%c] - %m%n
+
+log4j.appender.file=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.file.File=logs/log.log
+log4j.appender.file.layout=org.apache.log4j.PatternLayout
+log4j.appender.A3.MaxFileSize=1024KB
+log4j.appender.A3.MaxBackupIndex=10
+log4j.appender.file.layout.ConversionPattern=%d %p [%c] - %m%n
+```
+
+### **配置 `web.xml`**
+
+`web.xml` 配置文件如下：
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -112,3 +226,10 @@ Java Web的Maven基本结构如下:
 ##  **配置 Tomcat**
 
 ![tomcat](/assets/maven/yky-15734367557.png9)
+
+## **测试运行**
+按照之前章节 `第一个 IDEA 应用程序` 配置完 `Tomcat` 后直接运行，打开浏览器访问 http://localhost:8080 显示如下：
+
+```
+Hello Maven
+```

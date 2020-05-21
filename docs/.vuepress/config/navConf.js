@@ -53,4 +53,6 @@ module.exports = [
             { text: '在线 Web 练习', link: 'https://jsfiddle.net/' },
         ]
     },
+    { text: 'Change Log', link: '/zh/changelog/' },
+    
 ]

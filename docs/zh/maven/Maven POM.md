@@ -1,5 +1,7 @@
 # **Maven POM**
 ## **概述**
+---
+
 POM代表项目对象模型。它是Maven中工作的基本单位，这是一个XML文件。它始终保存在该项目基本目录中的`pom.xml`文件
 
 POM包含的项目是使用Maven来构建的，它用来包含各种配置信息。
@@ -17,6 +19,7 @@ POM也包含了目标和插件。在执行任务或者目标时，Maven会使用
 创建一个POM之前，应该要先决定项目组(groupId)，它的名字(artifactId)和版本，因为这些属性在项目仓库是唯一标识的。
 
 ## **POM的例子**
+---
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -42,6 +45,8 @@ artifactId  | 这是项目ID。这通常是项目的名称。例如`consumer-ban
 version | 这是项目版本。与groupId一起使用，artifact在存储库中用于将版本彼此分离。例如：`com.company.bank:consumer-banking:1.0`,`com.company.bank:consumer-banking:1.1`
 
 ## **语义化版本规范**
+---
+
 版本号 | 详细
 :-: | :-
 1.0.0 | 第一个版本  五个功能

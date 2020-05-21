@@ -22,6 +22,15 @@ module.exports = {
         },
 
     ],
+    '/zh/changelog/':[
+        {
+            title: 'Change Log',
+            collapsable: false,
+            children: [
+                { title: '最近更新', path: '/zh/changelog/' }
+            ]
+        },
+    ],
     '/zh/idea/': [
         {
             title: 'Intllij IDEA',
