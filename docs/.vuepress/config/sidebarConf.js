@@ -20,6 +20,14 @@ module.exports = {
                 { title: 'ZooKeeper 源码分析与实战', path: 'Zookeeper-源码分析与实战' },
             ]
         },
+        {
+            title: '专题',
+            collapsable: false,
+            children: [
+                { title: 'Spring Security oAuth2', path: 'Spring-Security-oAuth2' },
+            ]
+        }
+       
 
     ],
     '/zh/changelog/':[
@@ -215,6 +223,15 @@ module.exports = {
             collapsable: false,
             children: [
                 { title: 'ZooKeeper 数据模型：节点的特性与应用', path: '/zh/zookeeper-analysis/' },
+            ]
+        },
+    ],
+    '/zh/spring-security-oAuth2/': [
+        {
+            title: 'Spring Security oAuth2',
+            collapsable: false,
+            children: [
+                { title: 'Spring Security oAuth2', path: '/zh/spring-security-oAuth2/' },
             ]
         },
     ],
