@@ -24,6 +24,7 @@ module.exports = {
             title: '专题',
             collapsable: false,
             children: [
+                { title: 'Apache Shiro', path: 'Apache-Shiro' },
                 { title: 'Spring Security oAuth2', path: 'Spring-Security-oAuth2' },
             ]
         }
@@ -241,6 +242,21 @@ module.exports = {
             collapsable: false,
             children: [
                 { title: '更新中', path: '/zh/gengxin/' }
+            ]
+        },
+    ],
+    '/zh/apache-shiro/':[
+        {
+            title: 'Shiro',
+            collapsable: false,
+            children: [
+                { title: '小知识点：权限管理', path: '小知识点-权限管理.md' },
+                { title: 'Shiro', path: '/zh/apache-shiro/' },
+                { title: 'shiro 架构', path: 'shiro-架构' },
+                { title: '基于JavaSE应用——Shiro 的基本使用', path: '基于JavaSE应用-Shiro-的基本使用' },
+                { title: 'Hello World', path: 'Hello-World' },
+                { title: 'shiro 架构', path: 'shiro-架构' },
+                
             ]
         },
     ]

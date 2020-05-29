@@ -20,7 +20,7 @@
 
 <br />
 
-选择 `JaVa` -> `Java EE`-> `Web Application`
+选择 `Java` -> `Java EE`-> `Web Application`
 
 <br />
 
