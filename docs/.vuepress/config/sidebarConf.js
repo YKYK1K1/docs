@@ -251,12 +251,17 @@ module.exports = {
             collapsable: false,
             children: [
                 { title: '小知识点：权限管理', path: '小知识点-权限管理.md' },
-                { title: 'Shiro', path: '/zh/apache-shiro/' },
+                { title: 'Shiro 介绍', path: '/zh/apache-shiro/' },
                 { title: 'shiro 架构', path: 'shiro-架构' },
-                { title: '基于JavaSE应用——Shiro 的基本使用', path: '基于JavaSE应用-Shiro-的基本使用' },
-                { title: 'Hello World', path: 'Hello-World' },
-                { title: 'shiro 架构', path: 'shiro-架构' },
-                
+                { title: '基于 JavaSE 应用', path: '基于JavaSE应用-Shiro-的基本使用' },
+                { title: 'Shiro 认证流程', path: 'Shiro-认证流程' },
+                { title: 'SpringBoot 应用整合 Shiro', path: 'SpringBoot-应用整合-Shiro-案例' },
+                { title: 'Shiro 的标签使用', path: 'shiro-的标签使用' },
+                { title: 'Shiro 自定义 Realm', path: 'SpringBoot-整合-Shiro-完成权限管理案例'},
+                { title: '密码加密介绍', path: '密码加密介绍' },
+                { title: '缓存使用', path: '缓存使用' },
+                { title: 'Session 管理', path: 'session-管理' },  
+                { title: 'Remember Me', path: 'RememberMe' },  
             ]
         },
     ]

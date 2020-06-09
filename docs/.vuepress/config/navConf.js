@@ -16,6 +16,16 @@ module.exports = [
         ]
     },
     {
+        text: '工作软件',
+        items: [
+            {
+                text: '编辑器', items: [
+                    { text: 'HBuilder', link: 'http://www.dcloud.io/' },
+                ]
+            }
+        ]
+    },
+    {
         text: '在线工具',
         items: [
             {

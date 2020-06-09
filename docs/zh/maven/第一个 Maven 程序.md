@@ -113,7 +113,7 @@ Java Web的Maven基本结构如下:
 
 ### **POM**
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -147,7 +147,7 @@ Java Web的Maven基本结构如下:
 
 创新一个`Servlet`用于测试请求
 
-```
+```java
 package com.yky.hello.maven.servlet;
 
 import javax.servlet.ServletException;
@@ -173,7 +173,7 @@ public class HelloServlet extends HttpServlet {
 
 创建一个 `JSP` 页面，用于测试请求
 
-```
+```jsp
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -188,7 +188,7 @@ public class HelloServlet extends HttpServlet {
 ### **创建 Log4J 的配置文件**
 在 `src/main/resources` 目录下创建 `log4j.properties` 配置文件，内容如下：
 
-```
+```properties
 log4j.rootLogger=INFO, console, file
 
 log4j.appender.console=org.apache.log4j.ConsoleAppender
@@ -207,7 +207,7 @@ log4j.appender.file.layout.ConversionPattern=%d %p [%c] - %m%n
 
 `web.xml` 配置文件如下：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
