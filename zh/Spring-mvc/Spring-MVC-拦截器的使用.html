@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Spring MVC 拦截器的使用 | 七伊</title>
+    <meta name="description" content="七伊的博客">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/docs/favicon.ico">
+  <link rel="manifest" href="/docs/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/docs/icons/192x192.png">
+  <link rel="mask-icon" href="/docs/icons/safari-pinned-tab.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="author" content="七伊">
+  <meta name="keywords" content="vuepress 介绍，vuepress 说明，七伊">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.35d8fede.css" as="style"><link rel="preload" href="/docs/assets/js/app.07c220e4.js" as="script"><link rel="preload" href="/docs/assets/js/2.921638eb.js" as="script"><link rel="preload" href="/docs/assets/js/10.48c08d70.js" as="script"><link rel="preload" href="/docs/assets/js/3.318575c0.js" as="script"><link rel="prefetch" href="/docs/assets/js/100.b3c52deb.js"><link rel="prefetch" href="/docs/assets/js/101.df7fcdb0.js"><link rel="prefetch" href="/docs/assets/js/102.c5723748.js"><link rel="prefetch" href="/docs/assets/js/103.be324fae.js"><link rel="prefetch" href="/docs/assets/js/104.c21ffabf.js"><link rel="prefetch" href="/docs/assets/js/105.2b0c1d17.js"><link rel="prefetch" href="/docs/assets/js/11.04529c8f.js"><link rel="prefetch" href="/docs/assets/js/12.3f1edc2d.js"><link rel="prefetch" href="/docs/assets/js/13.c3bee8d7.js"><link rel="prefetch" href="/docs/assets/js/14.6293b2b4.js"><link rel="prefetch" href="/docs/assets/js/15.7f4a8446.js"><link rel="prefetch" href="/docs/assets/js/16.eda0a3b7.js"><link rel="prefetch" href="/docs/assets/js/17.cb02c9c4.js"><link rel="prefetch" href="/docs/assets/js/18.d869fa46.js"><link rel="prefetch" href="/docs/assets/js/19.a0e5b08a.js"><link rel="prefetch" href="/docs/assets/js/20.70f207ac.js"><link rel="prefetch" href="/docs/assets/js/21.b23767cc.js"><link rel="prefetch" href="/docs/assets/js/22.724bec9d.js"><link rel="prefetch" href="/docs/assets/js/23.81227d75.js"><link rel="prefetch" href="/docs/assets/js/24.89a3c8b5.js"><link rel="prefetch" href="/docs/assets/js/25.1911d3b9.js"><link rel="prefetch" href="/docs/assets/js/26.2eba6ac6.js"><link rel="prefetch" href="/docs/assets/js/27.bf4f5955.js"><link rel="prefetch" href="/docs/assets/js/28.a441f2aa.js"><link rel="prefetch" href="/docs/assets/js/29.fd63b927.js"><link rel="prefetch" href="/docs/assets/js/30.cf3b7db3.js"><link rel="prefetch" href="/docs/assets/js/31.072dedc7.js"><link rel="prefetch" href="/docs/assets/js/32.e32bf6e6.js"><link rel="prefetch" href="/docs/assets/js/33.2072ada3.js"><link rel="prefetch" href="/docs/assets/js/34.efd56ab8.js"><link rel="prefetch" href="/docs/assets/js/35.f8ff5a47.js"><link rel="prefetch" href="/docs/assets/js/36.3a86d332.js"><link rel="prefetch" href="/docs/assets/js/37.6f164a57.js"><link rel="prefetch" href="/docs/assets/js/38.92c6b404.js"><link rel="prefetch" href="/docs/assets/js/39.6559180a.js"><link rel="prefetch" href="/docs/assets/js/4.e559a794.js"><link rel="prefetch" href="/docs/assets/js/40.512d1e10.js"><link rel="prefetch" href="/docs/assets/js/41.8db3ba60.js"><link rel="prefetch" href="/docs/assets/js/42.7ea7a91e.js"><link rel="prefetch" href="/docs/assets/js/43.850fef30.js"><link rel="prefetch" href="/docs/assets/js/44.b460ef45.js"><link rel="prefetch" href="/docs/assets/js/45.719f5d4b.js"><link rel="prefetch" href="/docs/assets/js/46.a98859c0.js"><link rel="prefetch" href="/docs/assets/js/47.f82b4e26.js"><link rel="prefetch" href="/docs/assets/js/48.142909d8.js"><link rel="prefetch" href="/docs/assets/js/49.234d192b.js"><link rel="prefetch" href="/docs/assets/js/5.2db0d042.js"><link rel="prefetch" href="/docs/assets/js/50.741634c5.js"><link rel="prefetch" href="/docs/assets/js/51.f242ba1d.js"><link rel="prefetch" href="/docs/assets/js/52.30ed35db.js"><link rel="prefetch" href="/docs/assets/js/53.5e774f5f.js"><link rel="prefetch" href="/docs/assets/js/54.e86627a5.js"><link rel="prefetch" href="/docs/assets/js/55.57233987.js"><link rel="prefetch" href="/docs/assets/js/56.e3ad3b9e.js"><link rel="prefetch" href="/docs/assets/js/57.bd5bdd87.js"><link rel="prefetch" href="/docs/assets/js/58.27dbb3cd.js"><link rel="prefetch" href="/docs/assets/js/59.ef8b709d.js"><link rel="prefetch" href="/docs/assets/js/6.94a10221.js"><link rel="prefetch" href="/docs/assets/js/60.b607006c.js"><link rel="prefetch" href="/docs/assets/js/61.901c9d2e.js"><link rel="prefetch" href="/docs/assets/js/62.e1056fc4.js"><link rel="prefetch" href="/docs/assets/js/63.a400e58c.js"><link rel="prefetch" href="/docs/assets/js/64.67734145.js"><link rel="prefetch" href="/docs/assets/js/65.0f97b843.js"><link rel="prefetch" href="/docs/assets/js/66.8d63aeea.js"><link rel="prefetch" href="/docs/assets/js/67.d94afce8.js"><link rel="prefetch" href="/docs/assets/js/68.1b1e7c88.js"><link rel="prefetch" href="/docs/assets/js/69.701a21eb.js"><link rel="prefetch" href="/docs/assets/js/7.81f19ebc.js"><link rel="prefetch" href="/docs/assets/js/70.d380ab54.js"><link rel="prefetch" href="/docs/assets/js/71.cda605e4.js"><link rel="prefetch" href="/docs/assets/js/72.3bdc5546.js"><link rel="prefetch" href="/docs/assets/js/73.f7881ae0.js"><link rel="prefetch" href="/docs/assets/js/74.6cbf0692.js"><link rel="prefetch" href="/docs/assets/js/75.ed735f98.js"><link rel="prefetch" href="/docs/assets/js/76.989a9a4e.js"><link rel="prefetch" href="/docs/assets/js/77.bc96999a.js"><link rel="prefetch" href="/docs/assets/js/78.d9b7c4f6.js"><link rel="prefetch" href="/docs/assets/js/79.a40d6c1b.js"><link rel="prefetch" href="/docs/assets/js/8.db2b4fcb.js"><link rel="prefetch" href="/docs/assets/js/80.17ed4b04.js"><link rel="prefetch" href="/docs/assets/js/81.a7578d37.js"><link rel="prefetch" href="/docs/assets/js/82.bb5ef27c.js"><link rel="prefetch" href="/docs/assets/js/83.060d0e6e.js"><link rel="prefetch" href="/docs/assets/js/84.f24ee20c.js"><link rel="prefetch" href="/docs/assets/js/85.84a7061e.js"><link rel="prefetch" href="/docs/assets/js/86.2d6432d5.js"><link rel="prefetch" href="/docs/assets/js/87.6c815c55.js"><link rel="prefetch" href="/docs/assets/js/88.b150dc61.js"><link rel="prefetch" href="/docs/assets/js/89.346b5201.js"><link rel="prefetch" href="/docs/assets/js/9.d4c0e7b4.js"><link rel="prefetch" href="/docs/assets/js/90.f376dce2.js"><link rel="prefetch" href="/docs/assets/js/91.084edf02.js"><link rel="prefetch" href="/docs/assets/js/92.288b268c.js"><link rel="prefetch" href="/docs/assets/js/93.45cd0fe4.js"><link rel="prefetch" href="/docs/assets/js/94.c055c973.js"><link rel="prefetch" href="/docs/assets/js/95.122d2685.js"><link rel="prefetch" href="/docs/assets/js/96.4ae05b56.js"><link rel="prefetch" href="/docs/assets/js/97.c61d6a55.js"><link rel="prefetch" href="/docs/assets/js/98.cef4e912.js"><link rel="prefetch" href="/docs/assets/js/99.39c35545.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.35d8fede.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="ant-row"><div class="sidebar-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/docs/" class="router-link-active home-link"><img src="/docs/assets/img/hero.png" alt="七伊" class="logo"> <span class="site-name">七伊</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/docs/zh/guide/">
+          指南
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          在线文档
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          工作软件
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          在线工具
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          在线编辑器
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/docs/zh/changelog/">
+          Change Log
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <!----></nav></div></div> <!----></header> <aside class="sidebar"><!----> <!----></aside> <main class="page"> <div class="theme-antdocs-content content__default"><h1 id="spring-mvc-拦截器的使用"><a href="#spring-mvc-拦截器的使用" class="header-anchor">#</a> <strong>Spring MVC 拦截器的使用</strong></h1> <h2 id="拦截器简介"><a href="#拦截器简介" class="header-anchor">#</a> <strong>拦截器简介</strong></h2> <p>Spring Web MVC 的处理器拦截器，类似于 Servlet 开发中的过滤器 Filter，用于对处理器进行预处理和后处理。</p> <h1 id="常见应用场景"><a href="#常见应用场景" class="header-anchor">#</a> <strong>常见应用场景</strong></h1> <ul><li><p>日志记录：记录请求信息的日志，以便进行信息监控、信息统计、计算 PV（Page View）等</p></li> <li><p>权限检查：如登录检测，进入处理器检测检测是否登录，如果没有直接返回到登录页面</p></li> <li><p>性能监控：有时候系统在某段时间莫名其妙的慢，可以通过拦截器在进入处理器之前记录开始时间，在处理完后记录结束时间，从而得到该请求的处理时间</p></li> <li><p>通用行为：读取 Cookie 得到用户信息并将用户对象放入请求，从而方便后续流程使用，还有如提取 Locale、Theme 信息等，只要是多个处理器都需要的即可使用拦截器实现</p></li></ul> <h2 id="第一个-spring-mvc-拦截器"><a href="#第一个-spring-mvc-拦截器" class="header-anchor">#</a> <strong>第一个 Spring MVC 拦截器</strong></h2> <p>Spring MVC 拦截器需要实现 <code>HandlerInterceptor</code> 接口，该接口定义了 3 个方法，分别为 <code>preHandle()</code>、<code>postHandle()</code> 和 <code>afterCompletion()</code>，咱们就是通过重写这 3 个方法来对用户的请求进行拦截处理的。</p> <ul><li><p><code>preHandle(HttpServletRequest request, HttpServletResponse response, Object handle)</code>：该方法在请求处理之前进行调用。Spring MVC 中的 Interceptor 是链式调用的，在一个应用中或者说是在一个请求中可以同时存在多个 Interceptor 。每个 Interceptor 的调用会依据它的声明顺序依次执行，而且最先执行的都是 Interceptor 中的 <code>preHandle</code> 方法，所以可以在这个方法中进行一些前置初始化操作或者是对当前请求做一个预处理，也可以在这个方法中进行一些判断来决定请求是否要继续进行下去。该方法的返回值是布尔值 Boolean 类型的，当它返回为 <code>false</code> 时，表示请求结束，后续的 Interceptor 和 Controller 都不会再执行；当返回值为 <code>true</code> 时，就会继续调用下一个 Interceptor 的 <code>preHandle</code> 方法，如果已经是最后一个 Interceptor 的时候，就会是调用当前请求的 Controller 中的方法。</p></li> <li><p><code>postHandle(HttpServletRequest request, HttpServletResponse response, Object handle, ModelAndView modelAndView)</code>：通过 <code>preHandle</code> 方法的解释咱们知道这个方法包括后面要说到的 <code>afterCompletion</code> 方法都只能在当前所属的 Interceptor 的 <code>preHandle</code> 方法的返回值为 <code>true</code> 的时候，才能被调用。<code>postHandle</code> 方法在当前请求进行处理之后，也就是在 Controller 中的方法调用之后执行，但是它会在 <code>DispatcherServlet</code> 进行视图返回渲染之前被调用，所以咱们可以在这个方法中对 Controller 处理之后的 <code>ModelAndView</code> 对象进行操作。<code>postHandle</code> 方法被调用的方向跟 <code>preHandle</code> 是相反的，也就是说，先声明的 Interceptor 的 postHandle 方法反而会后执行。</p></li> <li><p><code>afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handle, Exception ex)</code>：也是需要当前对应的 Interceptor 的 <code>preHandle</code> 方法的返回值为 <code>true</code> 时才会执行。因此，该方法将在整个请求结束之后，也就是在 <code>DispatcherServlet</code> 渲染了对应的视图之后执行，这个方法的主要作用是用于进行资源清理的工作。</p></li></ul> <p><strong>创建登录拦截器</strong>
+我们知道对系统的相关操作是需要登录后才可以使用的，当未登录时是无法直接访问需要登录权限的操作的，为了做到这个效果，我们使用登录拦截器来判断用户是否登录，如果用户已登录则放行让用户继续操作，否则就将其跳转到登录页。</p> <p>定义一个名为 <code>LoginInterceptor</code> 的拦截器，代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>package com.yky.my.shop.web.interceptor;
+
+import com.yky.my.shop.commons.constant.ConstantUtils;
+import com.yky.my.shop.entity.User;
+import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * @version 1.0
+ * @ClassName LoginInterceptor
+ * @Description TODO
+ * @Author YKY
+ * @Date 2019/12/3 11:10
+ **/
+public class LoginInterceptor implements HandlerInterceptor {
+    public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
+        User user = (User) httpServletRequest.getSession().getAttribute(ConstantUtils.SESSION_USER);
+        //未登录
+        if (user == null) {
+            httpServletResponse.sendRedirect(&quot;/login&quot;);
+        }
+        //放行
+        return true;
+    }
+
+    public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
+
+    }
+
+    public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
+
+    }
+}
+
+</code></pre></div><p><strong>在 spring-mvc.xml 中配置拦截器</strong></p> <p>拦截器定义后还需要在 <code>spring-mvc.xml</code> 中配置拦截器，代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 拦截器配置，拦截顺序：先执行后定义的，排在第一位的最后执行。--&gt;
+&lt;mvc:interceptors&gt;
+    &lt;mvc:interceptor&gt;
+        &lt;mvc:mapping path=&quot;/**&quot;/&gt;
+        &lt;mvc:exclude-mapping path=&quot;/static/**&quot;/&gt;
+        &lt;mvc:exclude-mapping path=&quot;/login&quot;/&gt;
+        &lt;bean class=&quot;com.funtl.my.shop.web.interceptor.LoginInterceptor&quot;/&gt;
+    &lt;/mvc:interceptor&gt;
+&lt;/mvc:interceptors&gt;
+</code></pre></div><p>相关配置说明：</p> <ul><li><code>mvc:interceptor</code>：定义一个拦截器
+<code>mvc:mapping</code>：映射路径，需要拦截的请求路径
+<code>mvc:exclude-mapping</code>：需要排除的请求路径，比如登录页本身是不需要拦截的，这里还包括了静态资源路径也是不需要拦截的
+<code>bean class</code>：配置指定的拦截器对象</li></ul> <p><strong>拦截器执行顺序：</strong></p> <p><code>perHandle()</code> 方法是按照配置文件顺序执行,然后逆序执行每个拦截器的<code>postHandle()</code>方法,最后逆序执行<code>afterCompletion()</code>方法</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2020年4月20日星期一晚上7点39分</span></div></footer> <!----> </main> <!----></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/docs/assets/js/app.07c220e4.js" defer></script><script src="/docs/assets/js/2.921638eb.js" defer></script><script src="/docs/assets/js/10.48c08d70.js" defer></script><script src="/docs/assets/js/3.318575c0.js" defer></script>
+  </body>
+</html>

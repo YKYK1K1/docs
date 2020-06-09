@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>在 GitLab 上创建项目 | 七伊</title>
+    <meta name="description" content="七伊的博客">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/docs/favicon.ico">
+  <link rel="manifest" href="/docs/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/docs/icons/192x192.png">
+  <link rel="mask-icon" href="/docs/icons/safari-pinned-tab.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="author" content="七伊">
+  <meta name="keywords" content="vuepress 介绍，vuepress 说明，七伊">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.35d8fede.css" as="style"><link rel="preload" href="/docs/assets/js/app.07c220e4.js" as="script"><link rel="preload" href="/docs/assets/js/2.921638eb.js" as="script"><link rel="preload" href="/docs/assets/js/88.b150dc61.js" as="script"><link rel="preload" href="/docs/assets/js/3.318575c0.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.48c08d70.js"><link rel="prefetch" href="/docs/assets/js/100.b3c52deb.js"><link rel="prefetch" href="/docs/assets/js/101.df7fcdb0.js"><link rel="prefetch" href="/docs/assets/js/102.c5723748.js"><link rel="prefetch" href="/docs/assets/js/103.be324fae.js"><link rel="prefetch" href="/docs/assets/js/104.c21ffabf.js"><link rel="prefetch" href="/docs/assets/js/105.2b0c1d17.js"><link rel="prefetch" href="/docs/assets/js/11.04529c8f.js"><link rel="prefetch" href="/docs/assets/js/12.3f1edc2d.js"><link rel="prefetch" href="/docs/assets/js/13.c3bee8d7.js"><link rel="prefetch" href="/docs/assets/js/14.6293b2b4.js"><link rel="prefetch" href="/docs/assets/js/15.7f4a8446.js"><link rel="prefetch" href="/docs/assets/js/16.eda0a3b7.js"><link rel="prefetch" href="/docs/assets/js/17.cb02c9c4.js"><link rel="prefetch" href="/docs/assets/js/18.d869fa46.js"><link rel="prefetch" href="/docs/assets/js/19.a0e5b08a.js"><link rel="prefetch" href="/docs/assets/js/20.70f207ac.js"><link rel="prefetch" href="/docs/assets/js/21.b23767cc.js"><link rel="prefetch" href="/docs/assets/js/22.724bec9d.js"><link rel="prefetch" href="/docs/assets/js/23.81227d75.js"><link rel="prefetch" href="/docs/assets/js/24.89a3c8b5.js"><link rel="prefetch" href="/docs/assets/js/25.1911d3b9.js"><link rel="prefetch" href="/docs/assets/js/26.2eba6ac6.js"><link rel="prefetch" href="/docs/assets/js/27.bf4f5955.js"><link rel="prefetch" href="/docs/assets/js/28.a441f2aa.js"><link rel="prefetch" href="/docs/assets/js/29.fd63b927.js"><link rel="prefetch" href="/docs/assets/js/30.cf3b7db3.js"><link rel="prefetch" href="/docs/assets/js/31.072dedc7.js"><link rel="prefetch" href="/docs/assets/js/32.e32bf6e6.js"><link rel="prefetch" href="/docs/assets/js/33.2072ada3.js"><link rel="prefetch" href="/docs/assets/js/34.efd56ab8.js"><link rel="prefetch" href="/docs/assets/js/35.f8ff5a47.js"><link rel="prefetch" href="/docs/assets/js/36.3a86d332.js"><link rel="prefetch" href="/docs/assets/js/37.6f164a57.js"><link rel="prefetch" href="/docs/assets/js/38.92c6b404.js"><link rel="prefetch" href="/docs/assets/js/39.6559180a.js"><link rel="prefetch" href="/docs/assets/js/4.e559a794.js"><link rel="prefetch" href="/docs/assets/js/40.512d1e10.js"><link rel="prefetch" href="/docs/assets/js/41.8db3ba60.js"><link rel="prefetch" href="/docs/assets/js/42.7ea7a91e.js"><link rel="prefetch" href="/docs/assets/js/43.850fef30.js"><link rel="prefetch" href="/docs/assets/js/44.b460ef45.js"><link rel="prefetch" href="/docs/assets/js/45.719f5d4b.js"><link rel="prefetch" href="/docs/assets/js/46.a98859c0.js"><link rel="prefetch" href="/docs/assets/js/47.f82b4e26.js"><link rel="prefetch" href="/docs/assets/js/48.142909d8.js"><link rel="prefetch" href="/docs/assets/js/49.234d192b.js"><link rel="prefetch" href="/docs/assets/js/5.2db0d042.js"><link rel="prefetch" href="/docs/assets/js/50.741634c5.js"><link rel="prefetch" href="/docs/assets/js/51.f242ba1d.js"><link rel="prefetch" href="/docs/assets/js/52.30ed35db.js"><link rel="prefetch" href="/docs/assets/js/53.5e774f5f.js"><link rel="prefetch" href="/docs/assets/js/54.e86627a5.js"><link rel="prefetch" href="/docs/assets/js/55.57233987.js"><link rel="prefetch" href="/docs/assets/js/56.e3ad3b9e.js"><link rel="prefetch" href="/docs/assets/js/57.bd5bdd87.js"><link rel="prefetch" href="/docs/assets/js/58.27dbb3cd.js"><link rel="prefetch" href="/docs/assets/js/59.ef8b709d.js"><link rel="prefetch" href="/docs/assets/js/6.94a10221.js"><link rel="prefetch" href="/docs/assets/js/60.b607006c.js"><link rel="prefetch" href="/docs/assets/js/61.901c9d2e.js"><link rel="prefetch" href="/docs/assets/js/62.e1056fc4.js"><link rel="prefetch" href="/docs/assets/js/63.a400e58c.js"><link rel="prefetch" href="/docs/assets/js/64.67734145.js"><link rel="prefetch" href="/docs/assets/js/65.0f97b843.js"><link rel="prefetch" href="/docs/assets/js/66.8d63aeea.js"><link rel="prefetch" href="/docs/assets/js/67.d94afce8.js"><link rel="prefetch" href="/docs/assets/js/68.1b1e7c88.js"><link rel="prefetch" href="/docs/assets/js/69.701a21eb.js"><link rel="prefetch" href="/docs/assets/js/7.81f19ebc.js"><link rel="prefetch" href="/docs/assets/js/70.d380ab54.js"><link rel="prefetch" href="/docs/assets/js/71.cda605e4.js"><link rel="prefetch" href="/docs/assets/js/72.3bdc5546.js"><link rel="prefetch" href="/docs/assets/js/73.f7881ae0.js"><link rel="prefetch" href="/docs/assets/js/74.6cbf0692.js"><link rel="prefetch" href="/docs/assets/js/75.ed735f98.js"><link rel="prefetch" href="/docs/assets/js/76.989a9a4e.js"><link rel="prefetch" href="/docs/assets/js/77.bc96999a.js"><link rel="prefetch" href="/docs/assets/js/78.d9b7c4f6.js"><link rel="prefetch" href="/docs/assets/js/79.a40d6c1b.js"><link rel="prefetch" href="/docs/assets/js/8.db2b4fcb.js"><link rel="prefetch" href="/docs/assets/js/80.17ed4b04.js"><link rel="prefetch" href="/docs/assets/js/81.a7578d37.js"><link rel="prefetch" href="/docs/assets/js/82.bb5ef27c.js"><link rel="prefetch" href="/docs/assets/js/83.060d0e6e.js"><link rel="prefetch" href="/docs/assets/js/84.f24ee20c.js"><link rel="prefetch" href="/docs/assets/js/85.84a7061e.js"><link rel="prefetch" href="/docs/assets/js/86.2d6432d5.js"><link rel="prefetch" href="/docs/assets/js/87.6c815c55.js"><link rel="prefetch" href="/docs/assets/js/89.346b5201.js"><link rel="prefetch" href="/docs/assets/js/9.d4c0e7b4.js"><link rel="prefetch" href="/docs/assets/js/90.f376dce2.js"><link rel="prefetch" href="/docs/assets/js/91.084edf02.js"><link rel="prefetch" href="/docs/assets/js/92.288b268c.js"><link rel="prefetch" href="/docs/assets/js/93.45cd0fe4.js"><link rel="prefetch" href="/docs/assets/js/94.c055c973.js"><link rel="prefetch" href="/docs/assets/js/95.122d2685.js"><link rel="prefetch" href="/docs/assets/js/96.4ae05b56.js"><link rel="prefetch" href="/docs/assets/js/97.c61d6a55.js"><link rel="prefetch" href="/docs/assets/js/98.cef4e912.js"><link rel="prefetch" href="/docs/assets/js/99.39c35545.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.35d8fede.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="ant-row"><div class="sidebar-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/docs/" class="router-link-active home-link"><img src="/docs/assets/img/hero.png" alt="七伊" class="logo"> <span class="site-name">七伊</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/docs/zh/guide/">
+          指南
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          在线文档
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          工作软件
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          在线工具
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          在线编辑器
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/docs/zh/changelog/">
+          Change Log
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <!----></nav></div></div> <!----></header> <aside class="sidebar"><!----> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>开发前的准备</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh/spring-cloud-itoken-prepare/" class="sidebar-link">了解敏捷开发</a></li><li><a href="/docs/zh/spring-cloud-itoken-prepare/在-GitLab-上创建项目.html" class="active sidebar-link">在 GitLab 上创建项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/spring-cloud-itoken-prepare/在-GitLab-上创建项目.html#创建群组项目" class="sidebar-link">创建群组项目</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spring-cloud-itoken-prepare/在-GitLab-上创建项目.html#创建统一的依赖管理" class="sidebar-link">创建统一的依赖管理</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spring-cloud-itoken-prepare/在-GitLab-上创建项目.html#创建-分布式控制中心-完善信息" class="sidebar-link">创建 分布式控制中心 完善信息</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spring-cloud-itoken-prepare/在-GitLab-上创建项目.html#创建-服务注册与发现-项目-完善信息" class="sidebar-link">创建 服务注册与发现 项目 完善信息</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spring-cloud-itoken-prepare/在-GitLab-上创建项目.html#创建-分布式链路追踪-项目-完善信息" class="sidebar-link">创建 分布式链路追踪 项目 完善信息</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spring-cloud-itoken-prepare/在-GitLab-上创建项目.html#创建-分布式服务监控-项目-完善信息" class="sidebar-link">创建 分布式服务监控 项目 完善信息</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spring-cloud-itoken-prepare/在-GitLab-上创建项目.html#创建-路由网关-项目-完善信息" class="sidebar-link">创建 路由网关 项目 完善信息</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spring-cloud-itoken-prepare/在-GitLab-上创建项目.html#开启项目顺序" class="sidebar-link">开启项目顺序</a></li></ul></li><li><a href="/docs/zh/spring-cloud-itoken-prepare/部署服务到容器.html" class="sidebar-link">部署服务到容器</a></li></ul></section></li></ul></aside> <main class="page"> <div class="theme-antdocs-content content__default"><h1 id="在-gitlab-上创建项目"><a href="#在-gitlab-上创建项目" class="header-anchor">#</a> <strong>在 GitLab 上创建项目</strong></h1> <h2 id="创建群组项目"><a href="#创建群组项目" class="header-anchor">#</a> <strong>创建群组项目</strong></h2> <p><img src="/docs/assets/spring-cloud-itoken-prepare/yky-1584266705.png" alt=""> <img src="/docs/assets/spring-cloud-itoken-prepare/yky-19276482384.png" alt=""> <strong>创建群组成功</strong> <img src="/docs/assets/spring-cloud-itoken-prepare/yky-1231236612.png" alt=""></p> <h2 id="创建统一的依赖管理"><a href="#创建统一的依赖管理" class="header-anchor">#</a> <strong>创建统一的依赖管理</strong></h2> <p><img src="/docs/assets/spring-cloud-itoken-prepare/yky-1827461273.png" alt=""> <strong>添加默认的自述文件</strong> <img src="/docs/assets/spring-cloud-itoken-prepare/yky-1927461233.png" alt=""> <img src="/docs/assets/spring-cloud-itoken-prepare/yky-1917256312.png" alt=""></p> <h3 id="pom-xml"><a href="#pom-xml" class="header-anchor">#</a> pom.xml</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+        &lt;version&gt;2.0.3.RELEASE&lt;/version&gt;
+    &lt;/parent&gt;
+
+    &lt;groupId&gt;com.yky&lt;/groupId&gt;
+    &lt;artifactId&gt;itoken-dependencies&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+    &lt;packaging&gt;pom&lt;/packaging&gt;
+
+    &lt;name&gt;itoken-dependencies&lt;/name&gt;
+    &lt;url&gt;http://www.yky.com&lt;/url&gt;
+    &lt;inceptionYear&gt;2018-Now&lt;/inceptionYear&gt;
+
+    &lt;properties&gt;
+        &lt;!-- Environment Settings --&gt;
+        &lt;java.version&gt;1.8&lt;/java.version&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;project.reporting.outputEncoding&gt;UTF-8&lt;/project.reporting.outputEncoding&gt;
+
+        &lt;!-- Spring Settings --&gt;
+        &lt;spring-cloud.version&gt;Finchley.RELEASE&lt;/spring-cloud.version&gt;
+        &lt;spring-boot-admin.version&gt;2.0.1&lt;/spring-boot-admin.version&gt;
+        &lt;zipkin.version&gt;2.10.1&lt;/zipkin.version&gt;
+    &lt;/properties&gt;
+
+    &lt;dependencyManagement&gt;
+        &lt;dependencies&gt;
+            &lt;!-- Spring Cloud Begin --&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-cloud-dependencies&lt;/artifactId&gt;
+                &lt;version&gt;${spring-cloud.version}&lt;/version&gt;
+                &lt;type&gt;pom&lt;/type&gt;
+                &lt;scope&gt;import&lt;/scope&gt;
+            &lt;/dependency&gt;
+            &lt;!-- Spring Cloud End --&gt;
+
+            &lt;!-- Spring Boot Admin Begin --&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;de.codecentric&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-admin-starter-server&lt;/artifactId&gt;
+                &lt;version&gt;${spring-boot-admin.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;de.codecentric&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-admin-starter-client&lt;/artifactId&gt;
+                &lt;version&gt;${spring-boot-admin.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;!-- Spring Boot Admin End --&gt;
+
+            &lt;!-- ZipKin Begin --&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;io.zipkin.java&lt;/groupId&gt;
+                &lt;artifactId&gt;zipkin&lt;/artifactId&gt;
+                &lt;version&gt;${zipkin.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;io.zipkin.java&lt;/groupId&gt;
+                &lt;artifactId&gt;zipkin-server&lt;/artifactId&gt;
+                &lt;version&gt;${zipkin.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;io.zipkin.java&lt;/groupId&gt;
+                &lt;artifactId&gt;zipkin-autoconfigure-ui&lt;/artifactId&gt;
+                &lt;version&gt;${zipkin.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;!-- ZipKin End --&gt;
+        &lt;/dependencies&gt;
+    &lt;/dependencyManagement&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;!-- Compiler 插件, 设定 JDK 版本 --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;showWarnings&gt;true&lt;/showWarnings&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+
+            &lt;!-- 打包 jar 文件时，配置 manifest 文件，加入 lib 包的 jar 依赖 --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;archive&gt;
+                        &lt;addMavenDescriptor&gt;false&lt;/addMavenDescriptor&gt;
+                    &lt;/archive&gt;
+                &lt;/configuration&gt;
+                &lt;executions&gt;
+                    &lt;execution&gt;
+                        &lt;configuration&gt;
+                            &lt;archive&gt;
+                                &lt;manifest&gt;
+                                    &lt;!-- Add directory entries --&gt;
+                                    &lt;addDefaultImplementationEntries&gt;true&lt;/addDefaultImplementationEntries&gt;
+                                    &lt;addDefaultSpecificationEntries&gt;true&lt;/addDefaultSpecificationEntries&gt;
+                                    &lt;addClasspath&gt;true&lt;/addClasspath&gt;
+                                &lt;/manifest&gt;
+                            &lt;/archive&gt;
+                        &lt;/configuration&gt;
+                    &lt;/execution&gt;
+                &lt;/executions&gt;
+            &lt;/plugin&gt;
+
+            &lt;!-- resource --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-resources-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+
+            &lt;!-- install --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-install-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+
+            &lt;!-- clean --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-clean-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+
+            &lt;!-- ant --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-antrun-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+
+            &lt;!-- dependency --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-dependency-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+
+        &lt;pluginManagement&gt;
+            &lt;plugins&gt;
+                &lt;!-- Java Document Generate --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;phase&gt;prepare-package&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+
+                &lt;!-- YUI Compressor (CSS/JS压缩) --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;net.alchim31.maven&lt;/groupId&gt;
+                    &lt;artifactId&gt;yuicompressor-maven-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;1.5.1&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;phase&gt;prepare-package&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;compress&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                    &lt;configuration&gt;
+                        &lt;encoding&gt;UTF-8&lt;/encoding&gt;
+                        &lt;jswarn&gt;false&lt;/jswarn&gt;
+                        &lt;nosuffix&gt;true&lt;/nosuffix&gt;
+                        &lt;linebreakpos&gt;30000&lt;/linebreakpos&gt;
+                        &lt;force&gt;true&lt;/force&gt;
+                        &lt;includes&gt;
+                            &lt;include&gt;**/*.js&lt;/include&gt;
+                            &lt;include&gt;**/*.css&lt;/include&gt;
+                        &lt;/includes&gt;
+                        &lt;excludes&gt;
+                            &lt;exclude&gt;**/*.min.js&lt;/exclude&gt;
+                            &lt;exclude&gt;**/*.min.css&lt;/exclude&gt;
+                        &lt;/excludes&gt;
+                    &lt;/configuration&gt;
+                &lt;/plugin&gt;
+            &lt;/plugins&gt;
+        &lt;/pluginManagement&gt;
+
+        &lt;!-- 资源文件配置 --&gt;
+        &lt;resources&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;src/main/java&lt;/directory&gt;
+                &lt;excludes&gt;
+                    &lt;exclude&gt;**/*.java&lt;/exclude&gt;
+                &lt;/excludes&gt;
+            &lt;/resource&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;src/main/resources&lt;/directory&gt;
+            &lt;/resource&gt;
+        &lt;/resources&gt;
+    &lt;/build&gt;
+
+    &lt;distributionManagement&gt;
+        &lt;repository&gt;
+            &lt;id&gt;nexus-releases&lt;/id&gt;
+            &lt;name&gt;Nexus Release Repository&lt;/name&gt;
+            &lt;url&gt;http://192.168.0.164:8081/repository/maven-releases/&lt;/url&gt;
+        &lt;/repository&gt;
+        &lt;snapshotRepository&gt;
+            &lt;id&gt;nexus-snapshots&lt;/id&gt;
+            &lt;name&gt;Nexus Snapshot Repository&lt;/name&gt;
+            &lt;url&gt;http://192.168.0.164:8081/repository/maven-snapshots/&lt;/url&gt;
+        &lt;/snapshotRepository&gt;
+    &lt;/distributionManagement&gt;
+
+    &lt;repositories&gt;
+        &lt;repository&gt;
+            &lt;id&gt;nexus&lt;/id&gt;
+            &lt;name&gt;Nexus Repository&lt;/name&gt;
+            &lt;url&gt;http://192.168.0.164:8081/repository/maven-public/&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+            &lt;releases&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/releases&gt;
+        &lt;/repository&gt;
+
+        &lt;repository&gt;
+            &lt;id&gt;aliyun-repos&lt;/id&gt;
+            &lt;name&gt;Aliyun Repository&lt;/name&gt;
+            &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;
+            &lt;releases&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/releases&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;false&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/repository&gt;
+
+        &lt;repository&gt;
+            &lt;id&gt;sonatype-repos&lt;/id&gt;
+            &lt;name&gt;Sonatype Repository&lt;/name&gt;
+            &lt;url&gt;https://oss.sonatype.org/content/groups/public&lt;/url&gt;
+            &lt;releases&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/releases&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;false&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/repository&gt;
+        &lt;repository&gt;
+            &lt;id&gt;sonatype-repos-s&lt;/id&gt;
+            &lt;name&gt;Sonatype Repository&lt;/name&gt;
+            &lt;url&gt;https://oss.sonatype.org/content/repositories/snapshots&lt;/url&gt;
+            &lt;releases&gt;
+                &lt;enabled&gt;false&lt;/enabled&gt;
+            &lt;/releases&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/repository&gt;
+
+        &lt;repository&gt;
+            &lt;id&gt;spring-snapshots&lt;/id&gt;
+            &lt;name&gt;Spring Snapshots&lt;/name&gt;
+            &lt;url&gt;https://repo.spring.io/snapshot&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/repository&gt;
+        &lt;repository&gt;
+            &lt;id&gt;spring-milestones&lt;/id&gt;
+            &lt;name&gt;Spring Milestones&lt;/name&gt;
+            &lt;url&gt;https://repo.spring.io/milestone&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;false&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/repository&gt;
+    &lt;/repositories&gt;
+
+    &lt;pluginRepositories&gt;
+        &lt;pluginRepository&gt;
+            &lt;id&gt;nexus&lt;/id&gt;
+            &lt;name&gt;Nexus Plugin Repository&lt;/name&gt;
+            &lt;url&gt;http://192.168.0.164:8081/repository/maven-public/&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+            &lt;releases&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/releases&gt;
+        &lt;/pluginRepository&gt;
+
+        &lt;pluginRepository&gt;
+            &lt;id&gt;aliyun-repos&lt;/id&gt;
+            &lt;name&gt;Aliyun Repository&lt;/name&gt;
+            &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;
+            &lt;releases&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/releases&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;false&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/pluginRepository&gt;
+    &lt;/pluginRepositories&gt;
+&lt;/project&gt;
+</code></pre></div><p><strong>再次进入群组 选择 itoken</strong> <img src="/docs/assets/spring-cloud-itoken-prepare/yky-192736123.png" alt=""></p> <h2 id="创建-分布式控制中心-完善信息"><a href="#创建-分布式控制中心-完善信息" class="header-anchor">#</a> <strong>创建 分布式控制中心 完善信息</strong></h2> <p><img src="/docs/assets/spring-cloud-itoken-prepare/yky-102837612.png" alt=""></p> <h3 id="pom-xml-2"><a href="#pom-xml-2" class="header-anchor">#</a> <strong>pom.xml</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;itoken-dependencies&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../itoken-dependencies/pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;itoken-config&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+
+    &lt;name&gt;itoken-config&lt;/name&gt;
+    &lt;url&gt;http://www.yky.com&lt;/url&gt;
+    &lt;inceptionYear&gt;2018-Now&lt;/inceptionYear&gt;
+
+    &lt;dependencies&gt;
+        &lt;!-- Spring Boot Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-tomcat&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-actuator&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot End --&gt;
+
+        &lt;!-- Spring Cloud Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-zipkin&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-config-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Cloud End --&gt;
+
+        &lt;!-- Spring Boot Admin Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.jolokia&lt;/groupId&gt;
+            &lt;artifactId&gt;jolokia-core&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;de.codecentric&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-admin-starter-client&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot Admin End --&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;mainClass&gt;com.yky.itoken.config.ConfigApplication&lt;/mainClass&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre></div><h3 id="application-yml"><a href="#application-yml" class="header-anchor">#</a> <strong>application.yml</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  application:
+    name: itoken-config
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: http://192.168.0.163/itoken/itoken-config.git
+          search-paths: respo
+          username: yky19970707@163.com
+          password: 12345678
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+</code></pre></div><h3 id="application"><a href="#application" class="header-anchor">#</a> <strong>Application</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>package com.yky.itoken.config;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+/**
+ * @version 1.0
+ * @ClassName ConfigApplication
+ * @Description TODO
+ * @Author YKY
+ * @Date 2020/3/15 18:49
+ **/
+@SpringBootApplication
+@EnableConfigServer
+@EnableEurekaClient
+public class ConfigApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ConfigApplication.class, args);
+    }
+}
+</code></pre></div><h2 id="创建-服务注册与发现-项目-完善信息"><a href="#创建-服务注册与发现-项目-完善信息" class="header-anchor">#</a> <strong>创建 服务注册与发现 项目 完善信息</strong></h2> <p><img src="/docs/assets/spring-cloud-itoken-prepare/yky-1982736123.png" alt=""></p> <h3 id="pom-xml-3"><a href="#pom-xml-3" class="header-anchor">#</a> pom.xml</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;itoken-dependencies&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../itoken-dependencies/pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;itoken-eureka&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+
+    &lt;name&gt;itoken-eureka&lt;/name&gt;
+    &lt;url&gt;http://www.yky.com&lt;/url&gt;
+    &lt;inceptionYear&gt;2018-Now&lt;/inceptionYear&gt;
+
+    &lt;dependencies&gt;
+        &lt;!-- Spring Boot Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot End --&gt;
+
+        &lt;!-- Spring Cloud Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-zipkin&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-config&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Cloud End --&gt;
+
+        &lt;!-- Spring Boot Admin Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.jolokia&lt;/groupId&gt;
+            &lt;artifactId&gt;jolokia-core&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;de.codecentric&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-admin-starter-client&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot Admin End --&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;mainClass&gt;com.yky.itoken.eureka.EurekaApplication&lt;/mainClass&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre></div><h3 id="application-yml-2"><a href="#application-yml-2" class="header-anchor">#</a> <strong>application.yml</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: itoken-eureka
+      label: master
+      profile: dev
+</code></pre></div><h3 id="application-2"><a href="#application-2" class="header-anchor">#</a> <strong>Application</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>package com.yky.itoken.eureka;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+/**
+ * @version 1.0
+ * @ClassName EurekaApplication
+ * @Description TODO
+ * @Author YKY
+ * @Date 2020/3/15 19:18
+ **/
+@SpringBootApplication
+@EnableEurekaServer
+public class EurekaApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(EurekaApplication.class, args);
+    }
+}
+</code></pre></div><h3 id="cloud-config"><a href="#cloud-config" class="header-anchor">#</a> <strong>Cloud Config</strong></h3> <blockquote><p>在 <code>itoken-config</code> 项目的 <code>respo</code> 目录下创建一个名为 <code>itoken-eureka-dev.yml</code> 的配置文件，内容如下:</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  application:
+    name: itoken-eureka
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+</code></pre></div><h3 id="集群部署的配置"><a href="#集群部署的配置" class="header-anchor">#</a> <strong>集群部署的配置</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  application:
+    name: itoken-eureka
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: host
+  client:
+    # 表示是否将自己注册到 Eureka，因为要构建集群环境，需要将自己注册到集群，所以应该开启
+    registerWithEureka: true
+    # 表示是否从 Eureka 获取注册信息，如果是单一节点，不需要同步其他 Eureka节点，则可以设置为false，但此处为集群，应该设置 true
+    fetchRegistry: true
+    serviceUrl:
+      # Eureka 集群地址
+      defaultZone: http://ip:${server.port}/eureka/,http://ip:${server.port}/eureka/,http://ip:${server.port}/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+</code></pre></div><h2 id="创建-分布式链路追踪-项目-完善信息"><a href="#创建-分布式链路追踪-项目-完善信息" class="header-anchor">#</a> <strong>创建 分布式链路追踪 项目 完善信息</strong></h2> <p><img src="/docs/assets/spring-cloud-itoken-prepare/yky-123881272.png" alt=""></p> <h3 id="pom-xml-4"><a href="#pom-xml-4" class="header-anchor">#</a> pom.xml</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;itoken-dependencies&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../itoken-dependencies/pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;itoken-zipkin&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+
+    &lt;name&gt;itoken-zipkin&lt;/name&gt;
+    &lt;url&gt;http://www.yky.com&lt;/url&gt;
+    &lt;inceptionYear&gt;2018-Now&lt;/inceptionYear&gt;
+
+    &lt;dependencies&gt;
+        &lt;!-- Spring Boot Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-tomcat&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-actuator&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot End --&gt;
+
+        &lt;!-- Spring Cloud Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-zipkin&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-config&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Cloud End --&gt;
+
+        &lt;!-- Spring Boot Admin Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.jolokia&lt;/groupId&gt;
+            &lt;artifactId&gt;jolokia-core&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;de.codecentric&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-admin-starter-client&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot Admin End --&gt;
+
+        &lt;!-- ZipKin Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;io.zipkin.java&lt;/groupId&gt;
+            &lt;artifactId&gt;zipkin&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;io.zipkin.java&lt;/groupId&gt;
+            &lt;artifactId&gt;zipkin-server&lt;/artifactId&gt;
+            &lt;exclusions&gt;
+                &lt;exclusion&gt;
+                    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                    &lt;artifactId&gt;spring-boot-starter-log4j2&lt;/artifactId&gt;
+                &lt;/exclusion&gt;
+            &lt;/exclusions&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;io.zipkin.java&lt;/groupId&gt;
+            &lt;artifactId&gt;zipkin-autoconfigure-ui&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- ZipKin End --&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;mainClass&gt;com.yky.itoken.zipkin.ZipKinApplication&lt;/mainClass&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre></div><h3 id="application-yml-3"><a href="#application-yml-3" class="header-anchor">#</a> <strong>application.yml</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: itoken-zipkin
+      label: master
+      profile: dev
+</code></pre></div><h3 id="application-3"><a href="#application-3" class="header-anchor">#</a> <strong>Application</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>package com.yky.itoken.zipkin;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import zipkin.server.internal.EnableZipkinServer;
+
+/**
+ * @version 1.0
+ * @ClassName ZipkinApplication
+ * @Description TODO
+ * @Author YKY
+ * @Date 2020/3/16 10:37
+ **/
+@SpringBootApplication
+@EnableZipkinServer
+@EnableEurekaClient
+public class ZipKinApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ZipKinApplication.class, args);
+    }
+}
+</code></pre></div><h3 id="cloud-config-2"><a href="#cloud-config-2" class="header-anchor">#</a> <strong>Cloud Config</strong></h3> <blockquote><p>在 <code>itoken-config</code> 项目的 <code>respo</code> 目录下创建一个名为 <code>itoken-zipkin-dev.yml</code> 的配置文件，内容如下：</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  application:
+    name: itoken-zipkin
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 9411
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+</code></pre></div><h2 id="创建-分布式服务监控-项目-完善信息"><a href="#创建-分布式服务监控-项目-完善信息" class="header-anchor">#</a> <strong>创建 分布式服务监控 项目 完善信息</strong></h2> <p><img src="/docs/assets/spring-cloud-itoken-prepare/yky-181726312.png" alt=""></p> <h3 id="pom-xml-5"><a href="#pom-xml-5" class="header-anchor">#</a> pom.xml</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;itoken-dependencies&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../itoken-dependencies/pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;itoken-admin&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+
+    &lt;name&gt;itoken-admin&lt;/name&gt;
+    &lt;url&gt;http://www.yky.com&lt;/url&gt;
+    &lt;inceptionYear&gt;2018-Now&lt;/inceptionYear&gt;
+
+    &lt;dependencies&gt;
+        &lt;!-- Spring Boot Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-tomcat&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-webflux&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-actuator&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot End --&gt;
+
+        &lt;!-- Spring Cloud Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-zipkin&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-config&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Cloud End --&gt;
+
+        &lt;!-- Spring Boot Admin Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.jolokia&lt;/groupId&gt;
+            &lt;artifactId&gt;jolokia-core&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;de.codecentric&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-admin-starter-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot Admin End --&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;mainClass&gt;com.yky.itoken.admin.AdminApplication&lt;/mainClass&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre></div><h3 id="application-yml-4"><a href="#application-yml-4" class="header-anchor">#</a> <strong>application.yml</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: itoken-admin
+      label: master
+      profile: dev
+</code></pre></div><h3 id="application-4"><a href="#application-4" class="header-anchor">#</a> <strong>Application</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>package com.yky.itoken.admin;
+
+import de.codecentric.boot.admin.server.config.EnableAdminServer;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+/**
+ * @version 1.0
+ * @ClassName AdminApplication
+ * @Description TODO
+ * @Author YKY
+ * @Date 2020/3/16 10:49
+ **/
+@SpringBootApplication
+@EnableEurekaClient
+@EnableAdminServer
+public class AdminApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(AdminApplication.class, args);
+    }
+}
+</code></pre></div><h3 id="cloud-config-3"><a href="#cloud-config-3" class="header-anchor">#</a> <strong>Cloud Config</strong></h3> <p>在 <code>itoken-config</code> 项目的 <code>respo</code> 目录下创建一个名为 <code>itoken-admin-dev.yml</code> 的配置文件，内容如下：</p> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  application:
+    name: itoken-admin
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 8084
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+</code></pre></div><h2 id="创建-路由网关-项目-完善信息"><a href="#创建-路由网关-项目-完善信息" class="header-anchor">#</a> <strong>创建 路由网关 项目 完善信息</strong></h2> <p><img src="/docs/assets/spring-cloud-itoken-prepare/yky-192731233.png" alt=""></p> <h3 id="pom-xml-6"><a href="#pom-xml-6" class="header-anchor">#</a> pom.xml</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;itoken-dependencies&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../itoken-dependencies/pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;itoken-zuul&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+
+    &lt;name&gt;itoken-zuul&lt;/name&gt;
+    &lt;url&gt;http://www.yky.com&lt;/url&gt;
+    &lt;inceptionYear&gt;2018-Now&lt;/inceptionYear&gt;
+
+    &lt;dependencies&gt;
+        &lt;!-- Spring Boot Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-tomcat&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-actuator&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot End --&gt;
+
+        &lt;!-- Spring Cloud Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-zipkin&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-config&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-netflix-zuul&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Cloud End --&gt;
+
+        &lt;!-- Spring Boot Admin Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.jolokia&lt;/groupId&gt;
+            &lt;artifactId&gt;jolokia-core&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;de.codecentric&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-admin-starter-client&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot Admin End --&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;mainClass&gt;com.yky.itoken.zuul.ZuulApplication&lt;/mainClass&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre></div><h3 id="application-yml-5"><a href="#application-yml-5" class="header-anchor">#</a> <strong>application.yml</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: itoken-zuul
+      label: master
+      profile: dev
+</code></pre></div><h3 id="application-5"><a href="#application-5" class="header-anchor">#</a> <strong>Application</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>package com.yky.itoken.zuul;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulServer;
+
+/**
+ * @version 1.0
+ * @ClassName ZuulApplication
+ * @Description TODO
+ * @Author YKY
+ * @Date 2020/3/16 10:56
+ **/
+@SpringBootApplication
+@EnableEurekaClient
+@EnableZuulServer
+public class ZuulApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ZuulApplication.class, args);
+    }
+}
+</code></pre></div><h3 id="cloud-config-4"><a href="#cloud-config-4" class="header-anchor">#</a> <strong>Cloud Config</strong></h3> <blockquote><p>在 <code>itoken-config</code> 项目的 <code>respo</code> 目录下创建一个名为 <code>itoken-zuul-dev.yml</code> 的配置文件，内容如下：</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  application:
+    name: itoken-zuul
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 8769
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+</code></pre></div><h2 id="开启项目顺序"><a href="#开启项目顺序" class="header-anchor">#</a> <strong>开启项目顺序</strong></h2> <p>开启顺序 <code>Config</code> --&gt; <code>Eureka</code> --&gt; <code>ZipKin</code> --&gt; <code>Admin</code> --&gt; <code>zuul</code></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2020年4月23日星期四晚上10点26分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/docs/zh/spring-cloud-itoken-prepare/" class="prev router-link-active"><i aria-label="icon: left" class="anticon anticon-left"><svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg></i>
+        了解敏捷开发
+      </a></span> <span class="next"><a href="/docs/zh/spring-cloud-itoken-prepare/部署服务到容器.html">
+        部署服务到容器
+        <i aria-label="icon: right" class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"></path></svg></i></a></span></p></div> </main> <!----></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/docs/assets/js/app.07c220e4.js" defer></script><script src="/docs/assets/js/2.921638eb.js" defer></script><script src="/docs/assets/js/88.b150dc61.js" defer></script><script src="/docs/assets/js/3.318575c0.js" defer></script>
+  </body>
+</html>

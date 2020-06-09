@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Maven 模块化开发 | 七伊</title>
+    <meta name="description" content="七伊的博客">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/docs/favicon.ico">
+  <link rel="manifest" href="/docs/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/docs/icons/192x192.png">
+  <link rel="mask-icon" href="/docs/icons/safari-pinned-tab.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="author" content="七伊">
+  <meta name="keywords" content="vuepress 介绍，vuepress 说明，七伊">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.35d8fede.css" as="style"><link rel="preload" href="/docs/assets/js/app.07c220e4.js" as="script"><link rel="preload" href="/docs/assets/js/2.921638eb.js" as="script"><link rel="preload" href="/docs/assets/js/7.81f19ebc.js" as="script"><link rel="preload" href="/docs/assets/js/3.318575c0.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.48c08d70.js"><link rel="prefetch" href="/docs/assets/js/100.b3c52deb.js"><link rel="prefetch" href="/docs/assets/js/101.df7fcdb0.js"><link rel="prefetch" href="/docs/assets/js/102.c5723748.js"><link rel="prefetch" href="/docs/assets/js/103.be324fae.js"><link rel="prefetch" href="/docs/assets/js/104.c21ffabf.js"><link rel="prefetch" href="/docs/assets/js/105.2b0c1d17.js"><link rel="prefetch" href="/docs/assets/js/11.04529c8f.js"><link rel="prefetch" href="/docs/assets/js/12.3f1edc2d.js"><link rel="prefetch" href="/docs/assets/js/13.c3bee8d7.js"><link rel="prefetch" href="/docs/assets/js/14.6293b2b4.js"><link rel="prefetch" href="/docs/assets/js/15.7f4a8446.js"><link rel="prefetch" href="/docs/assets/js/16.eda0a3b7.js"><link rel="prefetch" href="/docs/assets/js/17.cb02c9c4.js"><link rel="prefetch" href="/docs/assets/js/18.d869fa46.js"><link rel="prefetch" href="/docs/assets/js/19.a0e5b08a.js"><link rel="prefetch" href="/docs/assets/js/20.70f207ac.js"><link rel="prefetch" href="/docs/assets/js/21.b23767cc.js"><link rel="prefetch" href="/docs/assets/js/22.724bec9d.js"><link rel="prefetch" href="/docs/assets/js/23.81227d75.js"><link rel="prefetch" href="/docs/assets/js/24.89a3c8b5.js"><link rel="prefetch" href="/docs/assets/js/25.1911d3b9.js"><link rel="prefetch" href="/docs/assets/js/26.2eba6ac6.js"><link rel="prefetch" href="/docs/assets/js/27.bf4f5955.js"><link rel="prefetch" href="/docs/assets/js/28.a441f2aa.js"><link rel="prefetch" href="/docs/assets/js/29.fd63b927.js"><link rel="prefetch" href="/docs/assets/js/30.cf3b7db3.js"><link rel="prefetch" href="/docs/assets/js/31.072dedc7.js"><link rel="prefetch" href="/docs/assets/js/32.e32bf6e6.js"><link rel="prefetch" href="/docs/assets/js/33.2072ada3.js"><link rel="prefetch" href="/docs/assets/js/34.efd56ab8.js"><link rel="prefetch" href="/docs/assets/js/35.f8ff5a47.js"><link rel="prefetch" href="/docs/assets/js/36.3a86d332.js"><link rel="prefetch" href="/docs/assets/js/37.6f164a57.js"><link rel="prefetch" href="/docs/assets/js/38.92c6b404.js"><link rel="prefetch" href="/docs/assets/js/39.6559180a.js"><link rel="prefetch" href="/docs/assets/js/4.e559a794.js"><link rel="prefetch" href="/docs/assets/js/40.512d1e10.js"><link rel="prefetch" href="/docs/assets/js/41.8db3ba60.js"><link rel="prefetch" href="/docs/assets/js/42.7ea7a91e.js"><link rel="prefetch" href="/docs/assets/js/43.850fef30.js"><link rel="prefetch" href="/docs/assets/js/44.b460ef45.js"><link rel="prefetch" href="/docs/assets/js/45.719f5d4b.js"><link rel="prefetch" href="/docs/assets/js/46.a98859c0.js"><link rel="prefetch" href="/docs/assets/js/47.f82b4e26.js"><link rel="prefetch" href="/docs/assets/js/48.142909d8.js"><link rel="prefetch" href="/docs/assets/js/49.234d192b.js"><link rel="prefetch" href="/docs/assets/js/5.2db0d042.js"><link rel="prefetch" href="/docs/assets/js/50.741634c5.js"><link rel="prefetch" href="/docs/assets/js/51.f242ba1d.js"><link rel="prefetch" href="/docs/assets/js/52.30ed35db.js"><link rel="prefetch" href="/docs/assets/js/53.5e774f5f.js"><link rel="prefetch" href="/docs/assets/js/54.e86627a5.js"><link rel="prefetch" href="/docs/assets/js/55.57233987.js"><link rel="prefetch" href="/docs/assets/js/56.e3ad3b9e.js"><link rel="prefetch" href="/docs/assets/js/57.bd5bdd87.js"><link rel="prefetch" href="/docs/assets/js/58.27dbb3cd.js"><link rel="prefetch" href="/docs/assets/js/59.ef8b709d.js"><link rel="prefetch" href="/docs/assets/js/6.94a10221.js"><link rel="prefetch" href="/docs/assets/js/60.b607006c.js"><link rel="prefetch" href="/docs/assets/js/61.901c9d2e.js"><link rel="prefetch" href="/docs/assets/js/62.e1056fc4.js"><link rel="prefetch" href="/docs/assets/js/63.a400e58c.js"><link rel="prefetch" href="/docs/assets/js/64.67734145.js"><link rel="prefetch" href="/docs/assets/js/65.0f97b843.js"><link rel="prefetch" href="/docs/assets/js/66.8d63aeea.js"><link rel="prefetch" href="/docs/assets/js/67.d94afce8.js"><link rel="prefetch" href="/docs/assets/js/68.1b1e7c88.js"><link rel="prefetch" href="/docs/assets/js/69.701a21eb.js"><link rel="prefetch" href="/docs/assets/js/70.d380ab54.js"><link rel="prefetch" href="/docs/assets/js/71.cda605e4.js"><link rel="prefetch" href="/docs/assets/js/72.3bdc5546.js"><link rel="prefetch" href="/docs/assets/js/73.f7881ae0.js"><link rel="prefetch" href="/docs/assets/js/74.6cbf0692.js"><link rel="prefetch" href="/docs/assets/js/75.ed735f98.js"><link rel="prefetch" href="/docs/assets/js/76.989a9a4e.js"><link rel="prefetch" href="/docs/assets/js/77.bc96999a.js"><link rel="prefetch" href="/docs/assets/js/78.d9b7c4f6.js"><link rel="prefetch" href="/docs/assets/js/79.a40d6c1b.js"><link rel="prefetch" href="/docs/assets/js/8.db2b4fcb.js"><link rel="prefetch" href="/docs/assets/js/80.17ed4b04.js"><link rel="prefetch" href="/docs/assets/js/81.a7578d37.js"><link rel="prefetch" href="/docs/assets/js/82.bb5ef27c.js"><link rel="prefetch" href="/docs/assets/js/83.060d0e6e.js"><link rel="prefetch" href="/docs/assets/js/84.f24ee20c.js"><link rel="prefetch" href="/docs/assets/js/85.84a7061e.js"><link rel="prefetch" href="/docs/assets/js/86.2d6432d5.js"><link rel="prefetch" href="/docs/assets/js/87.6c815c55.js"><link rel="prefetch" href="/docs/assets/js/88.b150dc61.js"><link rel="prefetch" href="/docs/assets/js/89.346b5201.js"><link rel="prefetch" href="/docs/assets/js/9.d4c0e7b4.js"><link rel="prefetch" href="/docs/assets/js/90.f376dce2.js"><link rel="prefetch" href="/docs/assets/js/91.084edf02.js"><link rel="prefetch" href="/docs/assets/js/92.288b268c.js"><link rel="prefetch" href="/docs/assets/js/93.45cd0fe4.js"><link rel="prefetch" href="/docs/assets/js/94.c055c973.js"><link rel="prefetch" href="/docs/assets/js/95.122d2685.js"><link rel="prefetch" href="/docs/assets/js/96.4ae05b56.js"><link rel="prefetch" href="/docs/assets/js/97.c61d6a55.js"><link rel="prefetch" href="/docs/assets/js/98.cef4e912.js"><link rel="prefetch" href="/docs/assets/js/99.39c35545.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.35d8fede.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="ant-row"><div class="sidebar-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/docs/" class="router-link-active home-link"><img src="/docs/assets/img/hero.png" alt="七伊" class="logo"> <span class="site-name">七伊</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/docs/zh/guide/">
+          指南
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          在线文档
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          工作软件
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          在线工具
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          在线编辑器
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/docs/zh/changelog/">
+          Change Log
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <!----></nav></div></div> <!----></header> <aside class="sidebar"><!----> <!----></aside> <main class="page"> <div class="theme-antdocs-content content__default"><h1 id="maven-模块化开发"><a href="#maven-模块化开发" class="header-anchor">#</a> <strong>Maven 模块化开发</strong></h1> <h2 id="概述"><a href="#概述" class="header-anchor">#</a> <strong>概述</strong></h2> <p>在多人协同开发时，特别是规模较大的项目，为了方便日后的代码维护和管理，我们会将每个开发人员的工作细分到具体的功能和模块上。随着项目的不断扩大，模块也会越来越多，后续会更加难以维护和扩展，为了应对这种情况后期我们还会采用微服务架构的方式进行开发。</p> <p>以当前教程为例，我们可以将模块划分为如下形式：</p> <ul><li>统一的依赖管理（dependencies）</li> <li>通用的工具类（commons）</li> <li>领域模型（domain）</li> <li>管理后台（admin）</li> <li>商城前端（ui）</li> <li>接口模块（api）</li></ul> <p>整个模块化开发过程主要是在开发思想上稍作了一些转变，只需要按照下面的流程操作即可。</p> <h2 id="创建根项目（工程）"><a href="#创建根项目（工程）" class="header-anchor">#</a> <strong>创建根项目（工程）</strong></h2> <p>创建一个名为 <code>my-shop</code> 的工程，<code>pom.xml</code> 文件如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;groupId&gt;com.yky&lt;/groupId&gt;
+    &lt;artifactId&gt;my-shop&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+    &lt;packaging&gt;pom&lt;/packaging&gt;
+    
+    &lt;modules&gt;
+    
+    &lt;/modules&gt;
+&lt;/project&gt;
+</code></pre></div><p>该项目称之为 Root 项目，主要作用是管理整个工程的全部模块，当有新模块加入时需要在 <code>modules</code> 元素下配置对应的模块目录</p> <h2 id="创建统一的依赖管理"><a href="#创建统一的依赖管理" class="header-anchor">#</a> <strong>创建统一的依赖管理</strong></h2> <p>创建一个名为 <code>-shop-dependencies</code> 的项目，<code>pom.xml</code> 文件如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;my-shop&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;my-shop-dependencies&lt;/artifactId&gt;
+    &lt;packaging&gt;pom&lt;/packaging&gt;
+
+    &lt;name&gt;my-shop-dependencies&lt;/name&gt;
+    &lt;description&gt;&lt;/description&gt;
+
+    &lt;properties&gt;
+        &lt;!-- 环境配置 --&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;project.reporting.outputEncoding&gt;UTF-8&lt;/project.reporting.outputEncoding&gt;
+        &lt;java.version&gt;1.8&lt;/java.version&gt;
+
+        &lt;!-- 统一的依赖管理 --&gt;
+        &lt;commons-lang3.version&gt;3.5&lt;/commons-lang3.version&gt;
+        &lt;jstl.version&gt;1.2&lt;/jstl.version&gt;
+        &lt;log4j.version&gt;1.2.17&lt;/log4j.version&gt;
+        &lt;servlet-api.version&gt;3.1.0&lt;/servlet-api.version&gt;
+        &lt;slf4j.version&gt;1.7.25&lt;/slf4j.version&gt;
+        &lt;spring.version&gt;4.3.17.RELEASE&lt;/spring.version&gt;
+    &lt;/properties&gt;
+
+    &lt;dependencyManagement&gt;
+        &lt;dependencies&gt;
+            &lt;!-- Spring Begin --&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-context&lt;/artifactId&gt;
+                &lt;version&gt;${spring.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt;
+                &lt;version&gt;${spring.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;!-- Spring End --&gt;
+
+            &lt;!-- Servlet Begin --&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;javax.servlet&lt;/groupId&gt;
+                &lt;artifactId&gt;javax.servlet-api&lt;/artifactId&gt;
+                &lt;version&gt;${servlet-api.version}&lt;/version&gt;
+                &lt;scope&gt;provided&lt;/scope&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;javax.servlet&lt;/groupId&gt;
+                &lt;artifactId&gt;jstl&lt;/artifactId&gt;
+                &lt;version&gt;${jstl.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;!-- Servlet End --&gt;
+
+            &lt;!-- Log Begin --&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+                &lt;artifactId&gt;slf4j-api&lt;/artifactId&gt;
+                &lt;version&gt;${slf4j.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+                &lt;artifactId&gt;slf4j-log4j12&lt;/artifactId&gt;
+                &lt;version&gt;${slf4j.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+                &lt;artifactId&gt;jcl-over-slf4j&lt;/artifactId&gt;
+                &lt;version&gt;${slf4j.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+                &lt;artifactId&gt;jul-to-slf4j&lt;/artifactId&gt;
+                &lt;version&gt;${slf4j.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;log4j&lt;/groupId&gt;
+                &lt;artifactId&gt;log4j&lt;/artifactId&gt;
+                &lt;version&gt;${log4j.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;!-- Log End --&gt;
+
+            &lt;!-- Commons Begin --&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.apache.commons&lt;/groupId&gt;
+                &lt;artifactId&gt;commons-lang3&lt;/artifactId&gt;
+                &lt;version&gt;${commons-lang3.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;!-- Commons End --&gt;
+        &lt;/dependencies&gt;
+    &lt;/dependencyManagement&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;!-- Compiler 插件, 设定 JDK 版本 --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.7.0&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;source&gt;${java.version}&lt;/source&gt;
+                    &lt;target&gt;${java.version}&lt;/target&gt;
+                    &lt;encoding&gt;${project.build.sourceEncoding}&lt;/encoding&gt;
+                    &lt;showWarnings&gt;true&lt;/showWarnings&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+
+        &lt;!-- 资源文件配置 --&gt;
+        &lt;resources&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;src/main/java&lt;/directory&gt;
+                &lt;excludes&gt;
+                    &lt;exclude&gt;**/*.java&lt;/exclude&gt;
+                &lt;/excludes&gt;
+            &lt;/resource&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;src/main/resources&lt;/directory&gt;
+            &lt;/resource&gt;
+        &lt;/resources&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre></div><p>PS：别忘记在 <code>my-shop</code> 工程的 <code>pom.xml</code> 中增加 <code>&lt;module&gt;my-shop-dependencies&lt;/module&gt;</code> 配置</p> <h2 id="创建通用的工具类"><a href="#创建通用的工具类" class="header-anchor">#</a> <strong>创建通用的工具类</strong></h2> <p>创建一个名为 <code>my-shop-commons</code> 的项目，<code>pom.xml</code> 文件如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;my-shop-dependencies&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../my-shop-dependencies/pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;my-shop-commons&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+
+    &lt;name&gt;my-shop-commons&lt;/name&gt;
+    &lt;description&gt;&lt;/description&gt;
+
+&lt;/project&gt;
+</code></pre></div><p>PS：别忘记在 <code>my-shop</code> 工程的 <code>pom.xml</code> 中增加 <code>&lt;module&gt;my-shop-commons&lt;/module&gt;</code> 配置</p> <h2 id="创建领域模型"><a href="#创建领域模型" class="header-anchor">#</a> <strong>创建领域模型</strong></h2> <p>创建一个名为 <code>my-shop-domain</code> 的项目，<code>pom.xml</code> 文件如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;my-shop-dependencies&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../my-shop-dependencies/pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;my-shop-domain&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+
+    &lt;name&gt;my-shop-domain&lt;/name&gt;
+    &lt;description&gt;&lt;/description&gt;
+
+&lt;/project&gt;
+</code></pre></div><p>PS：别忘记在 <code>my-shop</code> 工程的 <code>pom.xml</code> 中增加 <code>&lt;module&gt;my-shop-domain&lt;/module&gt;</code> 配置</p> <h2 id="创建管理后台"><a href="#创建管理后台" class="header-anchor">#</a> <strong>创建管理后台</strong></h2> <p>创建一个名为 <code>my-shop-web-admin</code> 的项目，<code>pom.xml</code> 文件如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;my-shop-dependencies&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../my-shop-dependencies/pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;my-shop-web-admin&lt;/artifactId&gt;
+    &lt;packaging&gt;war&lt;/packaging&gt;
+
+    &lt;name&gt;my-shop-web-admin&lt;/name&gt;
+    &lt;description&gt;&lt;/description&gt;
+
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.yky&lt;/groupId&gt;
+            &lt;artifactId&gt;my-shop-commons&lt;/artifactId&gt;
+            &lt;version&gt;${project.parent.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.yky&lt;/groupId&gt;
+            &lt;artifactId&gt;my-shop-domain&lt;/artifactId&gt;
+            &lt;version&gt;${project.parent.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+&lt;/project&gt;
+</code></pre></div><p>PS：别忘记在 <code>my-shop</code> 工程的 <code>pom.xml</code> 中增加 <code>&lt;module&gt;my-shop-web-admin&lt;/module&gt;</code> 配置</p> <h2 id="创建商城前端"><a href="#创建商城前端" class="header-anchor">#</a> <strong>创建商城前端</strong></h2> <p>创建一个名为 <code>my-shop-web-ui</code> 的项目，<code>pom.xml</code> 文件如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;my-shop-dependencies&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../my-shop-dependencies/pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;my-shop-web-ui&lt;/artifactId&gt;
+    &lt;packaging&gt;war&lt;/packaging&gt;
+
+    &lt;name&gt;my-shop-web-ui&lt;/name&gt;
+    &lt;description&gt;&lt;/description&gt;
+
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.yky&lt;/groupId&gt;
+            &lt;artifactId&gt;my-shop-commons&lt;/artifactId&gt;
+            &lt;version&gt;${project.parent.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+&lt;/project&gt;
+</code></pre></div><p>PS：别忘记在 <code>my-shop</code> 工程的 <code>pom.xml</code> 中增加 <code>&lt;module&gt;my-shop-web-ui&lt;/module&gt;</code> 配置</p> <h2 id="创建接口模块"><a href="#创建接口模块" class="header-anchor">#</a> <strong>创建接口模块</strong></h2> <p>创建一个名为 <code>my-shop-web-api</code> 的项目，<code>pom.xml</code> 文件如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;com.yky&lt;/groupId&gt;
+        &lt;artifactId&gt;my-shop-dependencies&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;relativePath&gt;../my-shop-dependencies/pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;my-shop-web-api&lt;/artifactId&gt;
+    &lt;packaging&gt;war&lt;/packaging&gt;
+
+    &lt;name&gt;my-shop-web-api&lt;/name&gt;
+    &lt;description&gt;&lt;/description&gt;
+
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.yky&lt;/groupId&gt;
+            &lt;artifactId&gt;my-shop-commons&lt;/artifactId&gt;
+            &lt;version&gt;${project.parent.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+&lt;/project&gt;
+</code></pre></div><p>PS：别忘记在 <code>my-shop</code> 工程的 <code>pom.xml</code> 中增加 <code>&lt;module&gt;my-shop-web-api&lt;/module&gt;</code> 配置</p> <h2 id="清理、编译、打包"><a href="#清理、编译、打包" class="header-anchor">#</a> <strong>清理、编译、打包</strong></h2> <p>至此一个完整的模块化工程创建完毕，此时的 Root 工程 <code>pom.xml</code> 文件如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;groupId&gt;com.yky&lt;/groupId&gt;
+    &lt;artifactId&gt;my-shop&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+    &lt;packaging&gt;pom&lt;/packaging&gt;
+
+    &lt;modules&gt;
+        &lt;module&gt;my-shop-dependencies&lt;/module&gt;
+        &lt;module&gt;my-shop-commons&lt;/module&gt;
+        &lt;module&gt;my-shop-domain&lt;/module&gt;
+        &lt;module&gt;my-shop-web-admin&lt;/module&gt;
+        &lt;module&gt;my-shop-web-ui&lt;/module&gt;
+        &lt;module&gt;my-shop-web-api&lt;/module&gt;
+    &lt;/modules&gt;
+&lt;/project&gt;
+</code></pre></div><p>我们可以在 Root 工程中使用 Maven 提供的 <code>mvn clean</code> 命令测试一下效果，控制台输出如下：</p> <div class="language- extra-class"><pre class="language-text"><code>[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] my-shop                                                            [pom]
+[INFO] my-shop-dependencies                                               [pom]
+[INFO] my-shop-commons                                                    [jar]
+[INFO] my-shop-domain                                                     [jar]
+[INFO] my-shop-web-admin                                                  [war]
+[INFO] my-shop-web-ui                                                     [war]
+[INFO] my-shop-web-api                                                    [war]
+[INFO] 
+[INFO] --------------------------&lt; com.yky:my-shop &gt;---------------------------
+[INFO] Building my-shop 1.0.0-SNAPSHOT                                    [1/7]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ my-shop ---
+[INFO] 
+[INFO] --------------------&lt; com.yky:my-shop-dependencies &gt;--------------------
+[INFO] Building my-shop-dependencies 1.0.0-SNAPSHOT                       [2/7]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ my-shop-dependencies ---
+[INFO] 
+[INFO] ----------------------&lt; com.yky:my-shop-commons &gt;-----------------------
+[INFO] Building my-shop-commons 1.0.0-SNAPSHOT                            [3/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ my-shop-commons ---
+[INFO] 
+[INFO] -----------------------&lt; com.yky:my-shop-domain &gt;-----------------------
+[INFO] Building my-shop-domain 1.0.0-SNAPSHOT                             [4/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ my-shop-domain ---
+[INFO] 
+[INFO] ---------------------&lt; com.yky:my-shop-web-admin &gt;----------------------
+[INFO] Building my-shop-web-admin 1.0.0-SNAPSHOT                          [5/7]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ my-shop-web-admin ---
+[INFO] 
+[INFO] -----------------------&lt; com.yky:my-shop-web-ui &gt;-----------------------
+[INFO] Building my-shop-web-ui 1.0.0-SNAPSHOT                             [6/7]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ my-shop-web-ui ---
+[INFO] 
+[INFO] ----------------------&lt; com.yky:my-shop-web-api &gt;-----------------------
+[INFO] Building my-shop-web-api 1.0.0-SNAPSHOT                            [7/7]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ my-shop-web-api ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for my-shop 1.0.0-SNAPSHOT:
+[INFO] 
+[INFO] my-shop ............................................ SUCCESS [  0.216 s]
+[INFO] my-shop-dependencies ............................... SUCCESS [  0.016 s]
+[INFO] my-shop-commons .................................... SUCCESS [  0.015 s]
+[INFO] my-shop-domain ..................................... SUCCESS [  0.016 s]
+[INFO] my-shop-web-admin .................................. SUCCESS [  0.000 s]
+[INFO] my-shop-web-ui ..................................... SUCCESS [  0.032 s]
+[INFO] my-shop-web-api .................................... SUCCESS [  0.031 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.503 s
+[INFO] Finished at: 2019-12-03T17:02:12+08:00
+[INFO] ------------------------------------------------------------------------
+
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2020年4月21日星期二凌晨12点37分</span></div></footer> <!----> </main> <!----></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/docs/assets/js/app.07c220e4.js" defer></script><script src="/docs/assets/js/2.921638eb.js" defer></script><script src="/docs/assets/js/7.81f19ebc.js" defer></script><script src="/docs/assets/js/3.318575c0.js" defer></script>
+  </body>
+</html>
