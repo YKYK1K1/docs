@@ -39,14 +39,14 @@
   执行之后，新的Maven本地存储库现在改为`D:/apache-maven-3.5.2/repo`
   
 
-  ![本地存储库位置](/assets/maven/yky_1573115273.png)
+  ![本地存储库位置](/docs/assets/maven/yky_1573115273.png)
   
 ## **Maven 中央仓库**
 ---
 
 当你建立一个Maven的项目，Maven会检查你的`pom.xml`,以确定哪些依赖下载。首先，Maven将从本地资源库获得Maven的本地资源库依赖资源，如果没有找到，然后把它会从默认的Maven中央存储库  http://repo1.maven.org/maven2/ 查找下载。
 
-![中央仓库地址](/assets/maven/yky_1511452924.png)
+![中央仓库地址](/docs/assets/maven/yky_1511452924.png)
 
 <br />
 
@@ -54,4 +54,4 @@
 
 <br />
 
-![maven依赖](/assets/maven/yky_20200520111258.png)
+![maven依赖](/docs/assets/maven/yky_20200520111258.png)

@@ -4,7 +4,7 @@
 
 <br />
 
-![](/assets/apache-shiro/yky_20200424145508674.png)
+![](/docs/assets/apache-shiro/yky_20200424145508674.png)
 
 <br />
 
@@ -12,7 +12,7 @@
 
 <br />
 
-![](/assets/apache-shiro/yky_20200424152851569.png)
+![](/docs/assets/apache-shiro/yky_20200424152851569.png)
 
 <br />
 

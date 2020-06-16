@@ -4,7 +4,7 @@
 
 <br />
 
-![](/assets/apache-shiro/yky_20200423151533733.png)
+![](/docs/assets/apache-shiro/yky_20200423151533733.png)
 
 <br />
 
@@ -34,7 +34,7 @@
 
 <br />
 
-![](/assets/apache-shiro/image4.jpeg)
+![](/docs/assets/apache-shiro/image4.jpeg)
 
 <br />
 
@@ -72,7 +72,7 @@
 ## **Shiro 核心组件**
 ---
 
-![](/assets/apache-shiro/yky_13495408237665.jpg)
+![](/docs/assets/apache-shiro/yky_13495408237665.jpg)
 
 - Shiro三大核心组件：Subject、Security Manager、Realms
     - Subject，表示待认证和授权的用户
@@ -83,7 +83,7 @@
         - CacheManager，缓存管理器
     - Realms，相当于 Shiro 进行认证和授权的数据源，充当了 Shiro 与安全数据之间的 "桥梁" 或者 "连接器"。也就是说，当对用户进行认证(登录)和授权（访问控制）验证时，Shiro 会用应用配置的 Realm 中查找用户及其权限信息 (也有多 Realms 配置)。
 
-![](/assets/apache-shiro/yky_20200423163414191.png)
+![](/docs/assets/apache-shiro/yky_20200423163414191.png)
 
 
 ## **RBAC模型**
@@ -105,7 +105,7 @@
 
 
 
-![](/assets/apache-shiro/image5.jpeg)
+![](/docs/assets/apache-shiro/image5.jpeg)
 
 
 
@@ -146,7 +146,7 @@
 
 > **简单了解，在对 shiro 有了完整得应用体验后可以重点了解！**
 
-![](/assets/aoache-shiro/image6.jpeg)
+![](/docs/assets/aoache-shiro/image6.jpeg)
 
 
 

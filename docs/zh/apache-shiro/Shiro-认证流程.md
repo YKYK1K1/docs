@@ -3,7 +3,7 @@
 ---
 <br />
 
-![认证流程图](/assets/apache-shiro/yky_20200424104531685.png)
+![认证流程图](/docs/assets/apache-shiro/yky_20200424104531685.png)
 
 <br />
 
@@ -25,7 +25,7 @@
 
 <br />
 
-![创建 Spring Boot 项目](/assets/apache-shiro/yky_20200601105756.png)
+![创建 Spring Boot 项目](/docs/assets/apache-shiro/yky_20200601105756.png)
 
 <br />
 
@@ -33,12 +33,12 @@
 
 <br />
 
-![创建 Spring Boot 项目](/assets/apache-shiro/yky_20200601110055.png)
+![创建 Spring Boot 项目](/docs/assets/apache-shiro/yky_20200601110055.png)
 
 <br />
 
 选择 Spring Boot 所需要的依赖 -> `Next`
-![创建 Spring Boot 项目](/assets/apache-shiro/yky_20200601110228.png)
+![创建 Spring Boot 项目](/docs/assets/apache-shiro/yky_20200601110228.png)
 
 <br />
 
@@ -46,7 +46,7 @@
 
 <br />
 
-![创建 Spring Boot 项目](/assets/apache-shiro/yky_20200601110401.png)
+![创建 Spring Boot 项目](/docs/assets/apache-shiro/yky_20200601110401.png)
 
 
 ### **整合 Druid 和 MyBatis**
@@ -97,7 +97,7 @@ mybatis:
 
 <br />
 
-![](/assets/apache-shiro/yky_20200601141615.png)
+![](/docs/assets/apache-shiro/yky_20200601141615.png)
 
 
 - 导入依赖

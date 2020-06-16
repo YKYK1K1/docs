@@ -18,7 +18,7 @@
 - 下载：http://shiro.apache.org/
 <br />
 
-![apache-shiro-logo](/assets/apache-shiro/apache-shiro-logo.png)
+![apache-shiro-logo](/docs/assets/apache-shiro/apache-shiro-logo.png)
 
 <br />
 
@@ -29,7 +29,7 @@
 
 <br />
 
-![apache-shiro-logo](/assets/apache-shiro/yky_20200522092437.jpeg)
+![apache-shiro-logo](/docs/assets/apache-shiro/yky_20200522092437.jpeg)
 
 <br />
 
@@ -58,7 +58,7 @@
     - 授权：对用户的权限进行检查(是否有对应的操作权限)
     - 流程示意图：
 
-    ![](/assets/apache-shiro/yky_20200522163822.png)
+    ![](/docs/assets/apache-shiro/yky_20200522163822.png)
 
 ## **安全框架**
 ---

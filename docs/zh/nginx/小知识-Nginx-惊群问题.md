@@ -21,7 +21,7 @@ CPU 任务调度
 
 ## 惊群效果图
 
-![](/assets/nginx/yky-20200510125604.png)
+![](/docs/assets/nginx/yky-20200510125604.png)
 
 > 注意：
 > 1.11.3 版本之后就没有惊群问题了，是 Nginx 里程碑版本 

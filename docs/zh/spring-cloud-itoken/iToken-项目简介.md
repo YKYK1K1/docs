@@ -42,7 +42,7 @@
 - 容器编排：Kubernetes
 
 ## **系统架构**
-![](/assets/spring-cloud-itoken/yky-2018072916110001.png)
+![](/docs/assets/spring-cloud-itoken/yky-2018072916110001.png)
 
 ## **服务规划**
 

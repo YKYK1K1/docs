@@ -12,11 +12,11 @@ MVC，即Mode模型，View视图，及Controller控制器，是应用于视图�
 -   Model处理后，将处理结果再交给Controller
 -   Controller再接到处理结果后，根据处理结果找到要作为向客户端的响应View页面。页面经渲染（数据填充）后，在发送给客户端。
 
-![MVC工作流程](/assets/mvc/yky-1827462833.png)
+![MVC工作流程](/docs/assets/mvc/yky-1827462833.png)
 
 ## **三层架构 + MVC 示意图**
 
-![MVC示意图](/assets/mvc/yky-1837462657.png)
+![MVC示意图](/docs/assets/mvc/yky-1837462657.png)
 
 ---
 

@@ -1,5 +1,5 @@
 # iToken 白皮书
-![](/assets/spring-cloud-itoken/yky-071316110001.png)
+![](/docs/assets/spring-cloud-itoken/yky-071316110001.png)
 
 ### **弹指间洞悉数字货币行情**
 
@@ -68,10 +68,10 @@ iToken 项目主要是为了解决一站式查看多家交易所交易价格的�
 - 【UGC 体系】- 完成用户体系和 UGC 机制，吸引更多的内容贡献者加入到整个生态体系中来，帮助整个社区生态贡献和完善具有高价值的内容和信息并获取等值回报；
 
 ### **iToken 业务架构图**
-![](/assets/spring-cloud-itoken/yky-201807130002.png)
+![](/docs/assets/spring-cloud-itoken/yky-201807130002.png)
 v1 版系统架构图
 
-![](/assets/spring-cloud-itoken/yky-1531495566.png)
+![](/docs/assets/spring-cloud-itoken/yky-1531495566.png)
 v2 版系统架构图
 
 ### **LT 及使用场景**
@@ -139,7 +139,7 @@ iToken 发行的代币名为 LT，发行主体是 Lusifer Limited。LT 是基于
 团队和早期投资者部分分 4 年锁仓，每年释放 25%。
 
 硬顶为 22000 ETH； 第一轮兑换比例为 1 ETH = 75000 LT， 锁定50%，分六个月按周线性释放（周内按照认购先后顺序，在不同日释放）； 第二轮兑换比例为 1 ETH = 45000 LT， 锁定20%，分三个月按周线性释放（周内按照认购先后顺序，在不同日释放）。
-![](/assets/spring-cloud-itoken/yky-1531497604.png)
+![](/docs/assets/spring-cloud-itoken/yky-1531497604.png)
 LT 代币分配
 
 ### **代币释放规划**
@@ -148,11 +148,11 @@ iToken 所有兑换的 ETH 将全部用于整个加密货币社区生态的建�
 - 产品研发：我们会将不少于 50% 的资金用于开发团队，包括对于多客户端开发的扩张，区块链开发力量的补充，整体系统架构和基础建设的改善，开发和协作工具的采购，以及安全保障成本；
 - 市场拓展：作为全球性项目，我们将持续投入大约 20% 的资金，用于市场和商务合作，以推进项目尽快被世界范围的用户所接受，以及和区块链世界的优秀团队达成合作；
 - 社区运营：剩余的 20% 资金将用于 iToken 的产品运营和社区维护，我们将建立完善的产品、运营和客户服务团队，积极连接社区，以实现高速的产品迭代和项目推进。
-![](/assets/spring-cloud-itoken/yky-1531497963.png)
+![](/docs/assets/spring-cloud-itoken/yky-1531497963.png)
 LT 代币释放规划
 
 ## **第五章 顾问机构**
-![](/assets/spring-cloud-itoken/yky-201807140001.png)
+![](/docs/assets/spring-cloud-itoken/yky-201807140001.png)
 Spectra Advisory 是 Spectra Ventures & Advisory（[www.spectragroup.io](www.spectragroup.io)）旗下的加密货币咨询服务机构，致力于为优秀的项目提供加密货币咨询服务。 Spectra Advisory 团队由加密货币领域从业者和一线 VC 机构风险投资从业者组成，具备跨界的组合能力和丰富的加密货币领域运作经验，服务范围覆盖中、日、韩、新加坡、东南亚、欧洲、美国。
 
 官方微信号：spectravc 官方 Telegram：spectravc

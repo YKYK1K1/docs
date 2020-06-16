@@ -10,7 +10,7 @@
 
 确保已安装JDK，并设置`JAVA_HOME`环境变量到Windows环境变量。
 
-![JAVA环境变量](/assets/maven/yky-1578321747.png)
+![JAVA环境变量](/docs/assets/maven/yky-1578321747.png)
 
 ## **下载 Apache Maven**
 ---
@@ -19,11 +19,11 @@
 
 <br />
 
-![Maven 官方下载安装包](/assets/maven/yky_1511451890.png)
+![Maven 官方下载安装包](/docs/assets/maven/yky_1511451890.png)
 
 下载 Maven 的 zip 文件，例如： apache-maven-3.5.2-bin.zip，将它解压到你要安装 Maven 的文件夹。假设你解压缩到文件夹 – D:\apache-maven-3.5.2
 
-![解压到本地 D盘 路径下](/assets/maven/yky_1511452022.png)
+![解压到本地 D盘 路径下](/docs/assets/maven/yky_1511452022.png)
 
 > 注意：在这一步，只是文件夹和文件，安装不是必需的。
 
@@ -34,7 +34,7 @@
 
 <br />
 
-![Maven环境变量](/assets/maven/yky-1576253781.png)
+![Maven环境变量](/docs/assets/maven/yky-1576253781.png)
 
 <br />
 
@@ -43,7 +43,7 @@
 
 <br />
 
-![添加到环境变量](/assets/maven/yky-1573111370.png)
+![添加到环境变量](/docs/assets/maven/yky-1573111370.png)
 
 
 ## **验证**

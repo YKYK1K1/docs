@@ -4,4 +4,4 @@
 
 set -e
 
-echo 'www.ykyk1k1.xyz' > docs/.vuepress/dist/CNAME
+# echo 'www.ykyk1k1.xyz' > docs/.vuepress/dist/CNAME

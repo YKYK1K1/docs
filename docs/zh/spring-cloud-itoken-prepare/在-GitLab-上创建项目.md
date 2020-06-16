@@ -1,15 +1,15 @@
 # **在 GitLab 上创建项目**
 ## **创建群组项目**
-![](/assets/spring-cloud-itoken-prepare/yky-1584266705.png)
-![](/assets/spring-cloud-itoken-prepare/yky-19276482384.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-1584266705.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-19276482384.png)
 **创建群组成功** 
-![](/assets/spring-cloud-itoken-prepare/yky-1231236612.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-1231236612.png)
 
 ## **创建统一的依赖管理**
-![](/assets/spring-cloud-itoken-prepare/yky-1827461273.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-1827461273.png)
 **添加默认的自述文件**
-![](/assets/spring-cloud-itoken-prepare/yky-1927461233.png)
-![](/assets/spring-cloud-itoken-prepare/yky-1917256312.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-1927461233.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-1917256312.png)
 ### pom.xml
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -325,9 +325,9 @@
 </project>
 ```
 **再次进入群组 选择 itoken**
-![](/assets/spring-cloud-itoken-prepare/yky-192736123.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-192736123.png)
 ## **创建 分布式控制中心 完善信息**
-![](/assets/spring-cloud-itoken-prepare/yky-102837612.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-102837612.png)
 ### **pom.xml**
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -476,7 +476,7 @@ public class ConfigApplication {
 }
 ```
 ## **创建 服务注册与发现 项目 完善信息**
-![](/assets/spring-cloud-itoken-prepare/yky-1982736123.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-1982736123.png)
 ### pom.xml
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -656,7 +656,7 @@ management:
 ```
 
 ## **创建 分布式链路追踪 项目 完善信息**
-![](/assets/spring-cloud-itoken-prepare/yky-123881272.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-123881272.png)
 ### pom.xml
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -834,7 +834,7 @@ management:
 ```
 
 ## **创建 分布式服务监控 项目 完善信息**
-![](/assets/spring-cloud-itoken-prepare/yky-181726312.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-181726312.png)
 ### pom.xml
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -986,7 +986,7 @@ management:
 ```
 
 ## **创建 路由网关 项目 完善信息**
-![](/assets/spring-cloud-itoken-prepare/yky-192731233.png)
+![](/docs/assets/spring-cloud-itoken-prepare/yky-192731233.png)
 ### pom.xml
 ```
 <?xml version="1.0" encoding="UTF-8"?>

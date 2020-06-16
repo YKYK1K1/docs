@@ -16,7 +16,7 @@
 
 <br />
 
-![](/assets/idea/yky_20200520092922.jpg)
+![](/docs/assets/idea/yky_20200520092922.jpg)
 
 <br />
 
@@ -24,7 +24,7 @@
 
 <br />
 
-![](/assets/idea/yky_20200520093426.jpg)
+![](/docs/assets/idea/yky_20200520093426.jpg)
 
 ## **选择工作空间**
 ---
@@ -33,7 +33,7 @@
 
 <br />
 
-![](/assets/idea/yky_20200520093625.jpg)
+![](/docs/assets/idea/yky_20200520093625.jpg)
 
 ## **配置 JDK**
 ---
@@ -41,7 +41,7 @@
 
 <br />
 
-![](/assets/idea/yky_20200520093803.jpg)
+![](/docs/assets/idea/yky_20200520093803.jpg)
 
 <br />
 
@@ -49,7 +49,7 @@
 
 <br />
 
-![](/assets/idea/yky_20200520094051.jpg)
+![](/docs/assets/idea/yky_20200520094051.jpg)
 
 ## **配置 Tomcat**
 ---
@@ -58,7 +58,7 @@
 
 <br />
 
-![](/assets/idea/yky_20200520094159.jpg)
+![](/docs/assets/idea/yky_20200520094159.jpg)
 
 <br />
 
@@ -66,7 +66,7 @@
 
 <br />
 
-![](/assets/idea/yky_20200520094246.jpg)
+![](/docs/assets/idea/yky_20200520094246.jpg)
 
 <br />
 
@@ -74,7 +74,7 @@
 
 <br />
 
-![](/assets/idea/yky_20200520094318.jpg)
+![](/docs/assets/idea/yky_20200520094318.jpg)
 
 ## **配置 Tomcat 本地部署**
 ---
@@ -83,11 +83,11 @@
 
 <br />
 
-![](/assets/idea/yky_20200520094457.jpg)
+![](/docs/assets/idea/yky_20200520094457.jpg)
 
 <br />
 
-![](/assets/idea/yky_20200520094535.jpg)
+![](/docs/assets/idea/yky_20200520094535.jpg)
 
 <br />
 
@@ -95,7 +95,7 @@
 
 <br />
 
-![](/assets/idea/yky_20200520094615.jpg)
+![](/docs/assets/idea/yky_20200520094615.jpg)
 
 ## **测试运行**
 ---
@@ -104,7 +104,7 @@
 
 <br />
 
-![](/assets/idea/yky_20200520094723.jpg)
+![](/docs/assets/idea/yky_20200520094723.jpg)
 
 <br />
 
@@ -118,7 +118,7 @@ $END$
 ---
 `com.XXX.项目名`
 
-![](/assets/idea/yky_20200520095523.png)
+![](/docs/assets/idea/yky_20200520095523.png)
 
 ## **测试输出**
 ---

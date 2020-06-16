@@ -6,7 +6,7 @@
 
 <br />
 
-![创建 Maven 项目](/assets/apache-shiro/yky_20200527110701.png)
+![创建 Maven 项目](/docs/assets/apache-shiro/yky_20200527110701.png)
 
 <br />
 
@@ -14,7 +14,7 @@
 
 <br />
 
-![填写项目信息](/assets/apache-shiro/yky_20200527111017.png)
+![填写项目信息](/docs/assets/apache-shiro/yky_20200527111017.png)
 
 <br />
 
@@ -22,7 +22,7 @@
 
 <br />
 
-![选择 Maven 依赖库](/assets/apache-shiro/yky_20200527112336.png)
+![选择 Maven 依赖库](/docs/assets/apache-shiro/yky_20200527112336.png)
 
 <br />
 
@@ -30,7 +30,7 @@
 
 <br />
 
-![选择工作空间](/assets/apache-shiro/yky_20200527111220.png)
+![选择工作空间](/docs/assets/apache-shiro/yky_20200527111220.png)
 
 <br />
 

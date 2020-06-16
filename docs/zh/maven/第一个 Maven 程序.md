@@ -11,7 +11,7 @@
 
 <br />
 
-![创建项目](/assets/maven/yky_1528025821.png)
+![创建项目](/docs/assets/maven/yky_1528025821.png)
 
 <br />
 
@@ -19,7 +19,7 @@
 
 <br />
 
-![创建maven项目](/assets/maven/yky_1573199544.png)
+![创建maven项目](/docs/assets/maven/yky_1573199544.png)
 
 <br />
 
@@ -27,7 +27,7 @@
 
 <br />
 
-![填项目信息](/assets/maven/yky_1573199700.png)
+![填项目信息](/docs/assets/maven/yky_1573199700.png)
 
 <br />
 
@@ -35,7 +35,7 @@
 
 <br />
 
-![创建项目](/assets/maven/yky_1573199996.png)
+![创建项目](/docs/assets/maven/yky_1573199996.png)
 
 <br />
 
@@ -43,7 +43,7 @@
 
 <br />
 
-![创建新窗口](/assets/maven/yky_1573200106.png)
+![创建新窗口](/docs/assets/maven/yky_1573200106.png)
 
 ## **目录结构**
 ---
@@ -75,7 +75,7 @@ Java Web的Maven基本结构如下:
 
 <br />
 
-![](/assets/maven/yky_1573200584.png)
+![](/docs/assets/maven/yky_1573200584.png)
 
 <br />
 
@@ -83,7 +83,7 @@ Java Web的Maven基本结构如下:
 
 <br />
 
-![](/assets/maven/yky_1573200610.png)
+![](/docs/assets/maven/yky_1573200610.png)
 
 <br />
 
@@ -91,7 +91,7 @@ Java Web的Maven基本结构如下:
 
 <br />
 
-![修改maven仓库路径](/assets/maven/yky_1573200710.png)
+![修改maven仓库路径](/docs/assets/maven/yky_1573200710.png)
 
 <br />
 
@@ -99,14 +99,14 @@ Java Web的Maven基本结构如下:
 
 <br />
 
-![全局maven仓库路径](/assets/maven/yky-1234522132.png)
+![全局maven仓库路径](/docs/assets/maven/yky-1234522132.png)
 
 ## **Idea Maven项目管理**
 ---
 
 在Idea界面的右侧 `Maven Projects` 选项，可以管理Maven项目的整个生命周期、插件、依赖等。
 
-![右侧项目菜单](/assets/maven/yky-123741238.png)
+![右侧项目菜单](/docs/assets/maven/yky-123741238.png)
 
 ## **完善Java Web 程序**
 ---
@@ -225,7 +225,7 @@ log4j.appender.file.layout.ConversionPattern=%d %p [%c] - %m%n
 ```
 ##  **配置 Tomcat**
 
-![tomcat](/assets/maven/yky-15734367557.png9)
+![tomcat](/docs/assets/maven/yky-15734367557.png9)
 
 ## **测试运行**
 按照之前章节 `第一个 IDEA 应用程序` 配置完 `Tomcat` 后直接运行，打开浏览器访问 http://localhost:8080 显示如下：

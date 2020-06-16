@@ -7,7 +7,7 @@
 
 <br />
 
-![](/assets/apache-shiro/yky_20200426143303884.png)
+![](/docs/assets/apache-shiro/yky_20200426143303884.png)
 
 <br />
 
@@ -15,7 +15,7 @@
 ---
 <br />
 
-![](/assets/apache-shiro/yky_20200427094830658.png)
+![](/docs/assets/apache-shiro/yky_20200427094830658.png)
 
 ## **数据库设计**
 ---

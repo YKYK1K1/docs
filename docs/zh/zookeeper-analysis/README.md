@@ -4,7 +4,7 @@ ZooKeeper 作为一个分布式协调服务，给出了在分布式环境下一�
 
 ## **ZooKeeper 基础知识基本分为三大模块**
 
-![](/assets/zookeeper-analysis/yky-20200510142631.png)
+![](/docs/assets/zookeeper-analysis/yky-20200510142631.png)
 
 - 数据模型
 - ACL 权限控制
@@ -40,10 +40,10 @@ create /servers
 create /works
 ```
 最终在 ZooKeeper 服务器上会得到一个具有层级关系的数据结构，如下图所示，这个数据结构就是 ZooKeeper 中的数据模型。
-![](/assets/zookeeper-analysis/yky-uAAAtBwGI74E989.png)
+![](/docs/assets/zookeeper-analysis/yky-uAAAtBwGI74E989.png)
 
 ZooKeeper 中的数据模型是一种树形结构，非常像电脑中的文件系统，有一个根文件夹，下面还有很多子文件夹。ZooKeeper 的数据模型也具有一个固定的根节点（`/`），我们可以在根节点下创建子节点，并在子节点下继续创建下一级节点。ZooKeeper 树中的每一层级用斜杠（`/`）分隔开，且只能用绝对路径（如“`get /work/task1`”）的方式查询 ZooKeeper 节点，而不能使用相对路径。具体的结构你可以看看下面这张图：
-![](/assets/zookeeper-analysis/yky-AABFGHyGNc950.png)
+![](/docs/assets/zookeeper-analysis/yky-AABFGHyGNc950.png)
 
 ## **znode 节点类型与特性**
 知道了 ZooKeeper 的数据模型是一种树形结构，就像在 MySQL 中数据是存在于数据表中，ZooKeeper 中的数据是由多个数据节点最终构成的一个层级的树状结构，和我们在创建 MySOL 数据表时会定义不同类型的数据列字段，ZooKeeper 中的数据节点也分为持久节点、临时节点和有序节点三种类型：
@@ -55,7 +55,7 @@ ZooKeeper 中的数据模型是一种树形结构，非常像电脑中的文件�
 接下来我们来介绍临时节点。从名称上我们可以看出该节点的一个最重要的特性就是临时性。所谓临时性是指，如果将节点创建为临时节点，那么该节点数据不会一直存储在 ZooKeeper 服务器上。当创建该临时节点的客户端会话因超时或发生异常而关闭时，该节点也相应在 ZooKeeper 服务器上被删除。同样，我们可以像删除持久节点一样主动删除临时节点。
 
 在平时的开发中，我们可以利用临时节点的这一特性来做服务器集群内机器运行情况的统计，将集群设置为“/servers”节点，并为集群下的每台服务器创建一个临时节点“/servers/host”，当服务器下线时该节点自动被删除，最后统计临时节点个数就可以知道集群中的运行情况。如下图所示：
-![](/assets/zookeeper-analysis/yky-AABQBLohKvo019.png)
+![](/docs/assets/zookeeper-analysis/yky-AABQBLohKvo019.png)
 
 3. 有序节点
 最后我们再说一下有序节点，其实有序节点并不算是一种单独种类的节点，而是在之前提到的持久节点和临时节点特性的基础上，增加了一个节点有序的性质。所谓节点有序是说在我们创建有序节点的时候，ZooKeeper 服务器会自动使用一个单调递增的数字作为后缀，追加到我们创建节点的后边。例如一个客户端创建了一个路径为 works/task- 的有序节点，那么 ZooKeeper 将会生成一个序号并追加到该节点的路径后，最后该节点的路径为 works/task-1。通过这种方式我们可以直观的查看到节点的创建顺序。
@@ -67,11 +67,11 @@ ZooKeeper 中的数据模型是一种树形结构，非常像电脑中的文件�
 ## **节点的状态结构**
 每个节点都有属于自己的状态信息，这就很像我们每个人的身份信息一样，我们打开之前的客户端，执行 stat /zk_test，可以看到控制台输出了一些信息，这些就是节点状态信息。
 
-![节点状态信息](/assets/zookeeper-analysis/yky-AABsJSpQkFI688.png)
+![节点状态信息](/docs/assets/zookeeper-analysis/yky-AABsJSpQkFI688.png)
 
 每一个节点都有一个自己的状态属性，记录了节点本身的一些信息，这些属性包括的内容我列在了下面这个表格里：
 
-![节点状态信息属性表](/assets/zookeeper-analysis/yky-AAC_yMQVCFo712.png)
+![节点状态信息属性表](/docs/assets/zookeeper-analysis/yky-AAC_yMQVCFo712.png)
 
 ## **数据节点的版本**
 这里我们重点讲解一下版本相关的属性，在 ZooKeeper 中为数据节点引入了版本的概念，每个数据节点有 3 种类型的版本信息，对数据节点的任何更新操作都会引起版本号的变化。ZooKeeper 的版本信息表示的是对节点数据内容、子节点信息或者是 ACL 信息的修改次数。
@@ -90,11 +90,11 @@ ZooKeeper 中的数据模型是一种树形结构，非常像电脑中的文件�
 
 线程 a 通过成功创建 ZooKeeper 节点“/locks”的方式获取锁后继续执行，如下图所示：
 
-![](/assets/zookeeper-analysis/yky-AAnymAAB32xbrhxQ973.png)
+![](/docs/assets/zookeeper-analysis/yky-AAnymAAB32xbrhxQ973.png)
 
 这时进程 b 也要访问临界区资源，于是进程 b 也尝试创建“/locks”节点来获取锁，因为之前进程 a 已经创建该节点，所以进程 b 创建节点失败无法获得锁。
 
-![](/assets/zookeeper-analysis/yky-AOIONAAB3daUjikw147.png)
+![](/docs/assets/zookeeper-analysis/yky-AOIONAAB3daUjikw147.png)
 
 这样就实现了一个简单的悲观锁，不过这也有一个隐含的问题，就是当进程 a 因为异常中断导致 /locks 节点始终存在，其他线程因为无法再次创建节点而无法获取锁，这就产生了一个死锁问题。针对这种情况我们可以通过将节点设置为临时节点的方式避免。并通过在服务器端添加监听事件来通知其他进程重新获取锁。
 
@@ -107,7 +107,7 @@ ZooKeeper 中的数据模型是一种树形结构，非常像电脑中的文件�
 
 在 ZooKeeper 的底层实现中，当服务端处理 setDataRequest 请求时，首先会调用 checkAndIncVersion 方法进行数据版本校验。ZooKeeper 会从 setDataRequest 请求中获取当前请求的版本 version，同时通过 getRecordForPath 方法获取服务器数据记录 nodeRecord， 从中得到当前服务器上的版本信息 currentversion。如果 version 为 -1，表示该请求操作不使用乐观锁，可以忽略版本对比；如果 version 不是 -1，那么就对比 version 和 currentversion，如果相等，则进行更新操作，否则就会抛出 BadVersionException 异常中断操作。
 
-![](/assets/zookeeper-analysis/yky-AZzwGAABPrrtajyI575.png)
+![](/docs/assets/zookeeper-analysis/yky-AZzwGAABPrrtajyI575.png)
 
 ## **总结**
 本节课主要介绍了ZooKeeper的基础知识点——数据模型。并深入介绍了节点类型、stat 状态属性等知识，并利用目前学到的知识解决了集群中服务器运行情况统计、悲观锁、乐观锁等问题。这些知识对接下来的课程至关重要，请务必掌握。

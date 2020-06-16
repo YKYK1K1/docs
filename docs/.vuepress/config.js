@@ -5,7 +5,7 @@ const navConf = require("./config/navConf")
 
 
 module.exports = {
-    // base: '/docs/',
+    base: '/docs/',
     title: "七伊",
     theme: 'antdocs',
     description: "七伊的博客",
