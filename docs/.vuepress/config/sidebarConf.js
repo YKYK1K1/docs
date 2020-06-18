@@ -12,12 +12,19 @@ module.exports = {
             collapsable: false,
             children: [
                 { title: '走向单体地狱', path: '走向单体地狱' },
-                { title: 'GitFlow 工作流指南', path: 'GitFlow-工作流指南' },
                 { title: '微服务解决复杂问题', path: '微服务解决复杂问题' },
                 { title: '再谈谈微服务', path: '再谈谈微服务' },
                 { title: 'Spring Cloud iToken', path: 'Spring-Cloud-iToken' },
                 { title: 'Nginx', path: 'Nginx' },
                 { title: 'ZooKeeper 源码分析与实战', path: 'Zookeeper-源码分析与实战' },
+            ]
+        },
+        {
+            title: '管理',
+            collapsable: false,
+            children: [
+                {title:'平台',path:'平台管理'},
+                { title: 'GitFlow 工作流指南', path: 'GitFlow-工作流指南' },
             ]
         },
         {
@@ -28,17 +35,6 @@ module.exports = {
                 { title: 'Spring Security oAuth2', path: 'Spring-Security-oAuth2' },
             ]
         }
-       
-
-    ],
-    '/zh/changelog/':[
-        {
-            title: 'Change Log',
-            collapsable: false,
-            children: [
-                { title: '最近更新', path: '/zh/changelog/' }
-            ]
-        },
     ],
     '/zh/idea/': [
         {
@@ -264,6 +260,29 @@ module.exports = {
                 { title: 'Remember Me', path: 'RememberMe' },  
             ]
         },
-    ]
+    ],
+    '/zh/nexus/':[
+        {
+            title: 'Nexus - 依赖管理平台',
+            collapsable: false,
+            children: [
+                { title: '什么是 Nexus ？', path: '/zh/nexus/' },
+                { title: '基于 Docker 安装 Nexus', path: '基于-Docker-安装-Nexus' },
+                { title: 'Maven 仓库介绍', path: 'Maven-仓库介绍' },
+                { title: '在项目中使用 Maven 私服', path: '在项目中使用-Maven-私服' },
+                { title: 'Maven 私服 Nexus 的好处', path: 'Maven-私服-Nexus-的好处' },
+            ]
+        }
+    ],
+    '/zh/changelog/':[
+        {
+            title: 'Change Log',
+            collapsable: false,
+            children: [
+                { title: '最近更新', path: '/zh/changelog/' },
+                { title: '2020 年 05 月', path: '2020-05' }
+            ]
+        },
+    ],
 
 }
