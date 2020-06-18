@@ -262,32 +262,56 @@ self.__precacheManifest = [
     "revision": "7ccf7d1c1aea4631dda63d2a402be5a0"
   },
   {
-    "url": "assets/js/100.31f4f587.js",
-    "revision": "a6409bc30f46eabb95ebc5510e99b941"
+    "url": "assets/js/100.18cca3a3.js",
+    "revision": "3c301b94d179717910389cd1ca152bf7"
   },
   {
-    "url": "assets/js/101.3a5d09ab.js",
-    "revision": "650019b9caf919b5b51a51af871ce501"
+    "url": "assets/js/101.98092418.js",
+    "revision": "b7627ce7b6a63ca4099465ffd7550717"
   },
   {
-    "url": "assets/js/102.3f4bdca5.js",
-    "revision": "b3e5d0b66e890d365579dfa416ea1aed"
+    "url": "assets/js/102.3a15ff39.js",
+    "revision": "8e3217a5a1f12286a6af2593d68ec165"
   },
   {
-    "url": "assets/js/103.d3ea5566.js",
-    "revision": "ebc2218ceb1db243f52fb8ced8c48394"
+    "url": "assets/js/103.8d673712.js",
+    "revision": "ebc6bcd7d80e40037bff054bcad53791"
   },
   {
-    "url": "assets/js/104.c21ffabf.js",
-    "revision": "3958b564d2313f5d2e32b6dc3205c70a"
+    "url": "assets/js/104.6cdd514a.js",
+    "revision": "7296ed0b184a5202cfc865c75a65b6ef"
   },
   {
-    "url": "assets/js/105.2b0c1d17.js",
-    "revision": "cae5d8d57d334a1f2915f29ab1d4fc61"
+    "url": "assets/js/105.938ba79b.js",
+    "revision": "951eea012a10316ae9b03feb20bbd4e0"
+  },
+  {
+    "url": "assets/js/106.772e67b5.js",
+    "revision": "16b779dd96dbd5701564a5ba9e77b43c"
+  },
+  {
+    "url": "assets/js/107.51763d1c.js",
+    "revision": "acfaadb769acaaf4e864e8d34ff8fb3b"
+  },
+  {
+    "url": "assets/js/108.febf13fe.js",
+    "revision": "1395b9fe99987149f576675c31fdd699"
+  },
+  {
+    "url": "assets/js/109.a1dd45b0.js",
+    "revision": "f1fb8cd83a15fe64bb1c14e2f8980089"
   },
   {
     "url": "assets/js/11.04529c8f.js",
     "revision": "42326803c321ecc2cf7e94c6da93447f"
+  },
+  {
+    "url": "assets/js/110.25e56e43.js",
+    "revision": "6bd67db7c5c8859e9b5476450fa05603"
+  },
+  {
+    "url": "assets/js/111.705b3701.js",
+    "revision": "78c83273c0bafe1ee95d332e8f448ab8"
   },
   {
     "url": "assets/js/12.3f1edc2d.js",
@@ -326,12 +350,12 @@ self.__precacheManifest = [
     "revision": "241385b3dbb5935aef1c670f7d4b6331"
   },
   {
-    "url": "assets/js/20.fbd38832.js",
-    "revision": "4fdafff702612c79ac0c1363b5040c9e"
+    "url": "assets/js/20.70f207ac.js",
+    "revision": "88df09ca707823ee51c8e4aa36666adb"
   },
   {
-    "url": "assets/js/21.470029c0.js",
-    "revision": "76d3028e4f1877857b90da5ef6bfb1c3"
+    "url": "assets/js/21.b23767cc.js",
+    "revision": "d55771bdc4a9508680ef6e175493e76c"
   },
   {
     "url": "assets/js/22.724bec9d.js",
@@ -358,16 +382,16 @@ self.__precacheManifest = [
     "revision": "b9959db5be2b6abd4ef7e8b63f28201f"
   },
   {
-    "url": "assets/js/28.d47473d1.js",
-    "revision": "db6105faafc1851c83d399ba7a407369"
+    "url": "assets/js/28.d4c32400.js",
+    "revision": "a200bb3ba265015c904694e03dd83a47"
   },
   {
-    "url": "assets/js/29.fd63b927.js",
-    "revision": "37f484ee662e0e7af838d36515a606f4"
+    "url": "assets/js/29.0e90262d.js",
+    "revision": "5bae2aa1259d03c9f2414c4f225eaaef"
   },
   {
-    "url": "assets/js/3.318575c0.js",
-    "revision": "39126e0ed15a4afe3afdd4993e7bb712"
+    "url": "assets/js/3.38ac8f19.js",
+    "revision": "776f5fccc4e74e5df95d68a2e9f55435"
   },
   {
     "url": "assets/js/30.cf3b7db3.js",
@@ -390,28 +414,28 @@ self.__precacheManifest = [
     "revision": "a746fc22aa71a8251857f705975aa338"
   },
   {
-    "url": "assets/js/35.507f9dfd.js",
-    "revision": "9e142fe1d675e9652dbdd9921d305317"
+    "url": "assets/js/35.f8ff5a47.js",
+    "revision": "e8fc48993bbb64299762d0c5c779e3da"
   },
   {
-    "url": "assets/js/36.e5482636.js",
-    "revision": "4497d02fc0a46917a022d95fa7833359"
+    "url": "assets/js/36.3a86d332.js",
+    "revision": "55a07a8fae4085ddae43f70cf44fbb44"
   },
   {
-    "url": "assets/js/37.68cee4f7.js",
-    "revision": "423fa680ba32156b1cce872bb634913a"
+    "url": "assets/js/37.6f164a57.js",
+    "revision": "c0a4e1e3d4d61bbe9100aea6f96df772"
   },
   {
-    "url": "assets/js/38.42c35705.js",
-    "revision": "9fac019198a9d014145093d2b4b78019"
+    "url": "assets/js/38.92c6b404.js",
+    "revision": "8e7d738fe286a14420a6dfd42cfc4169"
   },
   {
     "url": "assets/js/39.6559180a.js",
     "revision": "4fcc9367d338399a663aa4e5b3a47bcc"
   },
   {
-    "url": "assets/js/4.e559a794.js",
-    "revision": "18d57e129deef61cf84625b4ff13bf4b"
+    "url": "assets/js/4.11350ab7.js",
+    "revision": "fa5ab16ff696b38c9fbe1f31885fcddb"
   },
   {
     "url": "assets/js/40.512d1e10.js",
@@ -426,8 +450,8 @@ self.__precacheManifest = [
     "revision": "b46d2c334a40ee376ef3b6db4253882f"
   },
   {
-    "url": "assets/js/43.bff16cb4.js",
-    "revision": "bdc5e84606232a9d0174f5ada048140e"
+    "url": "assets/js/43.84109dc8.js",
+    "revision": "84c43ddbe389a6075462112c0a15cccc"
   },
   {
     "url": "assets/js/44.b460ef45.js",
@@ -450,228 +474,228 @@ self.__precacheManifest = [
     "revision": "daaf5949821d72df3af563a6cd7a9af5"
   },
   {
-    "url": "assets/js/49.234d192b.js",
-    "revision": "5750a87dfc1053f326ef9f398ce592c5"
+    "url": "assets/js/49.b27f9bab.js",
+    "revision": "ee1cecd2b966de41a2342ce001710b5e"
   },
   {
     "url": "assets/js/5.2db0d042.js",
     "revision": "ff491f2c5cd03de8285662c31654f212"
   },
   {
-    "url": "assets/js/50.741634c5.js",
-    "revision": "7fb2482fcb865283e58db0b8e14c9af9"
+    "url": "assets/js/50.85e06373.js",
+    "revision": "7131f5636be9b325f20738e423e761fd"
   },
   {
-    "url": "assets/js/51.f242ba1d.js",
-    "revision": "49b54ddd4ad7d0155a6e62adb5429d6c"
+    "url": "assets/js/51.9a3843d7.js",
+    "revision": "8b48aaac5de1845488fd7422bb052bad"
   },
   {
-    "url": "assets/js/52.30ed35db.js",
-    "revision": "dbd2cf8e2ab6085b24ef7c984c47d947"
+    "url": "assets/js/52.b8e4bc18.js",
+    "revision": "158dd6ada67ed5b883c0ea9a61fd6a5d"
   },
   {
-    "url": "assets/js/53.5437bd2b.js",
-    "revision": "c357cfc2887a4adf066e6719d74b6148"
+    "url": "assets/js/53.267c3ba7.js",
+    "revision": "03a4d566cb20762b5f2fb9bf53664c94"
   },
   {
-    "url": "assets/js/54.196cb688.js",
-    "revision": "81ad087a9ad38ba18412fd658bf71187"
+    "url": "assets/js/54.033977e5.js",
+    "revision": "331fa5738ae2f551fbfda26cea87abc8"
   },
   {
-    "url": "assets/js/55.3f4939ce.js",
-    "revision": "9a41fd9120f2c8c7bf170a8142325190"
+    "url": "assets/js/55.7de8f365.js",
+    "revision": "8452c84b2c6bfbec3ca00de453b74df5"
   },
   {
-    "url": "assets/js/56.f0db9799.js",
-    "revision": "f6b24e3983e01083a98bdc7298d20cc0"
+    "url": "assets/js/56.62206535.js",
+    "revision": "f28d3aea44e38dfcbbc3dbf4276e63e7"
   },
   {
-    "url": "assets/js/57.98aed42e.js",
-    "revision": "ded7e61510b8d25033eb661273a395a7"
+    "url": "assets/js/57.acb2afd9.js",
+    "revision": "e2f06c5f1bea8bb53db0aee20348beb5"
   },
   {
-    "url": "assets/js/58.23ae6264.js",
-    "revision": "448cc310ea24ecda32eed92a28e09685"
+    "url": "assets/js/58.208d40aa.js",
+    "revision": "c129ece220506a4a74b6e9400a659d01"
   },
   {
-    "url": "assets/js/59.4d070ee9.js",
-    "revision": "4ce636c2b74c182c780a52cc0f0f2f27"
+    "url": "assets/js/59.fb3f0b8b.js",
+    "revision": "75c4d53cda5f023a2e4bb4473866b0b4"
   },
   {
-    "url": "assets/js/6.94a10221.js",
-    "revision": "7d619b722339929694c4e38f2a35b160"
+    "url": "assets/js/6.35e71b54.js",
+    "revision": "6f747ac1a2ecd1cfa6d08b07138c35e1"
   },
   {
-    "url": "assets/js/60.7d981c9a.js",
-    "revision": "c08de16f70c86858bd1fb00739d41bd3"
+    "url": "assets/js/60.c13bf9e7.js",
+    "revision": "c354920c7450ece96fc0007186581b0e"
   },
   {
-    "url": "assets/js/61.7fcf795a.js",
-    "revision": "c0f1a7dd3200980fbc96dd32c08e75ce"
+    "url": "assets/js/61.7a7bd54e.js",
+    "revision": "f29b75081efa51151c6e645660493f0c"
   },
   {
-    "url": "assets/js/62.eaca034c.js",
-    "revision": "93c723392e86568ffdfd07e3d29f5f14"
+    "url": "assets/js/62.ae292538.js",
+    "revision": "a339a2c74d6799b77d2f98d67bfcb6ac"
   },
   {
-    "url": "assets/js/63.91a6fb3a.js",
-    "revision": "4b73b6ad287c81fc0588f8f78e39b63d"
+    "url": "assets/js/63.f37f6321.js",
+    "revision": "f746b8b1a9fd30e952ba50e9ad9aa8f8"
   },
   {
-    "url": "assets/js/64.f1bb51af.js",
-    "revision": "c18d1fcfce57d50651fe4df9933bf4e9"
+    "url": "assets/js/64.fece8ec5.js",
+    "revision": "16152f5d4656eda73c8b04e1a03c8952"
   },
   {
-    "url": "assets/js/65.3e74438f.js",
-    "revision": "4719c86497eb3ddaff4e1322f3ef80ac"
+    "url": "assets/js/65.6ecb9849.js",
+    "revision": "590902beefa50d2cf404458e507f60c4"
   },
   {
-    "url": "assets/js/66.28305fb6.js",
-    "revision": "93746c67c7123e1a9044d38a5ffd9c15"
+    "url": "assets/js/66.dd60e778.js",
+    "revision": "e5e3c6f96390952cb15476590ef55d49"
   },
   {
-    "url": "assets/js/67.e0e26571.js",
-    "revision": "3ed4fc43adcf433ef95f65e9057768b3"
+    "url": "assets/js/67.4893cb78.js",
+    "revision": "e2471311c53f1b40f0224fb6e7143a54"
   },
   {
-    "url": "assets/js/68.e071d5d9.js",
-    "revision": "8b3124313c9731e1bae7cbe2ca733cc6"
+    "url": "assets/js/68.350f4682.js",
+    "revision": "9011ec515a2858c1ae66b8d5d5e17837"
   },
   {
-    "url": "assets/js/69.67124035.js",
-    "revision": "647aa766807b39059cfb068909c24eb3"
+    "url": "assets/js/69.a74c1848.js",
+    "revision": "f36cb6c9e63d4159f1c2ba399117e330"
   },
   {
-    "url": "assets/js/7.81f19ebc.js",
-    "revision": "6da0062f5bdd6fcada2ee0e080e00d80"
+    "url": "assets/js/7.77865348.js",
+    "revision": "fcb69728d0f52505a91accfa35ff505d"
   },
   {
-    "url": "assets/js/70.87f611d5.js",
-    "revision": "2c06cf2786ef6361e1203af08efb355e"
+    "url": "assets/js/70.ffc7d3d1.js",
+    "revision": "509b6c79ef6faeda9eb282e5a743db0f"
   },
   {
-    "url": "assets/js/71.01f0c5ba.js",
-    "revision": "117c0191d8235057fa325558342b8c9e"
+    "url": "assets/js/71.7799fa1f.js",
+    "revision": "5f48f554c2dfc9ddc3cd81573d704dc2"
   },
   {
-    "url": "assets/js/72.43832bbd.js",
-    "revision": "c6cf52c1325797626fdac83492644ac4"
+    "url": "assets/js/72.d39e1f2c.js",
+    "revision": "26ea5737f4383fbd5a8adb3428189ae9"
   },
   {
-    "url": "assets/js/73.fb03e2ae.js",
-    "revision": "9579b443f33febae86f843419a324ab4"
+    "url": "assets/js/73.fd858676.js",
+    "revision": "2a38d56b1e536b51044f4f5319619861"
   },
   {
-    "url": "assets/js/74.a075a286.js",
-    "revision": "193049dd6b5c8cf6a5d50968fbd4164f"
+    "url": "assets/js/74.26922735.js",
+    "revision": "295dc90df875057d8ccd44fe9af612a4"
   },
   {
-    "url": "assets/js/75.e8953cff.js",
-    "revision": "6793a2dbfbfeaafccc3cb7faa06840a5"
+    "url": "assets/js/75.79e61785.js",
+    "revision": "e4defc72e693ce04f16286bf09f8e0e8"
   },
   {
-    "url": "assets/js/76.80364208.js",
-    "revision": "9d4ed8fef4f27aacfcd37cdbac1e8ca1"
+    "url": "assets/js/76.c0a40a8e.js",
+    "revision": "3fb745330b83853214903aedcc17dda4"
   },
   {
-    "url": "assets/js/77.1c348a0f.js",
-    "revision": "b73f793a7883bba044c2600b560fafd6"
+    "url": "assets/js/77.bb7199f4.js",
+    "revision": "1e67f1a81bd290ecc6d4015f371526ad"
   },
   {
-    "url": "assets/js/78.7c98b4e1.js",
-    "revision": "8804423cab74c7fc98f8813686ecd487"
+    "url": "assets/js/78.3a055c70.js",
+    "revision": "c530c23354b2c59d2f58e564b89cc52c"
   },
   {
-    "url": "assets/js/79.f11cbac6.js",
-    "revision": "d9bb3bf838201ede977aaf164ffe9e94"
+    "url": "assets/js/79.c96c91af.js",
+    "revision": "5ac87d7c3cdcdde3a7cbd599dce6dbf2"
   },
   {
-    "url": "assets/js/8.db2b4fcb.js",
-    "revision": "52fb85bc4dcad9a96b2551f8200f81ae"
+    "url": "assets/js/8.a98dab0c.js",
+    "revision": "ef6a8889940ff1dc2e90f47c46541b05"
   },
   {
-    "url": "assets/js/80.51439a0f.js",
-    "revision": "e1b1c19b81db8f1b7b3d01443b90b465"
+    "url": "assets/js/80.cf6a38fd.js",
+    "revision": "9417184de5e36c68f4a72a94146437d2"
   },
   {
-    "url": "assets/js/81.15cbd757.js",
-    "revision": "18b1ee8e7eef098f3d83ba517c7b2177"
+    "url": "assets/js/81.00eae050.js",
+    "revision": "fde055bcea9f1ae147eb909d80cd2ff2"
   },
   {
-    "url": "assets/js/82.92f02c4a.js",
-    "revision": "8f4db92db9009c9a8829f28f0bb3aaea"
+    "url": "assets/js/82.d177437c.js",
+    "revision": "abc3f369b0ea45c0fe19d27fe77dc07d"
   },
   {
-    "url": "assets/js/83.e5515407.js",
-    "revision": "b0fc0dd8c162fda3f735f4dee13def0e"
+    "url": "assets/js/83.0a85de52.js",
+    "revision": "1c385218669b1e2307ffcf185fd3b70d"
   },
   {
-    "url": "assets/js/84.8b2222cd.js",
-    "revision": "18aa3662875a4a06d772b3df89fbf611"
+    "url": "assets/js/84.45a6d8ad.js",
+    "revision": "e6acb9f56b40e135fd1620cdc4a7c6db"
   },
   {
-    "url": "assets/js/85.e6c5ecde.js",
-    "revision": "d4b27b7143198d44db1a8cf1d66653f3"
+    "url": "assets/js/85.215b6e7a.js",
+    "revision": "fa0ba7fdda77eec21e747fbce97e7bea"
   },
   {
-    "url": "assets/js/86.efd7b9af.js",
-    "revision": "c46f0c39520c769e6b54722cfe604589"
+    "url": "assets/js/86.c141f2e5.js",
+    "revision": "f18ee18010ad171842143e19a9e1b191"
   },
   {
-    "url": "assets/js/87.2064fade.js",
-    "revision": "a214ab9af01ab0441ed27963e899dc58"
+    "url": "assets/js/87.667b398e.js",
+    "revision": "993a8de22365e2e3ef5d488bf35fc71b"
   },
   {
-    "url": "assets/js/88.a923a517.js",
-    "revision": "f6985de7e194a70cb911885e65f17fa6"
+    "url": "assets/js/88.03b42cff.js",
+    "revision": "52554bc3e3fdb68115e83e7a93198ac6"
   },
   {
-    "url": "assets/js/89.955c01c2.js",
-    "revision": "369d4df5b4a17a6ff290ba18b5d794dc"
+    "url": "assets/js/89.62956965.js",
+    "revision": "c088bee9d5d07c774ba306022a665ce7"
   },
   {
     "url": "assets/js/9.d4c0e7b4.js",
     "revision": "2783c77a8ec846c2864e13c0d7f04983"
   },
   {
-    "url": "assets/js/90.8db6e761.js",
-    "revision": "ff2f0f3aeb32b375d7e48ca7b07c82b4"
+    "url": "assets/js/90.efba7245.js",
+    "revision": "43caff201f87952a71df3b0a9b449954"
   },
   {
-    "url": "assets/js/91.beaefdae.js",
-    "revision": "945cebefec94a1007caf6d540836cc53"
+    "url": "assets/js/91.5f6ffa76.js",
+    "revision": "8297bf7f97bca79303eb95a17662d1e5"
   },
   {
-    "url": "assets/js/92.10535c11.js",
-    "revision": "dec8801c177694152bf32fd7bf8a14fc"
+    "url": "assets/js/92.f35e42a2.js",
+    "revision": "dc15b7d242742a281c10dd1899c70bdb"
   },
   {
-    "url": "assets/js/93.098ec0d4.js",
-    "revision": "a94ef40f05c5dc039d0daf3741ef5840"
+    "url": "assets/js/93.25033592.js",
+    "revision": "3c013668363d8675ef74235b9839ea69"
   },
   {
-    "url": "assets/js/94.f664308d.js",
-    "revision": "7981c0c0bc84d521850f3ffd47d78e7f"
+    "url": "assets/js/94.5543d738.js",
+    "revision": "56687518e0649f14916122c4a7fff671"
   },
   {
-    "url": "assets/js/95.f0bc778c.js",
-    "revision": "df8b05dcb35163fe95eca641b8595b91"
+    "url": "assets/js/95.32733803.js",
+    "revision": "8262f9581a32a38d7c93274af53ef577"
   },
   {
-    "url": "assets/js/96.708f53d2.js",
-    "revision": "b093f20ac02b8c68b7c727848412195e"
+    "url": "assets/js/96.932abcd0.js",
+    "revision": "db1bef3b0baa01ce2646bac3b007079e"
   },
   {
-    "url": "assets/js/97.cb6a5ec0.js",
-    "revision": "b89d23d9c18496117e89ec194b37d796"
+    "url": "assets/js/97.596723ad.js",
+    "revision": "31f58978621304793af4b31797f7e43a"
   },
   {
-    "url": "assets/js/98.f2d832aa.js",
-    "revision": "64998cea553011f4d23dcbe008144203"
+    "url": "assets/js/98.4ebd092d.js",
+    "revision": "133292b9444dec7d893c136b6c5c1632"
   },
   {
-    "url": "assets/js/99.aa46a8d2.js",
-    "revision": "583bac9178061ae1f67392bc0d0d3eeb"
+    "url": "assets/js/99.9e578172.js",
+    "revision": "6b1f39dc69a3f7f7dee388dbd53745a8"
   },
   {
     "url": "assets/maven/yky_1511451890.png",
@@ -780,6 +804,14 @@ self.__precacheManifest = [
   {
     "url": "assets/mvc/yky-1837462674.png",
     "revision": "8edc9abe4ffb2c59fe337146f9c5423a"
+  },
+  {
+    "url": "assets/nexus/clipboard.png",
+    "revision": "65c40093829eef00976d9dbd76c1ec48"
+  },
+  {
+    "url": "assets/nexus/yky-20200618194512.png",
+    "revision": "7d8d944f4542d3457b31c4ed9a2368e8"
   },
   {
     "url": "assets/nginx/yky-20200424174214.png",
@@ -1115,395 +1147,419 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "1b2521ec2d33e5484f9d8ee712e08637"
+    "revision": "3628abb16ed3cfe1f16707939048571d"
   },
   {
     "url": "zh/apache-shiro/index.html",
-    "revision": "563b3390a3cc92741d1bd0a568f28e3f"
+    "revision": "62cc07d398fd584f3ffb3820ce2e8613"
   },
   {
     "url": "zh/apache-shiro/RememberMe.html",
-    "revision": "569b79a072b08f4ee608d4ebf19cf4f1"
+    "revision": "caa0cbdde97e8c747fd8db31fe388762"
   },
   {
     "url": "zh/apache-shiro/session-管理.html",
-    "revision": "f819a6463681f3ebb2655266105adcb2"
+    "revision": "7f2bb2ace17811fb259717a0442e5590"
   },
   {
     "url": "zh/apache-shiro/shiro-架构.html",
-    "revision": "df8442896b35b25a1eb66c7a3a7115ed"
+    "revision": "e9ddd1acf952466c9f3fee7d83add9dc"
   },
   {
     "url": "zh/apache-shiro/shiro-的标签使用.html",
-    "revision": "5147e5a7ebc856ea863b8510b7a79047"
+    "revision": "508aefb3e4b8b23178203dee3dfd931a"
   },
   {
     "url": "zh/apache-shiro/Shiro-认证流程.html",
-    "revision": "8cbb3a958bfdb72743ec2534679195d3"
+    "revision": "af36fe805ae21d7c5856ea4063b1e99f"
   },
   {
     "url": "zh/apache-shiro/SpringBoot-应用整合-Shiro-案例.html",
-    "revision": "392fa0e1cef08671f4f69b74edd3870c"
+    "revision": "0aec1a01d89cb00934cc1d9d269c2406"
   },
   {
     "url": "zh/apache-shiro/SpringBoot-整合-Shiro-完成权限管理案例.html",
-    "revision": "84fa3b9bf775176cb276b8896aa2e32f"
+    "revision": "b690964f591bacd68c36783be7964b3c"
   },
   {
     "url": "zh/apache-shiro/基于JavaSE应用-Shiro-的基本使用.html",
-    "revision": "bd5e6f4237f8ffc78c707bb65b195c6e"
+    "revision": "466d910a6bb718f522290b2030c61358"
   },
   {
     "url": "zh/apache-shiro/密码加密介绍.html",
-    "revision": "061794fe0fc7bfeb7dbfdfe9a74a920f"
+    "revision": "8062f27df092f80c7c4a92cd9638fd26"
   },
   {
     "url": "zh/apache-shiro/小知识点-权限管理.html",
-    "revision": "db588414c32a5ff6dcf46e3329ecf2a2"
+    "revision": "9c72be615bf151a2b2527a4002069303"
   },
   {
     "url": "zh/apache-shiro/缓存使用.html",
-    "revision": "cb79a260625d400df34e781252bfddf6"
+    "revision": "3872a427af249d25d30899abe31105d1"
   },
   {
     "url": "zh/bootstrap/index.html",
-    "revision": "19e43facfb65532fbbe734102c36890e"
+    "revision": "9947a172edd12d3ece21f06e82607df2"
+  },
+  {
+    "url": "zh/changelog/2020-05.html",
+    "revision": "bdbbe8cc464d008beae01d9d30a446c9"
   },
   {
     "url": "zh/changelog/index.html",
-    "revision": "1fc843a77192fca33dd57a9a6149c99f"
-  },
-  {
-    "url": "zh/changlog/index.html",
-    "revision": "3b5248e74523d6777ffa2a98ea56b010"
+    "revision": "931300197faf8c32728d1ed8ffbef0a7"
   },
   {
     "url": "zh/gengxin/index.html",
-    "revision": "07961b36d2534f902bc27a8a769dcad1"
+    "revision": "867dbcc00a6aaefbde7fa04dedf53db2"
   },
   {
     "url": "zh/gitflow/Forking-工作流.html",
-    "revision": "aea289fde077f7ba813ecf7ff6a68748"
+    "revision": "f5d6ea75112006ca577cc47fd23d252e"
   },
   {
     "url": "zh/gitflow/Git-工作流简介.html",
-    "revision": "714bc61602f02836c83cb3bc61d68340"
+    "revision": "c55a641f9912dcf2bf40736e29eb9f90"
   },
   {
     "url": "zh/gitflow/GitFlow-工作流.html",
-    "revision": "5d42d5b3d31e815c861e606c1ac33de7"
+    "revision": "3e2c16e76a20aa21e4a4fdffe3d04c63"
   },
   {
     "url": "zh/gitflow/index.html",
-    "revision": "0bedf05b9a3b0262f1e28a84ecebde78"
+    "revision": "75c4cf8a70f7cbe9a3dfcc4b411213bf"
   },
   {
     "url": "zh/gitflow/Pull-Requests.html",
-    "revision": "9f6af1df9042b8c1e83ccd66c4ca2894"
+    "revision": "d081f11d2f9af8abd38a41226cd0a7c6"
   },
   {
     "url": "zh/gitflow/什么是-Git.html",
-    "revision": "8168752cfa1356bc7fdbb7e6fa74f9df"
+    "revision": "8efc82d4a7745b70dab7474e6e66b3ea"
   },
   {
     "url": "zh/gitflow/功能分支工作流.html",
-    "revision": "d0f18a9a4d1ac90cc9a6321b1c945737"
+    "revision": "66c34c75fdbe3072171bff1426da5e0b"
   },
   {
     "url": "zh/gitflow/安装-Git.html",
-    "revision": "e69e9677d45261e1a6b2826469502c5f"
+    "revision": "27d699341c5cf72fc2aa19802cfc6fc5"
   },
   {
     "url": "zh/gitflow/集中式工作流.html",
-    "revision": "8f0ac30b708cb2522670f3884e6435c4"
+    "revision": "8eb69b094926cb10e82374d48e15d78c"
   },
   {
     "url": "zh/guide/Apache-Shiro.html",
-    "revision": "75b5330e1b3de7aef72e2fd1956fc77f"
+    "revision": "b5a7c85798b930b51bf3887cc0ab6241"
   },
   {
     "url": "zh/guide/GitFlow-工作流指南.html",
-    "revision": "3fd37809e79c885c7274995ed3f27266"
+    "revision": "4b02661ef27c0972c50d3e17d7bee09d"
   },
   {
     "url": "zh/guide/index.html",
-    "revision": "a10a61e5a6e0cd14fdcaed7e8506e0c5"
+    "revision": "c2b57cedcb83c0b7714dd7a4745fcc9b"
   },
   {
     "url": "zh/guide/Nginx.html",
-    "revision": "55a9f9cf07f50abc49e078cc98822412"
+    "revision": "75803007b3af887abb5cc8be1f957a9a"
   },
   {
     "url": "zh/guide/Spring-Cloud-iToken.html",
-    "revision": "c89e856052af13ab1e82c96671de6f0d"
+    "revision": "5a24f6f534c74316210db4bc5e8e2c3e"
   },
   {
     "url": "zh/guide/Spring-Security-oAuth2.html",
-    "revision": "84b3d141198dd3ecea52aa1dbd9ecab6"
+    "revision": "8e46f9679d21aa814901be778d73d5ee"
   },
   {
     "url": "zh/guide/Zookeeper-源码分析与实战.html",
-    "revision": "a705a10a96504f6dcbca48892097ae39"
+    "revision": "41f2437c7ee524935630da7ec15307c7"
   },
   {
     "url": "zh/guide/再谈谈微服务.html",
-    "revision": "40bcb3c1985136ccc89896af64a0defe"
+    "revision": "6358fd52b438bc35174fc9d43b8c6010"
   },
   {
     "url": "zh/guide/安装教学篇.html",
-    "revision": "b54a0b21359194f1738a3149221473b3"
+    "revision": "5126c6954d19ad3262c91e64058ef3a3"
+  },
+  {
+    "url": "zh/guide/平台管理.html",
+    "revision": "235c106157f5be1206c5065e91ecb7ec"
   },
   {
     "url": "zh/guide/微服务解决复杂问题.html",
-    "revision": "5fad1e0ae93b7cb380aaea74237aefa2"
+    "revision": "c2bb6290925ca5696f7583ecebfa8a6b"
   },
   {
     "url": "zh/guide/走向单体地狱.html",
-    "revision": "127f7b0afaae5cfea9114647595bcd20"
+    "revision": "44632bb71a9997f382fa91bc0c7ba299"
   },
   {
     "url": "zh/idea/index.html",
-    "revision": "aed7edca51e2cf0fb4755c58fe4ee001"
+    "revision": "a8781894540a5ca9650ef30cef431594"
   },
   {
     "url": "zh/idea/第一个 IDEA 单体应用.html",
-    "revision": "894aeac67561f5eab6f9c62b7245d1c7"
+    "revision": "20b271351d0f92ea0b3d2fcd983447d9"
   },
   {
     "url": "zh/junit/index.html",
-    "revision": "ffcc2998d9d4fb0c446dc497b1aa0583"
+    "revision": "b5d79be37f15950f47e059d785033a89"
   },
   {
     "url": "zh/junit/JUnit-断言.html",
-    "revision": "d6a55508875866f11246cfba44bf667a"
+    "revision": "6a8f6d3033361972b1088c3c8667ee6a"
   },
   {
     "url": "zh/junit/JUnit-注解.html",
-    "revision": "7ef023cac027c04692f288ead4766da8"
+    "revision": "450ad2f284b7e93a09c49bc49b871d75"
   },
   {
     "url": "zh/junit/知识点：测试.html",
-    "revision": "1bd8b5287f611c680336f53957141e64"
+    "revision": "0b28bcb777311e76585a0bbacf92b3c8"
   },
   {
     "url": "zh/junit/第一个-JUnit-单元测试.html",
-    "revision": "e51d0d92fbdff53d934798d06e490bdf"
+    "revision": "907f6e169ee7738a75d18efa4c687402"
   },
   {
     "url": "zh/log4j/index.html",
-    "revision": "f2902412f688d7725b257d735fa1820c"
+    "revision": "c1e4d447daef18de4c40c61b578db2bb"
   },
   {
     "url": "zh/log4j/Log4j-日志级别.html",
-    "revision": "4d89fa66293b899f1445c7b8b643a2e2"
+    "revision": "23366bbdfecf55cb23b3c387027a1b2c"
   },
   {
     "url": "zh/log4j/Log4j-日志输出控制文件.html",
-    "revision": "755b51ec516dee360f8bc8f945d85dbe"
+    "revision": "1f97ccac097de73bcbd13549e1d561e0"
   },
   {
     "url": "zh/log4j/第一个-Log4j-日志文件.html",
-    "revision": "c72e76476a8b0f6a918490661c70aaf7"
+    "revision": "ae0ad4c05a0296ca2aaa99d7d6a62c39"
   },
   {
     "url": "zh/maven/index.html",
-    "revision": "a91fbbdb45260f06601a1a3409ed8eb0"
+    "revision": "5666d5545458ca99852d7ff86d73eab8"
   },
   {
     "url": "zh/maven/Maven POM.html",
-    "revision": "ba0ba80c461f3630a67007f106fffe34"
+    "revision": "396f15811089fa4a325deb7dda7fba1b"
   },
   {
     "url": "zh/maven/Maven 依赖机制.html",
-    "revision": "4db50a5ecbb0280d44901910cb245140"
+    "revision": "22d4a44d08534b2e832c3c21e5da3229"
   },
   {
     "url": "zh/maven/Maven 安装配置.html",
-    "revision": "fc18143f86db678671d673dc5b42fa47"
+    "revision": "24c38a0a1b19e949f45aa7a3b070e005"
   },
   {
     "url": "zh/maven/Maven 常用命令.html",
-    "revision": "aedb98eb406125ef9f2f1ad2934f80bf"
+    "revision": "499a31655b57f06625b8b13020dd8f69"
   },
   {
     "url": "zh/maven/Maven 快照.html",
-    "revision": "9ca9580c91890b28df247ca7d56b1f23"
+    "revision": "0bdfce469f1bcd2b7d283261b65c0146"
   },
   {
     "url": "zh/maven/Maven 插件.html",
-    "revision": "494af7084af0fd2091b461412a4f56ce"
+    "revision": "a31826409144048e4695354cd72abd5e"
   },
   {
     "url": "zh/maven/Maven 的本地仓库与中央仓库.html",
-    "revision": "81eda13bcac02849039407059d716ea8"
+    "revision": "fb6de8a90c76fd8aa08e86dcae073806"
   },
   {
     "url": "zh/maven/知识点 MavenPom.html",
-    "revision": "82a49bbd37100f9beba9063a5a8880e6"
+    "revision": "54174cfd8baa51175e815b393175c4b4"
   },
   {
     "url": "zh/maven/第一个 Maven 程序.html",
-    "revision": "fb1b9de3b3c9d90fd7097c32441ba98f"
+    "revision": "322246f19f1d5c011baa6f0bf257890c"
   },
   {
     "url": "zh/maven/解决 Maven 无法自动下载依赖的问题.html",
-    "revision": "152f9299163e3e2ad7eb75fe104a66f0"
+    "revision": "c5cc2d44654a491ab092916c311aca81"
   },
   {
     "url": "zh/micro-service-about/index.html",
-    "revision": "fe08a4dcb7c3c06b48cb02b512405013"
+    "revision": "7630af499f7a7ce0358dbb21b781f77f"
   },
   {
     "url": "zh/micro-service-about/SOA-架构与微服务架构的区别.html",
-    "revision": "d4ebc5c2df7987b81fa9f816565d0559"
+    "revision": "f0d8cc6abec79673e42debb69aed69f7"
   },
   {
     "url": "zh/micro-service-about/传统架构与微服务架构的区别.html",
-    "revision": "f717cfc49cb6f4fc382a4d9f44c99cf4"
+    "revision": "a678f0c6a18f91c02e381b0103880cd3"
   },
   {
     "url": "zh/micro-service-about/微服务的实践.html",
-    "revision": "f25ddb1f54a2ad212d056928c125887c"
+    "revision": "10291c9224c19635a2477002a8e686fb"
   },
   {
     "url": "zh/micro-service-about/微服务的特征.html",
-    "revision": "e4fc9a3719407862998c7095ebf62c19"
+    "revision": "e7dea81033cbcdb4a0cbe73d87a7eba0"
   },
   {
     "url": "zh/mvc/index.html",
-    "revision": "9c27415b7c1656be8983f30cb7e784fc"
+    "revision": "735cd81a1e5bc672c0f7cad98e766f32"
   },
   {
     "url": "zh/mvc/什么是MVC模式.html",
-    "revision": "c6bf50da8122d30cb1c4fb98362586b8"
+    "revision": "5e7a8b0c87677fab5c95a1aaf157e23d"
   },
   {
     "url": "zh/mvc/小知识高内聚低耦合.html",
-    "revision": "61c9fcc44f0728e9d276cee5312ce4fb"
+    "revision": "9383037ce2a90a65c955a260397ac476"
+  },
+  {
+    "url": "zh/nexus/index.html",
+    "revision": "5464f78d0b53d2f6b01c1b9fbfaf63fe"
+  },
+  {
+    "url": "zh/nexus/Maven-仓库介绍.html",
+    "revision": "63f1a426d9450e297b9a7841017fe67c"
+  },
+  {
+    "url": "zh/nexus/Maven-私服-Nexus-的好处.html",
+    "revision": "24f60c83eefa88a81a139a76710ce511"
+  },
+  {
+    "url": "zh/nexus/在项目中使用-Maven-私服.html",
+    "revision": "b976c04d21640741b62f63749a72ebdd"
+  },
+  {
+    "url": "zh/nexus/基于-Docker-安装-Nexus.html",
+    "revision": "054806cd29d221ae262d5642882de445"
   },
   {
     "url": "zh/nginx/index.html",
-    "revision": "50f02cc17bfa0ff38697277e5b512d04"
+    "revision": "6057cca96f2478f0ea67bbd07eb5899b"
   },
   {
     "url": "zh/nginx/Nginx-虚拟主机.html",
-    "revision": "416cc3c8baf5c8d08bc1fd5046df6ed8"
+    "revision": "90187c3857c86b2ebf45cf5005b10b80"
   },
   {
     "url": "zh/nginx/小知识-Nginx-惊群问题.html",
-    "revision": "da9bf00c474c5f43a3332b552b341964"
+    "revision": "426e0477dad0d9571e864391aa2543fb"
   },
   {
     "url": "zh/nginx/知识点-CDN.html",
-    "revision": "3679ff0d487607989dde8781b402fd0a"
+    "revision": "9399b80adefb921c4fbef976e3873b18"
   },
   {
     "url": "zh/spring-cloud-alibaba-dubbo/index.html",
-    "revision": "570d568e06981685b35d9104be108b87"
+    "revision": "5d0acfd3abdbaf7abf2518fd1a31ce21"
   },
   {
     "url": "zh/spring-cloud-itoken-prepare/index.html",
-    "revision": "c7f2ff7798c29f4d2fed9760775e453e"
+    "revision": "c2fb0ac7a1067b7b78c984bfd7056868"
   },
   {
     "url": "zh/spring-cloud-itoken-prepare/了解-XP-极限编程.html",
-    "revision": "a788da40b141cf6060a8af9ec3287a80"
+    "revision": "1901a05aa2f6a3772c7147861eb6aff3"
   },
   {
     "url": "zh/spring-cloud-itoken-prepare/在-GitLab-上创建项目.html",
-    "revision": "919baf32993cb42cb63bb6dc31f3d8ba"
+    "revision": "14af1ee969030ea349a5fb78eb1dcfea"
   },
   {
     "url": "zh/spring-cloud-itoken-prepare/部署服务到容器.html",
-    "revision": "884d255a99adc9afbf26c93fc9b46162"
+    "revision": "a548917e8e33a6627902c34e81142ba4"
   },
   {
     "url": "zh/spring-cloud-itoken/index.html",
-    "revision": "3e6311bc6c3ceccf484163126862a267"
+    "revision": "d09b5c2de4f0ce5af0399dc1fabbb073"
   },
   {
     "url": "zh/spring-cloud-itoken/iToken-项目简介.html",
-    "revision": "5344e1e26c4cf8455818b38687fad7dc"
+    "revision": "8a043b5936fb3abe2ae9049b02c60d28"
   },
   {
     "url": "zh/Spring-mvc/index.html",
-    "revision": "fb0677b15129d7b22217b8fe296ce60c"
+    "revision": "2fa255b1d50f70d3b99a459df21d6af4"
   },
   {
     "url": "zh/Spring-mvc/Maven-模块化开发.html",
-    "revision": "c0408062e7e20334e8aafd1bfaaa5558"
+    "revision": "b729b1082c7494c5ab1293d11f0ef179"
   },
   {
     "url": "zh/Spring-mvc/Spring MVC-@ResponseBody.html",
-    "revision": "f37ecac222a2529505cd509abd1aa328"
+    "revision": "d552a48de01696cfe41b415d95747a45"
   },
   {
     "url": "zh/Spring-mvc/Spring-MVC-拦截器的使用.html",
-    "revision": "596de2f2e2047266c2bdfa9d9c399361"
+    "revision": "ff38e30d021088be3ed57c7172d01cd2"
   },
   {
     "url": "zh/Spring-mvc/Spring-MVC-表单标签库.html",
-    "revision": "cfacf9cdb22f197b9eb5511ac6ec9fcc"
+    "revision": "9db889e93f9e009af076cfe687d7486d"
   },
   {
     "url": "zh/Spring-mvc/Spring-整合-Spring-MVC.html",
-    "revision": "ebc19f7945801328bc666bb415e805f8"
+    "revision": "d268d6592b6b15e6babc37b084cb3a3b"
   },
   {
     "url": "zh/Spring-mvc/SpringMVC-@ModelAttribute.html",
-    "revision": "bec0e34635c4ce1f5847e44cac4bd9b3"
+    "revision": "617ec0af22794f35066de7debac8b864"
   },
   {
     "url": "zh/Spring-mvc/第一个-Controller-控制器.html",
-    "revision": "e5085ac29c7b75bc978e6ea2b476925c"
+    "revision": "a7adda67044ab6f2369f7c1f6b65a2bb"
   },
   {
     "url": "zh/spring-security-oAuth2/index.html",
-    "revision": "ef21b87290bdf6cbf489d8761724e0fd"
+    "revision": "323d172c610196cc32d93e41a8960ea2"
   },
   {
     "url": "zh/spring-security-oAuth2/为什么需要-oAuth2.html",
-    "revision": "2c1b786923571706a86629c76caf68e8"
+    "revision": "2c2416a68bad643b8dee89df612225f6"
   },
   {
     "url": "zh/spring-web/ApplicationContextAware.html",
-    "revision": "7c4a65ba05be1681a9780c92ff600a5c"
+    "revision": "917f23f1c27c3e37f697c2a95f247c83"
   },
   {
     "url": "zh/spring-web/Bean-的装配方式.html",
-    "revision": "043371053884414e325580e791656397"
+    "revision": "4481df6b00611a8297e5c5703ea36e27"
   },
   {
     "url": "zh/spring-web/index.html",
-    "revision": "59b62edbc7305719ea71f6c2b5d7c152"
+    "revision": "989d73e753f6e52349f15e7d16f0c8f7"
   },
   {
     "url": "zh/spring-web/浏览器端存储技术简介.html",
-    "revision": "9b1be190851055ef92949bc7a79bb8d3"
+    "revision": "115256e0ae1f4ca7328b78f0e7e35243"
   },
   {
     "url": "zh/spring/index.html",
-    "revision": "b2acb70160af9d6c7de623fa16ac7c55"
+    "revision": "b500c9d8832b192cdff4b089c1d28b04"
   },
   {
     "url": "zh/spring/Spring-与-loC.html",
-    "revision": "9778de59feb17ccd2ffcd2f7ff42e480"
+    "revision": "dd4533eaa9819f60eb7a71c465a512de"
   },
   {
     "url": "zh/spring/Spring-体系结构.html",
-    "revision": "671e47c91808b5d736600371991d5892"
+    "revision": "99fbeace4cab2a701678dacf502e3c88"
   },
   {
     "url": "zh/spring/Spring-的特点.html",
-    "revision": "e9b8cbee6fc15f7ed99988a185db9446"
+    "revision": "e28ee6a5ed2af7f53280c8678b9d2745"
   },
   {
     "url": "zh/spring/第一个-Spring-应用程序.html",
-    "revision": "dcb671aceda03baf6e7b818acf6de951"
+    "revision": "d8ed0ea2bbdafd35deb5c4a4235362ed"
   },
   {
     "url": "zh/zookeeper-analysis/index.html",
-    "revision": "3035aed0c8639189453a797fb84b663a"
+    "revision": "863d3519e81842f4271d200f6ca26a9e"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
