@@ -31,6 +31,7 @@ module.exports = {
             title: '专题',
             collapsable: false,
             children: [
+                { title: 'REST 与 RPC', path: 'REST-RPC' },
                 { title: 'Apache Shiro', path: 'Apache-Shiro' },
                 { title: 'Spring Security oAuth2', path: 'Spring-Security-oAuth2' },
             ]
@@ -271,6 +272,16 @@ module.exports = {
                 { title: 'Maven 仓库介绍', path: 'Maven-仓库介绍' },
                 { title: '在项目中使用 Maven 私服', path: '在项目中使用-Maven-私服' },
                 { title: 'Maven 私服 Nexus 的好处', path: 'Maven-私服-Nexus-的好处' },
+            ]
+        }
+    ],
+    '/zh/spring-boot-webclient/':[
+        {
+            title: 'WebClient',
+            collapsable: false,
+            children: [
+                { title: 'Spring Boot 响应式客户端 WebClient', path: '/zh/spring-boot-webclient/' },
+                { title: '快速上手 WebClient', path: '快速上手-WebClient' },
             ]
         }
     ],
