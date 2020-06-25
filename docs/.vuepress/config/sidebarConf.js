@@ -12,6 +12,7 @@ module.exports = {
             collapsable: false,
             children: [
                 { title: '走向单体地狱', path: '走向单体地狱' },
+                { title: 'GitFlow 工作流指南', path: 'GitFlow-工作流指南' },
                 { title: '微服务解决复杂问题', path: '微服务解决复杂问题' },
                 { title: '再谈谈微服务', path: '再谈谈微服务' },
                 { title: 'Spring Cloud iToken', path: 'Spring-Cloud-iToken' },
@@ -24,6 +25,8 @@ module.exports = {
             collapsable: false,
             children: [
                 {title:'平台',path:'平台管理'},
+              
+                { title: 'Nexus - 依赖管理平台', path: '/zh/nexus/' },
                 { title: 'GitFlow 工作流指南', path: 'GitFlow-工作流指南' },
             ]
         },
@@ -203,6 +206,19 @@ module.exports = {
             ]
         },
     ],
+    '/zh/spring-cloud-itoken-ci/': [
+        {
+            title: 'iToken 持续集成',
+            collapsable: false,
+            children: [
+                { title: '持续集成的基本概念', path: '/zh/spring-cloud-itoken-ci/' },
+                { title: '持续集成的操作流程', path: '持续集成的操作流程' },
+                { title: '使用 GitLab 持续集成', path: '使用-GitLab-持续集成' },
+                { title: '使用 GitLab Runner', path: '使用-GitLab-Runner' },
+                { title: '使用 GitLab Runner Docker', path: '使用-GitLab-Runner-Docker' },
+            ]
+        },
+    ],
     '/zh/nginx/': [
         {
             title: 'Nginx',
@@ -261,6 +277,24 @@ module.exports = {
                 { title: 'Remember Me', path: 'RememberMe' },  
             ]
         },
+    ],
+    '/zh/gitlab/':[
+        {
+            title: 'GitLab - 代码管理平台',
+            collapsable: false,
+            children: [
+                { title: '什么是 Git ？', path: '/zh/gitlab/' },
+                { title: '安装 Git', path: '安装-Git' },
+                { title: 'Git 的一般工作流程', path: 'Git-的一般工作流程' },
+                { title: 'Git 的基本操作', path: 'Git-的基本操作' },
+                { title: 'SmartGit 简化 Git 操作', path: 'SmartGit-简化-Git-操作' },
+                { title: '什么是 GitLab ？', path: '什么是-GitLab' },
+                { title: '基于 Docker 安装 GitLab', path: '基于-Docker-安装-GitLab' },
+                { title: 'GitLab 的基本设置', path: 'GitLab-的基本设置' },
+                { title: 'GitLab 的账户管理', path: 'GitLab-的账户管理' },
+                { title: 'GitLab 创建第一个项目', path: 'GitLab-创建第一个项目' },
+            ]
+        }
     ],
     '/zh/nexus/':[
         {
