@@ -1,8 +1,12 @@
 # **Bean 的装配方式**
 ## **概述**
+---
+
 截止目前为止，咱们 Bean 的装配方式是通过代码 getBean() 的方式从容器获取指定的 Bean 实例，容器首先会调用 Bean 类的无参构造器，创建空值的实例对象。除了使用 getBean() 的装配方式外，还可以使用注解的装配方式。
 
 ## **容器中 Bean 的作用域**
+---
+
 在学习 Bean 的装配方式之前，我们先了解一下 Bean 的作用域。当通过 Spring 容器创建一个 Bean 实例时，不仅可以完成 Bean 的实例化，还可以通过 scope 属性，为 Bean 指定特定的作用域。Spring 支持 5 种作用域。
 
 - singleton：单态模式。即在整个 Spring 容器中，使用 singleton 定义的 Bean 将是单例的，只有一个实例。默认为单态的。
@@ -18,10 +22,13 @@
 - 对于 scope 为 prototype 的原型模式，Bean 实例是在代码中使用该 Bean 实例时才进行装配的。
 
 ## **基于注解的装配方式**
+---
+
 对于 DI 使用注解，将不再需要在 Spring 配置文件中声明 Bean 实例。Spring 中使用注解， 需要在原有 Spring 运行环境基础上再做一些改变
 
 需要在 Spring 配置文件中配置组件扫描器，用于在指定的基本包中扫描注解。
-```
+
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -32,9 +39,11 @@
     <context:component-scan base-package="com.yky.my.shop"></context:component-scan>
 </beans>
 ```
+
 **@Component**
 需要在类上使用注解`@Component`，该注解的value属性用于指定该bean的id值。
-```
+
+```java
 @Component(value = "student")
 public class Student {
     private Long id;
@@ -73,7 +82,8 @@ Spring 还提供了3个功能基本和`Component`等效的注解：
 
 **@Scope**
 需要在类上使用注解`@Scope`，其value属性用于指定作用域。
-```
+
+```java
 @Scope("prototype")
 @Component(value="student")
 public class Student{
@@ -81,9 +91,11 @@ public class Student{
     private String name;
 }
 ```
+
 **@Value**
 需要在属性上使用注解`@value`，该注解的value属性用于指定要注入的值
-```
+
+```java
 @Scope("prototype")
 @Component(value="student")
 public class Student{
@@ -93,12 +105,14 @@ public class Student{
     private String name;
 }
 ```
+
 使用该注解完成属性注入时，类中无需setter。当然，若属性有setter，则也可将其加到setter上。
 **@Autowired**
 需要在域属性上使用注解`@Autowired`,该注解默认使用**按类型自动装配Bean**的方式。
 
 使用该注解完成属性注入时，类中无需setter。当然，若属性有setter，则也可将其加到setter上。
-```
+
+```java
 @Component
 public class School{
     @Value("2")
@@ -118,12 +132,15 @@ public class Student{
     private School school;
 }
 ```
+
 **@Resource**
 需要域属性上使用注解`@Resource`，该注解有一个name属性，可以创建指定的bean
-```
+
+```java
 @Resource(name="userService")
 private UserService userService;
 ```
+
 **@PostConstruct**
 在方法上使用`@PostConstruct`相当于初始化
 ```

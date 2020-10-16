@@ -1,5 +1,7 @@
-# 第一个 JUnit 单元测试
-## POM
+# **第一个 JUnit 单元测试**
+## **POM**
+---
+
 `pom.xml` 文件如下：
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -30,6 +32,8 @@
 主要增加了`junit:junit`依赖
 
 ## **创建测试类**
+---
+
 在测试包下 `src/main/test` 创建一个名为 `UserServiceTest` 的测试类，代码如下：
 ```
 package com.yky.hello.spring.service.test;

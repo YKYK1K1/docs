@@ -1,6 +1,8 @@
 # **ApplicationContextAware**
+
 当一个类实现了这个接口（`ApplicationContextAware`）之后，这个类就可以方便获得 `ApplicationContext` 中的所有 bean。换句话说，就是这个类可以直接获取 Spring 配置文件中，所有有引用到的 Bean 对象。
-```
+
+```java
 package com.funtl.leeshop.commons.context;
 
 import org.apache.commons.lang3.Validate;
@@ -75,18 +77,26 @@ public class SpringContext implements ApplicationContextAware, DisposableBean {
 }
 ```
 还需要在`spring-context.xml`配置文件中装配`<bean id="springContext" class="com.yky.leeshop.commons.context.SpringContext" />;`
-## *POM*
+
+## **POM**
+---
+
 需要在`pom.xml`中增加`org.apache.commons:commons-lang3`依赖
-```
+
+```xml
 <dependency>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-lang3</artifactId>
     <version>3.5</version>
 </dependency>
 ```
+
 ## **附：完整的 POM 文件**
+---
+
 截止目前所学知识点，完整的 `pom.xml` 如下：
-```
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

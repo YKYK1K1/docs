@@ -10,7 +10,7 @@
 一般来说，构建任务都会占用很多的系统资源 (譬如编译代码)，而 GitLab CI 又是 GitLab 的一部分，如果由 GitLab CI 来运行构建任务的话，在执行构建任务的时候，GitLab 的性能会大幅下降。
 
 GitLab CI 最大的作用是管理各个项目的构建状态，因此，运行构建任务这种浪费资源的事情就交给 GitLab Runner 来做拉！
-
+ 
 因为 GitLab Runner 可以安装到不同的机器上，所以在构建任务运行期间并不会影响到 GitLab 的性能
 
 ## **安装**
@@ -18,6 +18,7 @@ GitLab CI 最大的作用是管理各个项目的构建状态，因此，运行�
 
 - 在目标主机上安装 GitLab Runner，这里的目标主机指你要部署的服务器
 - Ubuntu 安装脚本：
+
 ```
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
 sudo apt-get update

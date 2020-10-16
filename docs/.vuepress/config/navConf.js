@@ -30,7 +30,7 @@ module.exports = [
         items: [
             {
                 text: '在线转换', items: [
-                    { text: 'PDF 转换器', link: '/https://smallpdf.com/cn/pdf-to-word' },
+                    { text: 'PDF 转换器', link: 'https://smallpdf.com/cn/pdf-to-word' },
                     { text: '图片格式转换器', link: 'https://www.aconvert.com/cn/format/svg/' },
                     { text: '在线编码转换', link: 'http://tool.chinaz.com/tools/native_ascii.aspx' },
                     { text: 'YAML <-> Properties', link: 'https://www.toyaml.com/index.html' },

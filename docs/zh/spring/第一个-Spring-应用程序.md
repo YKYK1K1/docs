@@ -1,7 +1,10 @@
 # **第一个 Spring 应用程序**
 ## **POM**
+---
+
 创建一个工程名为 `hello-spring` 的项目，`pom.xml` 文件如下：
-```
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -22,18 +25,26 @@
 
 </project>
 ```
+
 主要增加了 `org.springframework:spring-context` 依赖
-## 创建接口与实现
-### 创建 `UserService` 接口
-```
+
+
+## **创建接口与实现**
+---
+
+### **创建 `UserService` 接口**
+
+```java
 package com.yky.hello.spring.service;
 
 public interface UserService {
     public void sayHi();
 }
 ```
-### 创建 `UserServiceImpl` 实现
-```
+
+### **创建 `UserServiceImpl` 实现**
+
+```java
 package com.yky.hello.spring.service.impl;
 
 import com.yky.hello.spring.service.UserService;
@@ -44,9 +55,13 @@ public class UserServiceImpl implements UserService {
     }
 }
 ```
-## 创建Spring配置文件
+
+## **创建 Spring 配置文件**
+---
+
 在`src/main/resources`目录下创建`spring-context.xml`配置文件，从现在开始类的实例化工作交给Spring容器管理(IOC),配置文件如下：
-```
+
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -55,13 +70,17 @@ public class UserServiceImpl implements UserService {
 
 </beans>
 ```
+
 - `<bean />`:用于定义一个实例对象。一个实例对象一个bean元素。
 - `id`:该属性是Bean实例的唯一标识，程序通过id属性访问Bean，Bean与Bean间的依赖关系也是通过id属性关联的。
 - `class`:指定该Bean所属的类，注意这里只能是类，不能是接口。
 
-## 测试 Spring IoC
+## **测试 Spring IoC**
+---
+
 创建一个 `MyTest` 测试类，测试对象是否能够通过 Spring 来创建，代码如下：
-```
+
+```java
 package com.yky.hello.spring;
 
 import com.yky.hello.spring.service.UserService;

@@ -28,8 +28,7 @@ iToken 项目是基于 Spring Boot + Spring Cloud 的综合练习项目，帮助
 ## **正式进入开发**
 ---
 
-[开始学习](/zh/gengxin/)
-<!-- [开始学习](/zh/spring-cloud-itoken-codeing/) -->
+[开始学习](/zh/spring-cloud-itoken-codeing/)
 
 ## **补充知识点**
 ---

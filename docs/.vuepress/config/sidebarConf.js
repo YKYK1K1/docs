@@ -36,7 +36,17 @@ module.exports = {
             children: [
                 { title: 'REST 与 RPC', path: 'REST-RPC' },
                 { title: 'Apache Shiro', path: 'Apache-Shiro' },
+                { title: 'Kubernetes', path: 'Kubernetes' },
+                { title: 'Spring Cloud 第二季', path: 'spring-cloud-2' },
+                { title: 'Spring Cloud 微服务架构实战 160 讲', path: 'spring-cloud-160' },
                 { title: 'Spring Security oAuth2', path: 'Spring-Security-oAuth2' },
+            ]
+        },
+        {
+            title: '前端体系',
+            collapsable: false,
+            children: [
+                { title: 'Vue 从入门到精通', path: 'vue' },
             ]
         }
     ],
@@ -47,6 +57,16 @@ module.exports = {
             children: [
                 { title: 'IDEA 简介', path: '/zh/idea/' },
                 { title: '第一个 IDEA 单体应用', path: '第一个 IDEA 单体应用' }
+            ]
+        },
+    ],
+    '/zh/mysql/': [
+        {
+            title: 'MySQL',
+            collapsable: false,
+            children: [
+                { title: 'MySQL', path: '/zh/mysql/' },
+                { title: 'MySQL 安装', path: 'mysql-安装' }
             ]
         },
     ],
@@ -108,7 +128,7 @@ module.exports = {
             collapsable: false,
             children: [
                 { title: 'JUnit 简介', path: '/zh/junit/' },
-                { title: '知识点：测试', path: '知识点：测试' },
+                { title: '知识点：测试', path: '知识点-测试' },
                 { title: '第一个 JUnit 单元测试', path: '第一个-JUnit-单元测试' },
                 { title: 'JUnit 注解', path: 'JUnit-注解' },
                 { title: 'JUnit 断言', path: 'JUnit-断言' },
@@ -185,6 +205,115 @@ module.exports = {
             ]
         },
     ],
+    '/zh/spring-cloud-2/A-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: '从 2.2.x 和 H 版开始说起', path: '/zh/spring-cloud-2/A-module/' },
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/B-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: '关于 Cloud 各种组件的停更/升级/替换', path: '/zh/spring-cloud-2/B-module/' },
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/C-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: '约定大于配置', path: '/zh/spring-cloud-2/C-module/' },
+                { title: 'IDEA 新建 project 工作空间', path: 'IDEA-新建-project-工作空间'},
+                { title: 'Rest 微服务工程构建', path: 'Rest-微服务工程构建' }
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/D-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: 'Eureka 基础知识', path: '/zh/spring-cloud-2/D-module/' },
+                { title: '单机 Eureka 构建步骤', path: '单机-Eureka-构建步骤'},
+                { title: '集群 Eureka 构建步骤', path: '集群-Eureka-构建步骤'},   
+                { title: 'actuator 微服务信息完善', path: 'actuator-微服务信息完善'},
+                { title: '服务发现 Discovery', path: '服务发现-Discovery'},
+                { title: 'Eureka 自我保护', path: 'Eureka-自我保护'},
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/E-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: 'Zookeeper 服务注册与发现', path: '/zh/spring-cloud-2/E-module/' },
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/F-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: 'Consul 简介', path: '/zh/spring-cloud-2/F-module/' },
+                { title: '安装并运行 Consul', path: '安装并运行-Consul' },
+                { title: '服务提供者', path: '服务提供者' },
+                { title: '服务消费者', path: '服务消费者' },
+                { title: '三个注册中心异同点', path: '三个注册中心异同点' },
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/G-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: 'Ribbon 负载均衡调用', path: '/zh/spring-cloud-2/G-module/' },
+                { title: 'Ribbon 负载均衡演示', path: 'Ribbon-负载均衡演示' },
+                { title: 'Ribbon 核心组件 IRule', path: 'Ribbon-核心组件-IRule' },
+                { title: 'Ribbon 负载均衡算法', path: 'Ribbon-负载均衡算法' },
+
+
+                
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/H-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: 'OpenFeign 服务接口调用', path: '/zh/spring-cloud-2/H-module/' },    
+            ]
+        },
+    ],
+    '/zh/kubernetes/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: 'Kubernetes', path: '/zh/kubernetes/' },
+            ]
+        },
+    ],
+    '/zh/spring-cloud-160/first-module/': [
+        {
+            title: '第一模块：微服务安全架构与实践',
+            collapsable: false,
+            children: [
+                { title: '第一模块课程介绍', path: '/zh/spring-cloud-160/first-module/' },
+                { title: '问题域', path: '问题域.md' },
+                { title: 'OAuth2 最简向导', path: 'OAuth2-最简向导.md' },
+            ]
+        },
+    ],
     '/zh/spring-cloud-itoken/': [
         {
             title: '项目介绍',
@@ -202,6 +331,7 @@ module.exports = {
             children: [
                 { title: '了解敏捷开发', path: '/zh/spring-cloud-itoken-prepare/' },
                 { title: '在 GitLab 上创建项目', path: '在-GitLab-上创建项目' },
+                { title: '完善各服务配置', path: '完善各服务配置' },
                 { title: '部署服务到容器', path: '部署服务到容器' },
             ]
         },
@@ -219,14 +349,16 @@ module.exports = {
             ]
         },
     ],
-    '/zh/nginx/': [
+    '/zh/spring-cloud-itoken-codeing/': [
         {
-            title: 'Nginx',
+            title: '管理员服务',
             collapsable: false,
             children: [
-                { title: '知识点：CDN', path: '知识点-CDN' },
-                { title: 'Nginx 简介', path: '/zh/nginx/' },
+                { title: '创建管理员服务提供者', path: '/zh/spring-cloud-itoken-codeing/' },
+                { title: '创建管理员服务消费者', path: '创建管理员服务消费者' },
+                { title: 'Nginx 简介', path: 'Nginx-简介' },
                 { title: 'Nginx 虚拟主机', path: 'Nginx-虚拟主机' },
+                { title: '知识点：CDN', path: '知识点-CDN' },              
                 { title: '小知识：Nginx 惊群问题', path: '小知识-Nginx-惊群问题' },
             ]
         },
@@ -246,15 +378,6 @@ module.exports = {
             collapsable: false,
             children: [
                 { title: 'Spring Security oAuth2', path: '/zh/spring-security-oAuth2/' },
-            ]
-        },
-    ],
-    '/zh/gengxin/': [
-        {
-            title: '更新中',
-            collapsable: false,
-            children: [
-                { title: '更新中', path: '/zh/gengxin/' }
             ]
         },
     ],
@@ -319,6 +442,18 @@ module.exports = {
             ]
         }
     ],
+    '/zh/vue/': [
+        {
+            title: 'Vue 从入门到精通',
+            collapsable: false,
+            children: [
+                { title: 'Vuejs 知识量化', path: '/zh/vue/' },
+                { title: 'Vuejs 的认识和特点介绍', path: 'Vuejs-的认识和特点介绍' },
+                { title: 'Vue 基础语法', path: 'Vue-基础语法' },
+                { title: 'Vue 组件化开发', path: 'Vue-组件化开发' },
+            ]
+        },
+    ],
     '/zh/changelog/':[
         {
             title: 'Change Log',
@@ -326,6 +461,15 @@ module.exports = {
             children: [
                 { title: '最近更新', path: '/zh/changelog/' },
                 { title: '2020 年 05 月', path: '2020-05' }
+            ]
+        },
+    ],
+    '/zh/gengxin/': [
+        {
+            title: '更新中',
+            collapsable: false,
+            children: [
+                { title: '更新中', path: '/zh/gengxin/' }
             ]
         },
     ],

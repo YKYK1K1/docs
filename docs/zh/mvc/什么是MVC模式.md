@@ -1,5 +1,7 @@
 # **什么是 MVC 模式**
 ## **概述**
+---
+
 MVC，即Mode模型，View视图，及Controller控制器，是应用于视图层的模式
     
 - View：视图，为用户提供使用界面，与用户直接进行交互
@@ -7,6 +9,8 @@ MVC，即Mode模型，View视图，及Controller控制器，是应用于视图�
 - Controller：控制器，用于将用户请求转发给相应的Model进行处理，并根据Model的计算结果向用户提供相应响应。
 
 ##  **MVC 架构程序的工作流程**
+---
+
 -   用户通过View页面向服务端提出请求，可以是表单请求、超链接请求、AJAX请求等
 -   服务器Controller控制器接收到请求后对请求进行解析，找到相应得到Model对用户请求进行处理
 -   Model处理后，将处理结果再交给Controller
@@ -15,6 +19,7 @@ MVC，即Mode模型，View视图，及Controller控制器，是应用于视图�
 ![MVC工作流程](/docs/assets/mvc/yky-1827462833.png)
 
 ## **三层架构 + MVC 示意图**
+---
 
 ![MVC示意图](/docs/assets/mvc/yky-1837462657.png)
 
