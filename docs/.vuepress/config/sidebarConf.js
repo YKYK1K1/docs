@@ -34,6 +34,7 @@ module.exports = {
             title: '专题',
             collapsable: false,
             children: [
+                { title: 'Java 新特性', path: 'Java-新特性' },
                 { title: 'REST 与 RPC', path: 'REST-RPC' },
                 { title: 'Apache Shiro', path: 'Apache-Shiro' },
                 { title: 'Kubernetes', path: 'Kubernetes' },
@@ -290,7 +291,58 @@ module.exports = {
             title: '',
             collapsable: false,
             children: [
-                { title: 'OpenFeign 服务接口调用', path: '/zh/spring-cloud-2/H-module/' },    
+                { title: 'OpenFeign 服务接口调用', path: '/zh/spring-cloud-2/H-module/' },
+                { title: 'Feign 超时控制', path: 'Feign-超时控制' }, 
+                { title: 'OpenFeign 日志打印功能', path: 'OpenFeign-日志打印功能' }, 
+                
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/I-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: 'Hystrix 断路器', path: '/zh/spring-cloud-2/I-module/' },
+                { title: 'Hystrix 重要概念', path: 'Hystrix-重要概念' }, 
+                { title: 'Hystrix 案例', path: 'Hystrix-案例' }, 
+                { title: 'Hystrix 工作流程', path: 'Hystrix-工作流程' }, 
+                { title: '服务监控 HystrixDashboard', path: '服务监控-HystrixDashboard' }
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/J-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: 'Gateway 新一代网关', path: '/zh/spring-cloud-2/J-module/' },
+                { title: '通过微服务名实现动态路由', path: '通过微服务名实现动态路由.md' },
+                { title: 'Predicate 的使用', path: 'Predicate的使用.md' },
+                { title: 'Filter 的使用', path: 'Filter的使用.md' },
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/K-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: 'SpringCloud config 分布式配置中心', path: '/zh/spring-cloud-2/K-module/' },
+                { title: 'Config 服务端配置与测试', path: 'Config-服务端配置与测试' },
+                { title: 'Config 客户端配置与测试', path: 'Config-客户端配置与测试' },
+                { title: 'Config 客户端之动态刷新', path: 'Config-客户端之动态刷新' },
+            ]
+        },
+    ],
+    '/zh/spring-cloud-2/L-module/': [
+        {
+            title: '',
+            collapsable: false,
+            children: [
+                { title: 'SpringCloud Bus 消息总线', path: '/zh/spring-cloud-2/L-module/' },
+                { title: 'RabbitMQ 环境配置', path: 'RabbitMQ-环境配置' },
+                { title: 'SpringCloud Bus 动态刷新全局广播', path: 'SpringCloud-Bus-动态刷新全局广播' },
             ]
         },
     ],
@@ -451,8 +503,32 @@ module.exports = {
                 { title: 'Vuejs 的认识和特点介绍', path: 'Vuejs-的认识和特点介绍' },
                 { title: 'Vue 基础语法', path: 'Vue-基础语法' },
                 { title: 'Vue 组件化开发', path: 'Vue-组件化开发' },
+                { title: 'Vue 模块化开发', path: 'Vue-模块化开发' },
+                { title: 'Vue CLI 详解', path: 'Vue-CLI-详解' },
+                { title: 'Vue-router', path: 'Vue-router' },
             ]
         },
+    ],
+    '/zh/java/8/':[
+        {
+            title: 'Java 8 新特性',
+            collapsable: false,
+            children: [
+                { title: 'Java 8 新特性', path: '/zh/java/8/' },
+                { title: 'Java 8 Lambda 表达式', path: 'lambda' },
+            ]
+        }
+
+    ],
+    '/zh/java/9/':[
+        {
+            title: 'Java 9 新特性',
+            collapsable: false,
+            children: [
+                { title: 'Vuejs 知识量化', path: '/zh/java/9/' },
+            ]
+        }
+
     ],
     '/zh/changelog/':[
         {

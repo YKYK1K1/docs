@@ -5,6 +5,7 @@ const navConf = require("./config/navConf")
 
 
 module.exports = {
+    port :8080,
     base: '/docs/',
     title: "七伊",
     theme: 'antdocs',

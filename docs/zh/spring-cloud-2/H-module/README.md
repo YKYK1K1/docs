@@ -153,3 +153,5 @@ public class OrderFeignMain80 {
 - **小总结**
 
 ![OpenFeign](/docs/assets/spring-cloud-2/H-module/yky-20201013160103.png)
+
+![OpenFeign](/docs/assets/spring-cloud-2/H-module/yky-20201016164355.png)

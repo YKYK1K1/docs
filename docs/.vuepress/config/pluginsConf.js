@@ -31,7 +31,7 @@ module.exports = {
     '@vuepress/medium-zoom': {
         selector: 'img',
         options: {
-            margin: 16
+            margin: 24
         }
     }
     // ,"vuepress-plugin-auto-sidebar": {}

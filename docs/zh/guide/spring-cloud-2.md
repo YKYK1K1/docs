@@ -40,3 +40,23 @@
 ---
 
 [开始学习](/zh/spring-cloud-2/H-module/)
+
+## **9. Hystrix 断路器**
+---
+
+[开始学习](/zh/spring-cloud-2/I-module/)
+
+## **10. Gateway 新一代网关**
+---
+
+[开始学习](/zh/spring-cloud-2/J-module/)
+
+## **11. SpringCloud config 分布式配置中心**
+---
+
+[开始学习](/zh/spring-cloud-2/K-module/)
+
+## **12. SpringCloud Bus 消息总线**
+---
+
+[开始学习](/zh/spring-cloud-2/L-module/)
